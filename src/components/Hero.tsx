@@ -1,44 +1,64 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section
-      id="top"
-      className="flex min-h-screen flex-col justify-center px-6 pt-24 sm:px-10"
-    >
+    <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24 sm:px-10">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/hero-gold-ribbons.png"
+          alt=""
+          fill
+          priority
+          className="object-cover opacity-45"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg via-bg/70 to-bg" />
+        <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/40 to-transparent" />
+      </div>
+
+      <div className="glow -z-10 h-96 w-96" style={{ top: "20%", left: "55%" }} />
+
       <div className="mx-auto w-full max-w-5xl">
-        <p
-          className="rise-in mb-6 text-xs font-medium tracking-[0.3em] text-gold uppercase"
-          style={{ animationDelay: "0.05s" }}
-        >
+        <p className="rise-in eyebrow mb-6" style={{ animationDelay: "0.05s" }}>
           Marketing &amp; Automatisierung
         </p>
 
-        <h1 className="max-w-4xl text-[2.6rem] leading-[1.05] font-semibold tracking-tight sm:text-6xl sm:leading-[1.05]">
+        <h1 className="display-heading max-w-3xl">
           <span className="rise-in block" style={{ animationDelay: "0.15s" }}>
-            Ich helfe Professionals, die keine Zeit für Marketing haben,
+            Fachgebiet
           </span>
-          <span className="rise-in block text-gold" style={{ animationDelay: "0.3s" }}>
-            ihr Fachgebiet voll zu automatisieren
+          <span className="rise-in block" style={{ animationDelay: "0.3s" }}>
+            automatisieren.
           </span>
-          <span className="rise-in block" style={{ animationDelay: "0.45s" }}>
-            und Vertrauen zu Endkunden aufzubauen — ohne sich damit auskennen
-            zu müssen.
+          <span className="rise-in gold-text block" style={{ animationDelay: "0.45s" }}>
+            Vertrauen aufbauen.
           </span>
         </h1>
 
         <p
-          className="rise-in mt-8 max-w-md text-base text-fg/60"
-          style={{ animationDelay: "0.6s" }}
+          className="rise-in mt-8 max-w-lg text-base text-fg/60 sm:text-lg"
+          style={{ animationDelay: "0.62s" }}
         >
-          Kein Agentur-Blabla, keine Reportings, die niemand liest. Systeme,
-          die im Hintergrund laufen, während du dein Fachgebiet machst.
+          Ich helfe Professionals, die keine Zeit für Marketing haben, ihr
+          Fachgebiet voll zu automatisieren und Vertrauen zu Endkunden
+          aufzubauen — ohne sich in geringster Weise damit auskennen zu
+          müssen.
         </p>
 
-        <div className="rise-in mt-10" style={{ animationDelay: "0.75s" }}>
+        <div
+          className="rise-in mt-10 flex flex-wrap items-center gap-5"
+          style={{ animationDelay: "0.78s" }}
+        >
           <a
-            href="#kontakt"
-            className="inline-block rounded-full bg-gold px-8 py-4 text-sm font-semibold tracking-wide text-bg transition-transform hover:scale-[1.03]"
+            href="/kontakt"
+            className="gold-btn inline-block rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg"
           >
             Erstgespräch buchen
+          </a>
+          <a
+            href="/preise"
+            className="text-sm font-medium text-fg/60 underline underline-offset-4 hover:text-fg"
+          >
+            Preise ansehen
           </a>
         </div>
       </div>

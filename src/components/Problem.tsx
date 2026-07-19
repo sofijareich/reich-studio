@@ -5,9 +5,7 @@ export default function Problem() {
     <section className="px-6 py-28 sm:px-10">
       <div className="mx-auto max-w-3xl">
         <Reveal>
-          <p className="mb-6 text-xs font-medium tracking-[0.3em] text-gold uppercase">
-            Die Ausgangslage
-          </p>
+          <p className="eyebrow mb-6">Die Ausgangslage</p>
           <p className="text-2xl leading-snug font-medium sm:text-3xl">
             Du bist gut in dem, was du tust. Aber Content, Posts und
             Follow-ups fressen dir genau die Zeit weg, die du eigentlich für
