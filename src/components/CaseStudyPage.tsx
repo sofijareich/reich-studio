@@ -38,34 +38,38 @@ export default function CaseStudyPage({ study }: { study: CaseStudy }) {
         </div>
       </section>
 
-      <section className="px-6 pb-20 sm:px-10">
-        <div className="mx-auto max-w-6xl">
-          <Reveal>
-            <p className="eyebrow mb-4">Zahlen</p>
-            <h2 className="mb-12 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-              Was dabei rauskam.
-            </h2>
-          </Reveal>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {study.stats.map((stat) => (
-              <Reveal key={stat.label}>
-                <div className="card-surface-gold h-full rounded-2xl p-6">
-                  <p className="gold-text text-4xl font-bold tracking-tight sm:text-5xl">
-                    <DecodeNumber value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
-                  </p>
-                  <p className="mt-3 text-sm font-medium text-fg">{stat.label}</p>
-                  {stat.sublabel && (
-                    <p className="mt-1 text-xs text-fg/45">{stat.sublabel}</p>
-                  )}
-                </div>
+      {study.stats.length > 0 && (
+        <section className="px-6 pb-20 sm:px-10">
+          <div className="mx-auto max-w-6xl">
+            <Reveal>
+              <p className="eyebrow mb-4">Zahlen</p>
+              <h2 className="mb-12 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
+                Was dabei rauskam.
+              </h2>
+            </Reveal>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {study.stats.map((stat) => (
+                <Reveal key={stat.label}>
+                  <div className="card-surface-gold h-full rounded-2xl p-6">
+                    <p className="gold-text text-4xl font-bold tracking-tight sm:text-5xl">
+                      <DecodeNumber value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+                    </p>
+                    <p className="mt-3 text-sm font-medium text-fg">{stat.label}</p>
+                    {stat.sublabel && (
+                      <p className="mt-1 text-xs text-fg/45">{stat.sublabel}</p>
+                    )}
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+            {study.statsSource && (
+              <Reveal>
+                <p className="mt-6 text-xs text-fg/35">{study.statsSource}</p>
               </Reveal>
-            ))}
+            )}
           </div>
-          <Reveal>
-            <p className="mt-6 text-xs text-fg/35">{study.statsSource}</p>
-          </Reveal>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="px-6 pb-20 sm:px-10">
         <div className="mx-auto max-w-6xl">

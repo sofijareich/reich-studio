@@ -129,12 +129,12 @@ export const caseStudies: CaseStudy[] = [
     id: "ebikon-bar",
     name: "All in One Bar, Ebikon",
     category: "Nightlife",
-    logline: "Zwei Testvideos, ein gepostetes Reel — die echten Zahlen dazu.",
+    logline: "Zwei Testvideos für ein Event, eingefangen mit echten Momenten statt gestellter Szenen.",
     duration: "Kurzprojekt: 2 Testvideos für ein Event",
     cover: "/referenzen/ebikon-bar/dj-fire.jpg",
     origin:
       "Für die All in One Bar in Ebikon habe ich zwei Testvideos zu einem Event produziert, gedacht als Instagram Reel.",
-    approach: "Eines der beiden wurde veröffentlicht — hier sind die echten Zahlen dazu, ohne Beschönigung.",
+    approach: "Eines der beiden wurde veröffentlicht. Hier ist das volle Bildmaterial dazu — Fotos und Videos, so wie sie entstanden sind.",
     media: [
       {
         name: "Instagram Reel",
@@ -142,13 +142,18 @@ export const caseStudies: CaseStudy[] = [
         whyItWorked: "Echte Momente statt gestellter Szenen — passend zum Nightlife-Publikum der Bar.",
       },
     ],
-    stats: [
-      { value: 6, label: "Mal geteilt", sublabel: "dieses Reel" },
-      { value: 2, label: "Kommentare", sublabel: "dieses Reel" },
-      { value: 1517, label: "Follower des Accounts", sublabel: "@allinoneebikon" },
+    stats: [],
+    statsSource: "",
+    gallery: [
+      { type: "video", src: "/referenzen/ebikon-bar/testvideo-instagram.mp4" },
+      { type: "video", src: "/referenzen/ebikon-bar/ad.webm" },
+      { type: "video", src: "/referenzen/ebikon-bar/promo.mp4" },
+      { type: "image", src: "/referenzen/ebikon-bar/bar-ambiance.jpg", alt: "Ambiance in der All in One Bar, Ebikon" },
+      { type: "image", src: "/referenzen/ebikon-bar/dj-1.jpg", alt: "DJ-Set in der All in One Bar, Ebikon" },
+      { type: "image", src: "/referenzen/ebikon-bar/dj-fire.jpg", alt: "DJ-Set mit Feuer-Show in der All in One Bar, Ebikon" },
+      { type: "image", src: "/referenzen/ebikon-bar/performer.jpg", alt: "Live-Performance in der All in One Bar, Ebikon" },
+      { type: "image", src: "/referenzen/ebikon-bar/crowd.jpg", alt: "Stimmung in der All in One Bar, Ebikon" },
+      { type: "image", src: "/referenzen/ebikon-bar/action.jpg", alt: "Event-Moment in der All in One Bar, Ebikon" },
     ],
-    statsSource:
-      "Quelle: Instagram, aktueller Stand. Genaue Like-Zahlen zeigt Instagram bei diesem Beitrag nicht mehr öffentlich an.",
-    gallery: [{ type: "image", src: "/referenzen/ebikon-bar/dj-fire.jpg", alt: "DJ-Set in der All in One Bar, Ebikon" }],
   },
 ];
