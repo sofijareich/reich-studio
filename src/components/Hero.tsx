@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero3D from "./Hero3D";
+import Hero3DPhone from "./Hero3DPhone";
 
 export default function Hero() {
   return (
@@ -66,7 +66,7 @@ export default function Hero() {
           className="rise-in relative h-[280px] w-full sm:h-[380px] lg:h-[520px]"
           style={{ animationDelay: "0.3s" }}
         >
-          <Hero3D />
+          <Hero3DPhone />
         </div>
       </div>
     </section>

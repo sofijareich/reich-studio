@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import ReferenzAccordion from "@/components/ReferenzAccordion";
+import CaseStudyIndex from "@/components/CaseStudyIndex";
 import Testimonials from "@/components/Testimonials";
 import CtaBand from "@/components/CtaBand";
-import { referenzen } from "@/lib/referenzen";
+import { caseStudies } from "@/lib/referenzen";
 
 export const metadata: Metadata = {
   title: "Reich Studio — Referenzen",
   description:
-    "Echte Projekte von Reich Studio — Food- und Interior-Fotografie, Event-Content und Video-Ads für Gastronomie und Nightlife.",
+    "Echte Projekte von Reich Studio — mit Zahlen, Hintergrund und den Medien, die dahinterstecken.",
 };
 
 export default function ReferenzenPage() {
@@ -16,10 +16,10 @@ export default function ReferenzenPage() {
     <>
       <PageHero
         eyebrow="Referenzen"
-        lines={["Echte Projekte.", "Kein Fülltext."]}
-        subtext="Ein Klick auf ein Projekt öffnet die volle Galerie — Fotos und Videos, so wie sie entstanden sind."
+        lines={["Echte Projekte.", "Echte Zahlen."]}
+        subtext="Wie jedes Projekt zustande kam, wie lange es lief und wofür jedes Medium gedacht war — ein Klick öffnet die volle Case Study."
       />
-      <ReferenzAccordion items={referenzen} />
+      <CaseStudyIndex items={caseStudies} />
       <Testimonials />
       <CtaBand
         heading="Dein Projekt könnte das nächste sein."

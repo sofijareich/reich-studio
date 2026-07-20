@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { referenzen } from "@/lib/referenzen";
+import { caseStudies } from "@/lib/referenzen";
 
-const FEATURED = referenzen.slice(0, 3);
+const FEATURED = caseStudies;
 
 export default function ReferenzenTeaser() {
   return (
@@ -32,7 +32,7 @@ export default function ReferenzenTeaser() {
             return (
               <Reveal key={item.id}>
                 <Link
-                  href={`/referenzen#${item.id}`}
+                  href={`/referenzen/${item.id}`}
                   className="group relative block aspect-[4/3] overflow-hidden rounded-2xl border border-white/10"
                 >
                   {isVideo ? (
