@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { caseStudies } from "@/lib/referenzen";
+import DecodeNumber from "./DecodeNumber";
+import { stats } from "@/lib/referenzen";
 
-const FEATURED = caseStudies;
+const FEATURED = stats.slice(0, 3);
 
 export default function ReferenzenTeaser() {
   return (
@@ -14,7 +14,7 @@ export default function ReferenzenTeaser() {
             <div>
               <p className="eyebrow mb-4">Referenzen</p>
               <h2 className="max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-                Wie ein Ergebnis aussehen kann.
+                Zahlen, die für sich sprechen.
               </h2>
             </div>
             <Link
@@ -27,40 +27,17 @@ export default function ReferenzenTeaser() {
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-3">
-          {FEATURED.map((item) => {
-            const isVideo = item.cover.endsWith(".webm") || item.cover.endsWith(".mp4");
-            return (
-              <Reveal key={item.id}>
-                <Link
-                  href={`/referenzen/${item.id}`}
-                  className="group relative block aspect-[4/3] overflow-hidden rounded-2xl border border-white/10"
-                >
-                  {isVideo ? (
-                    <video
-                      src={item.cover}
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                    />
-                  ) : (
-                    <Image
-                      src={item.cover}
-                      alt={item.name}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/10 to-transparent" />
-                  <p className="absolute bottom-4 left-4 text-sm font-medium text-fg/90">
-                    {item.name}
-                  </p>
-                </Link>
-              </Reveal>
-            );
-          })}
+          {FEATURED.map((stat) => (
+            <Reveal key={stat.label}>
+              <div className="card-surface-gold h-full rounded-2xl p-8">
+                <p className="gold-text text-4xl font-bold tracking-tight sm:text-5xl">
+                  <DecodeNumber value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+                </p>
+                <p className="mt-3 text-sm font-medium text-fg">{stat.label}</p>
+                {stat.sublabel && <p className="mt-1 text-xs text-fg/45">{stat.sublabel}</p>}
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

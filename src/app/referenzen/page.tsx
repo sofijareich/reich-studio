@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import CaseStudyIndex from "@/components/CaseStudyIndex";
+import StatsOverview from "@/components/StatsOverview";
 import Testimonials from "@/components/Testimonials";
 import CtaBand from "@/components/CtaBand";
-import { caseStudies } from "@/lib/referenzen";
+import { stats, statsSource } from "@/lib/referenzen";
 
 export const metadata: Metadata = {
   title: "Reich Studio — Referenzen",
-  description:
-    "Echte Projekte von Reich Studio — mit Zahlen, Hintergrund und den Medien, die dahinterstecken.",
+  description: "Echte Zahlen aus echten Projekten — Ergebnisse aus Marketing- und Automatisierungsarbeit.",
 };
 
 export default function ReferenzenPage() {
@@ -16,13 +15,13 @@ export default function ReferenzenPage() {
     <>
       <PageHero
         eyebrow="Referenzen"
-        lines={["Echte Projekte.", "Echte Zahlen."]}
-        subtext="Wie jedes Projekt zustande kam, wie lange es lief und wofür jedes Medium gedacht war — ein Klick öffnet die volle Case Study."
+        lines={["Zahlen,", "die zählen."]}
+        subtext="Echte Ergebnisse aus echter Arbeit — keine Fotostrecken, keine Fülltexte. Nur das, was am Ende zählt."
       />
-      <CaseStudyIndex items={caseStudies} />
+      <StatsOverview stats={stats} source={statsSource} />
       <Testimonials />
       <CtaBand
-        heading="Dein Projekt könnte das nächste sein."
+        heading="Willst du solche Zahlen für dein Fachgebiet?"
         subtext="Erzähl mir, worum es geht — den Rest klären wir im Gespräch."
       />
     </>
