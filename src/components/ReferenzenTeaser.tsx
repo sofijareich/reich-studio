@@ -1,12 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
+import { referenzen } from "@/lib/referenzen";
 
-const ITEMS = [
-  { src: "/images/referenz-automation.png", label: "Automatisierung" },
-  { src: "/images/referenz-content.png", label: "Content-Systeme" },
-  { src: "/images/referenz-trust.png", label: "Vertrauensaufbau" },
-];
+const FEATURED = referenzen.slice(0, 3);
 
 export default function ReferenzenTeaser() {
   return (
@@ -30,22 +27,40 @@ export default function ReferenzenTeaser() {
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-3">
-          {ITEMS.map((item) => (
-            <Reveal key={item.label}>
-              <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10">
-                <Image
-                  src={item.src}
-                  alt=""
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/10 to-transparent" />
-                <p className="absolute bottom-4 left-4 text-sm font-medium text-fg/90">
-                  {item.label}
-                </p>
-              </div>
-            </Reveal>
-          ))}
+          {FEATURED.map((item) => {
+            const isVideo = item.cover.endsWith(".webm") || item.cover.endsWith(".mp4");
+            return (
+              <Reveal key={item.id}>
+                <Link
+                  href={`/referenzen#${item.id}`}
+                  className="group relative block aspect-[4/3] overflow-hidden rounded-2xl border border-white/10"
+                >
+                  {isVideo ? (
+                    <video
+                      src={item.cover}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                    />
+                  ) : (
+                    <Image
+                      src={item.cover}
+                      alt={item.name}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/10 to-transparent" />
+                  <p className="absolute bottom-4 left-4 text-sm font-medium text-fg/90">
+                    {item.name}
+                  </p>
+                </Link>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

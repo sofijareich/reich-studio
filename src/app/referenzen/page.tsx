@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import PortfolioGrid from "@/components/PortfolioGrid";
-import TestimonialPlaceholders from "@/components/TestimonialPlaceholders";
+import ReferenzAccordion from "@/components/ReferenzAccordion";
+import Testimonials from "@/components/Testimonials";
 import CtaBand from "@/components/CtaBand";
+import { referenzen } from "@/lib/referenzen";
 
 export const metadata: Metadata = {
   title: "Reich Studio — Referenzen",
   description:
-    "Wie ein Ergebnis mit Reich Studio aussehen kann — echte Case Studies folgen mit den ersten abgeschlossenen Projekten.",
+    "Echte Projekte von Reich Studio — Food- und Interior-Fotografie, Event-Content und Video-Ads für Gastronomie und Nightlife.",
 };
 
 export default function ReferenzenPage() {
@@ -15,14 +16,14 @@ export default function ReferenzenPage() {
     <>
       <PageHero
         eyebrow="Referenzen"
-        lines={["Referenzen", "im Aufbau."]}
-        subtext="Reich Studio ist jung. Hier zeige ich dir, wie ein Ergebnis aussehen kann — echte Case Studies folgen, sobald sie da sind."
+        lines={["Echte Projekte.", "Kein Fülltext."]}
+        subtext="Ein Klick auf ein Projekt öffnet die volle Galerie — Fotos und Videos, so wie sie entstanden sind."
       />
-      <PortfolioGrid />
-      <TestimonialPlaceholders />
+      <ReferenzAccordion items={referenzen} />
+      <Testimonials />
       <CtaBand
-        heading="Eines der ersten Projekte sein?"
-        subtext="Früh dabei zu sein hat Vorteile — sprich mit mir."
+        heading="Dein Projekt könnte das nächste sein."
+        subtext="Erzähl mir, worum es geht — den Rest klären wir im Gespräch."
       />
     </>
   );

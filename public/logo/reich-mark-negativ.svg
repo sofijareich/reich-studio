@@ -1,0 +1,11 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <title>Reich Studio — Monogramm, Negativ (Fast-Schwarz auf Off-White)</title>
+  <rect width="1080" height="1080" fill="#F5F5F5" />
+  <svg x="356.4" y="356.4" width="367.2" height="367.2" viewBox="0 0 100 100">
+    <path d="M20,7 L20,93 M20,7 L62,7 L76,21 L76,43 L62,57 L20,57 M20,57 L84,93"
+          fill="none" stroke="#8A6C17" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter"
+          opacity="0.45" transform="translate(9,9)" />
+    <path d="M20,7 L20,93 M20,7 L62,7 L76,21 L76,43 L62,57 L20,57 M20,57 L84,93"
+          fill="none" stroke="#0A0A0A" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter" />
+  </svg>
+</svg>

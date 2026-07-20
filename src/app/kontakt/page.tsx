@@ -22,6 +22,14 @@ const FAQ_ITEMS = [
     q: "Ich weiss noch nicht, was ich brauche — ist das ein Problem?",
     a: "Nein. Die meisten wissen das nicht genau. Dafür ist das Gespräch da.",
   },
+  {
+    q: "Arbeitest du auch überregional?",
+    a: "Ja. Die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens.",
+  },
+  {
+    q: "In welcher Sprache läuft die Zusammenarbeit?",
+    a: "Auf Deutsch, bei Bedarf auch auf Englisch.",
+  },
 ];
 
 export default function KontaktPage() {

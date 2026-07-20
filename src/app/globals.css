@@ -4,9 +4,9 @@
   --color-bg: #0a0a0a;
   --color-bg-raised: #131110;
   --color-fg: #f5f5f5;
-  --color-gold: #d4af37;
-  --color-gold-light: #f6e2a0;
-  --color-gold-deep: #7a5e17;
+  --color-gold: #e8b923;
+  --color-gold-light: #fff2c4;
+  --color-gold-deep: #8a5e0f;
   --color-gold-dim: #8a701c;
   --font-sans: var(--font-inter);
 }
@@ -53,9 +53,9 @@ footer {
   background: linear-gradient(
     100deg,
     var(--color-gold-deep) 0%,
-    var(--color-gold) 28%,
-    var(--color-gold-light) 50%,
-    var(--color-gold) 72%,
+    var(--color-gold) 24%,
+    var(--color-gold-light) 48%,
+    var(--color-gold) 68%,
     var(--color-gold-deep) 100%
   );
   background-size: 220% 100%;
@@ -63,7 +63,7 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 0 26px rgba(212, 175, 55, 0.35));
+  filter: drop-shadow(0 0 30px rgba(232, 185, 35, 0.55));
 }
 
 /* Soft ambient light blooms used behind hero/section headlines */
@@ -73,11 +73,21 @@ footer {
   border-radius: 9999px;
   background: radial-gradient(
     closest-side,
-    rgba(212, 175, 55, 0.22),
-    rgba(212, 175, 55, 0) 70%
+    rgba(232, 185, 35, 0.28),
+    rgba(232, 185, 35, 0) 70%
   );
   filter: blur(40px);
   z-index: 0;
+}
+
+@keyframes gold-shimmer {
+  0%,
+  100% {
+    background-position: 0% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
 }
 
 .gold-btn {
@@ -86,26 +96,52 @@ footer {
   background: linear-gradient(
     120deg,
     var(--color-gold-deep),
-    var(--color-gold) 35%,
+    var(--color-gold) 32%,
     var(--color-gold-light) 50%,
-    var(--color-gold) 65%,
+    var(--color-gold) 68%,
     var(--color-gold-deep)
   );
-  background-size: 220% 100%;
+  background-size: 240% 100%;
   box-shadow:
-    0 0 0 1px rgba(212, 175, 55, 0.4),
-    0 8px 30px -6px rgba(212, 175, 55, 0.45);
+    0 0 0 1px rgba(255, 242, 196, 0.5),
+    0 0 24px 2px rgba(232, 185, 35, 0.55),
+    0 10px 34px -6px rgba(232, 185, 35, 0.6);
+  animation: gold-shimmer 4s ease-in-out infinite;
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background-position 0.6s ease;
+    box-shadow 0.25s ease;
+}
+
+.gold-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.55) 48%,
+    transparent 62%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
 }
 
 .gold-btn:hover {
-  background-position: 100% 0;
+  transform: translateY(-1px);
   box-shadow:
-    0 0 0 1px rgba(246, 226, 160, 0.6),
-    0 10px 40px -6px rgba(212, 175, 55, 0.65);
+    0 0 0 1px rgba(255, 242, 196, 0.75),
+    0 0 32px 4px rgba(232, 185, 35, 0.75),
+    0 14px 40px -6px rgba(232, 185, 35, 0.75);
+}
+
+.gold-btn:hover::after {
+  transform: translateX(120%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-btn {
+    animation: none;
+  }
 }
 
 .card-surface {
@@ -120,11 +156,11 @@ footer {
 .card-surface-gold {
   background: linear-gradient(
     160deg,
-    rgba(212, 175, 55, 0.14),
-    rgba(212, 175, 55, 0.02)
+    rgba(232, 185, 35, 0.16),
+    rgba(232, 185, 35, 0.02)
   );
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 0 60px -20px rgba(212, 175, 55, 0.35);
+  border: 1px solid rgba(232, 185, 35, 0.45);
+  box-shadow: 0 0 60px -20px rgba(232, 185, 35, 0.45);
 }
 
 /* Hero build-up animation */

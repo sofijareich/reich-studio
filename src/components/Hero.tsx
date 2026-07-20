@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Hero3D from "./Hero3D";
 
 export default function Hero() {
   return (
@@ -17,49 +18,55 @@ export default function Hero() {
 
       <div className="glow -z-10 h-96 w-96" style={{ top: "20%", left: "55%" }} />
 
-      <div className="mx-auto w-full max-w-5xl">
-        <p className="rise-in eyebrow mb-6" style={{ animationDelay: "0.05s" }}>
-          Marketing &amp; Automatisierung
-        </p>
+      <div className="mx-auto grid w-full max-w-6xl items-center gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div>
+          <p className="rise-in eyebrow mb-6" style={{ animationDelay: "0.05s" }}>
+            Marketing &amp; Automatisierung
+          </p>
 
-        <h1 className="display-heading max-w-3xl">
-          <span className="rise-in block" style={{ animationDelay: "0.15s" }}>
-            Fachgebiet
-          </span>
-          <span className="rise-in block" style={{ animationDelay: "0.3s" }}>
-            automatisieren.
-          </span>
-          <span className="rise-in gold-text block" style={{ animationDelay: "0.45s" }}>
-            Vertrauen aufbauen.
-          </span>
-        </h1>
+          <h1 className="display-heading max-w-3xl">
+            <span className="rise-in block" style={{ animationDelay: "0.15s" }}>
+              Fachgebiet automatisieren.
+            </span>
+            <span className="rise-in gold-text block" style={{ animationDelay: "0.35s" }}>
+              Vertrauen aufbauen.
+            </span>
+          </h1>
 
-        <p
-          className="rise-in mt-8 max-w-lg text-base text-fg/60 sm:text-lg"
-          style={{ animationDelay: "0.62s" }}
-        >
-          Ich helfe Professionals, die keine Zeit für Marketing haben, ihr
-          Fachgebiet voll zu automatisieren und Vertrauen zu Endkunden
-          aufzubauen — ohne sich in geringster Weise damit auskennen zu
-          müssen.
-        </p>
+          <p
+            className="rise-in mt-8 max-w-lg text-base text-fg/60 sm:text-lg"
+            style={{ animationDelay: "0.62s" }}
+          >
+            Ich helfe Professionals, die keine Zeit für Marketing haben, ihr
+            Fachgebiet voll zu automatisieren und Vertrauen zu Endkunden
+            aufzubauen — ohne sich in geringster Weise damit auskennen zu
+            müssen.
+          </p>
+
+          <div
+            className="rise-in mt-10 flex flex-wrap items-center gap-5"
+            style={{ animationDelay: "0.78s" }}
+          >
+            <a
+              href="/kontakt"
+              className="gold-btn inline-block rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg"
+            >
+              Erstgespräch buchen
+            </a>
+            <a
+              href="/preise"
+              className="text-sm font-medium text-fg/60 underline underline-offset-4 hover:text-fg"
+            >
+              Preise ansehen
+            </a>
+          </div>
+        </div>
 
         <div
-          className="rise-in mt-10 flex flex-wrap items-center gap-5"
-          style={{ animationDelay: "0.78s" }}
+          className="rise-in relative h-[280px] w-full sm:h-[380px] lg:h-[520px]"
+          style={{ animationDelay: "0.3s" }}
         >
-          <a
-            href="/kontakt"
-            className="gold-btn inline-block rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg"
-          >
-            Erstgespräch buchen
-          </a>
-          <a
-            href="/preise"
-            className="text-sm font-medium text-fg/60 underline underline-offset-4 hover:text-fg"
-          >
-            Preise ansehen
-          </a>
+          <Hero3D />
         </div>
       </div>
     </section>

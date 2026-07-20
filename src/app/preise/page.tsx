@@ -27,6 +27,14 @@ const FAQ_ITEMS = [
     q: "Kann ich später wechseln?",
     a: "Ja. Die Pakete sind ein Ausgangspunkt, kein Vertrag in Stein — wir passen an, wenn sich dein Bedarf ändert.",
   },
+  {
+    q: "Wie schnell sehe ich erste Ergebnisse?",
+    a: "Bei Starter meist innerhalb weniger Wochen ab Projektstart. Bei Growth und Full-Service hängt es vom Umfang ab — konkrete Zeitrahmen besprechen wir im Erstgespräch.",
+  },
+  {
+    q: "Was, wenn mein Fachgebiet sehr speziell ist?",
+    a: "Genau dafür ist Reich Studio da. Je spezifischer dein Fachgebiet, desto klarer lässt sich Vertrauen bei Endkund:innen aufbauen — wir finden gemeinsam die passende Herangehensweise.",
+  },
 ];
 
 export default function PreisePage() {

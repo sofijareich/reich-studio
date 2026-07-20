@@ -49,10 +49,11 @@ export default function About() {
           <Reveal>
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-gold/30">
               <Image
-                src="/images/studio-sculpture.png"
-                alt="Illustratives Element für Reich Studio"
+                src="/images/sofija.jpg"
+                alt="Sofija Reich, Gründerin von Reich Studio"
                 fill
                 className="object-cover"
+                priority
               />
             </div>
           </Reveal>

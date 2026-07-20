@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -13,9 +14,7 @@ export default function Footer() {
     <footer className="border-t border-white/5 px-6 py-12 sm:px-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <p className="text-sm font-semibold tracking-[0.2em] uppercase">
-            Reich <span className="gold-text">Studio</span>
-          </p>
+          <Logo />
           <p className="mt-3 max-w-xs text-sm text-fg/40">
             Marketing- und Automatisierungssysteme für Professionals, die
             keine Zeit dafür haben.
