@@ -118,6 +118,7 @@ export const caseStudies: CaseStudy[] = [
       { type: "image", src: "/referenzen/hotel-sempachersee/vivace/plants.jpg", alt: "Detail Restaurant Vivace" },
       { type: "image", src: "/referenzen/hotel-sempachersee/vivace/detail.jpg", alt: "Interior-Detail Restaurant Vivace" },
       { type: "video", src: "/referenzen/hotel-sempachersee/aurora/before-after.webm" },
+      { type: "video", src: "/referenzen/hotel-sempachersee/lago/promo.webm" },
       { type: "image", src: "/referenzen/hotel-sempachersee/print/poster-winterlounge.jpg", alt: "Winterlounge Plakat" },
       { type: "image", src: "/referenzen/hotel-sempachersee/print/sales-folder-01.png", alt: "Sales Folder, Titelseite" },
       { type: "image", src: "/referenzen/hotel-sempachersee/print/sales-folder-03.png", alt: "Sales Folder, Seminare" },
@@ -146,7 +147,6 @@ export const caseStudies: CaseStudy[] = [
     statsSource: "",
     gallery: [
       { type: "video", src: "/referenzen/ebikon-bar/testvideo-instagram.mp4" },
-      { type: "video", src: "/referenzen/ebikon-bar/ad.webm" },
       { type: "video", src: "/referenzen/ebikon-bar/promo.mp4" },
       { type: "image", src: "/referenzen/ebikon-bar/bar-ambiance.jpg", alt: "Ambiance in der All in One Bar, Ebikon" },
       { type: "image", src: "/referenzen/ebikon-bar/dj-1.jpg", alt: "DJ-Set in der All in One Bar, Ebikon" },

@@ -3,9 +3,6 @@
 import { useState } from "react";
 import Reveal from "./Reveal";
 
-const CONTACT_EMAIL = "sofijareich@gmail.com";
-const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
-
 type Status = "idle" | "sending" | "sent" | "error";
 
 export default function Contact() {
@@ -16,21 +13,11 @@ export default function Contact() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-
-    if (!FORMSPREE_ENDPOINT) {
-      const subject = encodeURIComponent(`Erstgespräch — ${name || "Anfrage"}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nE-Mail: ${email}\n\n${message}`
-      );
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-      return;
-    }
-
     setStatus("sending");
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { Accept: "application/json", "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message }),
       });
       if (res.ok) {
@@ -94,21 +81,11 @@ export default function Contact() {
               </button>
               {status === "error" && (
                 <p className="text-sm text-red-400">
-                  Da ist etwas schiefgelaufen. Schreib mir direkt per Mail.
+                  Da ist etwas schiefgelaufen. Bitte versuch es in ein paar Minuten nochmal.
                 </p>
               )}
             </form>
           )}
-
-          <p className="mt-8 text-sm text-fg/40">
-            Oder direkt per Mail:{" "}
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="text-gold underline underline-offset-4"
-            >
-              {CONTACT_EMAIL}
-            </a>
-          </p>
         </Reveal>
       </div>
     </section>
