@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { href: "/studio", label: "Reich Studio" },
   { href: "/referenzen", label: "Referenzen" },
   { href: "/preise", label: "Preise" },
+  { href: "/produkte", label: "Produkte" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 

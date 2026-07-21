@@ -12,7 +12,7 @@ export default function StatsOverview({
   return (
     <section className="px-6 pb-20 sm:px-10">
       <div className="mx-auto max-w-6xl">
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4" data-mascot-spot="stats">
           {stats.map((stat) => (
             <Reveal key={stat.label}>
               <div className="card-surface-gold h-full rounded-2xl p-6">

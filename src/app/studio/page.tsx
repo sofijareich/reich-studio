@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import About from "@/components/About";
+import AiWorkflow from "@/components/AiWorkflow";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function StudioPage() {
         subtext="Kein Account-Team, kein anonymes Studio. Nur eine Person, die für das Ergebnis geradesteht."
       />
       <About />
+      <AiWorkflow />
       <CtaBand
         heading="Lust, mich kennenzulernen?"
         subtext="Im Erstgespräch klären wir in 20 Minuten, ob es passt."

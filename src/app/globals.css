@@ -212,6 +212,35 @@ footer {
   font-weight: 700;
 }
 
+@keyframes mascot-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(3deg);
+  }
+}
+
+.mascot-bob img {
+  animation: mascot-bob 2.6s ease-in-out infinite;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45));
+}
+
+.mascot-move {
+  transition: transform 0.9s cubic-bezier(0.34, 1.15, 0.34, 1);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-bob img {
+    animation: none !important;
+  }
+  .mascot-move {
+    transition: none !important;
+  }
+}
+
 .eyebrow {
   font-size: 0.7rem;
   font-weight: 600;

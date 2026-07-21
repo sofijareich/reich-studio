@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Hero3DPhone from "./Hero3DPhone";
+import HeroPhone3D from "./HeroPhone3D";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24 sm:px-10">
+    <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24 pb-16 sm:px-10 sm:pb-20">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/hero-gold-ribbons.png"
@@ -66,7 +66,7 @@ export default function Hero() {
           className="rise-in relative h-[280px] w-full sm:h-[380px] lg:h-[520px]"
           style={{ animationDelay: "0.3s" }}
         >
-          <Hero3DPhone />
+          <HeroPhone3D />
         </div>
       </div>
     </section>

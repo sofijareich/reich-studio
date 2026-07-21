@@ -4,7 +4,7 @@ import { services } from "@/lib/services";
 export default function PricingDetail() {
   return (
     <section className="px-6 pb-20 sm:px-10">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl" data-mascot-spot="preise">
         <div className="grid gap-6 md:grid-cols-3">
           {services.map((service, i) => (
             <Reveal key={service.name} className={i === 1 ? "md:-translate-y-2" : ""}>
