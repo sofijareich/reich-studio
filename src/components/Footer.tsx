@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { WaitlistInline } from "./Waitlist";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -13,7 +14,7 @@ const NAV_LINKS = [
 export default function Footer() {
   return (
     <footer className="border-t border-white/5 px-6 py-12 sm:px-10">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
         <div>
           <Logo />
           <p className="mt-3 max-w-xs text-sm text-fg/40">
@@ -29,6 +30,8 @@ export default function Footer() {
             </Link>
           ))}
         </nav>
+
+        <WaitlistInline />
       </div>
 
       <div className="mx-auto mt-10 flex max-w-6xl flex-col items-start justify-between gap-4 border-t border-white/5 pt-6 text-xs text-fg/40 sm:flex-row sm:items-center">
