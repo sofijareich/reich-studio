@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import About from "@/components/About";
 import AiWorkflow from "@/components/AiWorkflow";
 import CtaBand from "@/components/CtaBand";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reich Studio — Über uns",
-  description:
-    "Reich Studio ist Sofijas Ein-Personen-Studio für Marketing- und Automatisierungssysteme. Persönlich, ehrlich, ohne Buzzwords.",
-};
+export const metadata = pageMetadata(
+  "/studio",
+  "Reich Studio — Über uns",
+  "Reich Studio ist Sofijas Ein-Personen-Studio für Marketing- und Automatisierungssysteme. Persönlich, ehrlich, ohne Buzzwords."
+);
 
 export default function StudioPage() {
   return (

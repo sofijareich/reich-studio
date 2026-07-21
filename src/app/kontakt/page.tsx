@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reich Studio — Kontakt",
-  description:
-    "Kurze Nachricht reicht. Sofija meldet sich innert ein bis zwei Tagen persönlich zurück.",
-};
+export const metadata = pageMetadata(
+  "/kontakt",
+  "Reich Studio — Kontakt",
+  "Kurze Nachricht reicht. Sofija meldet sich innert ein bis zwei Tagen persönlich zurück."
+);
 
 const FAQ_ITEMS = [
   {

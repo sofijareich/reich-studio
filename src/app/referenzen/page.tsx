@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import StatsOverview from "@/components/StatsOverview";
 import Testimonials from "@/components/Testimonials";
 import CtaBand from "@/components/CtaBand";
 import { stats, statsSource } from "@/lib/referenzen";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reich Studio — Referenzen",
-  description: "Echte Zahlen aus echten Projekten — Ergebnisse aus Marketing- und Automatisierungsarbeit.",
-};
+export const metadata = pageMetadata(
+  "/referenzen",
+  "Reich Studio — Referenzen",
+  "Echte Zahlen aus echten Projekten — Ergebnisse aus Marketing- und Automatisierungsarbeit."
+);
 
 export default function ReferenzenPage() {
   return (

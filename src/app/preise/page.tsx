@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import PricingDetail from "@/components/PricingDetail";
 import Faq from "@/components/Faq";
 import CtaBand from "@/components/CtaBand";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Reich Studio — Preise",
-  description:
-    "Drei Pakete: Starter ab CHF 2'800 einmalig, Growth ab CHF 2'500/Monat, Full-Service ab CHF 5'000/Monat.",
-};
+export const metadata = pageMetadata(
+  "/preise",
+  "Reich Studio — Preise",
+  "Drei Pakete: Starter ab CHF 2'800 einmalig, Growth ab CHF 2'500/Monat, Full-Service ab CHF 5'000/Monat."
+);
 
 const FAQ_ITEMS = [
   {
