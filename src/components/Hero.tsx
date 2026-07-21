@@ -1,5 +1,4 @@
 import Image from "next/image";
-import HeroPhone3D from "./HeroPhone3D";
 
 export default function Hero() {
   return (
@@ -16,9 +15,9 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/40 to-transparent" />
       </div>
 
-      <div className="glow -z-10 h-96 w-96" style={{ top: "20%", left: "55%" }} />
+      <div className="glow -z-10 h-96 w-96" style={{ top: "15%", left: "25%" }} />
 
-      <div className="mx-auto grid w-full max-w-6xl items-center gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="mx-auto w-full max-w-6xl">
         <div>
           <p className="rise-in eyebrow mb-6" style={{ animationDelay: "0.05s" }}>
             Marketing &amp; Automatisierung
@@ -60,13 +59,6 @@ export default function Hero() {
               Preise ansehen
             </a>
           </div>
-        </div>
-
-        <div
-          className="rise-in relative h-[280px] w-full sm:h-[380px] lg:h-[520px]"
-          style={{ animationDelay: "0.3s" }}
-        >
-          <HeroPhone3D />
         </div>
       </div>
     </section>
