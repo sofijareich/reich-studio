@@ -31,8 +31,8 @@ export async function POST(request: Request) {
     body: JSON.stringify({
       parent: { database_id: databaseId },
       properties: {
-        "E-Mail": { title: [{ text: { content: email } }] },
-        Quelle: { select: { name: safeSource } },
+        Email: { title: [{ text: { content: email } }] },
+        Source: { select: { name: safeSource } },
         Status: { status: { name: "Nicht begonnen" } },
       },
     }),

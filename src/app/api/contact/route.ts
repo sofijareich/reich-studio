@@ -28,8 +28,8 @@ export async function POST(request: Request) {
       parent: { database_id: databaseId },
       properties: {
         Name: { title: [{ text: { content: name } }] },
-        "E-Mail": { email },
-        Nachricht: { rich_text: [{ text: { content: message } }] },
+        Email: { email },
+        Message: { rich_text: [{ text: { content: message } }] },
         Status: { status: { name: "Nicht begonnen" } },
       },
     }),

@@ -25,10 +25,10 @@ export default function Hero() {
 
           <h1 className="display-heading max-w-3xl">
             <span className="rise-in block" style={{ animationDelay: "0.15s" }}>
-              Automate your work.
+              The agency
             </span>
             <span className="rise-in gold-text block" style={{ animationDelay: "0.35s" }}>
-              Build real trust.
+              you don&apos;t need to hire.
             </span>
           </h1>
 
@@ -36,9 +36,8 @@ export default function Hero() {
             className="rise-in mt-8 max-w-lg text-base text-fg/60 sm:text-lg"
             style={{ animationDelay: "0.62s" }}
           >
-            I help busy professionals fully automate their marketing and
-            build real trust with clients — without needing to understand
-            any of it themselves.
+            Professional marketing with AI that actually works — done solo,
+            without the agency, in the least time possible.
           </p>
 
           <div
