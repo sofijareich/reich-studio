@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Reveal from "./Reveal";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
 export default function Contact() {
+  const t = useTranslations("Contact");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -39,10 +41,8 @@ export default function Contact() {
         <Reveal>
           {status === "sent" ? (
             <div className="card-surface-gold rounded-2xl p-8 text-center">
-              <p className="text-lg font-medium">Thanks — your message is in.</p>
-              <p className="mt-2 text-sm text-fg/60">
-                I&apos;ll reply personally within one to two days.
-              </p>
+              <p className="text-lg font-medium">{t("successTitle")}</p>
+              <p className="mt-2 text-sm text-fg/60">{t("successSubtext")}</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
@@ -50,7 +50,7 @@ export default function Contact() {
                 <input
                   required
                   type="text"
-                  placeholder="Name"
+                  placeholder={t("namePlaceholder")}
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="rounded-lg border border-white/15 bg-white/[0.03] px-4 py-3 text-sm placeholder:text-fg/40 focus:border-gold focus:outline-none"
@@ -58,7 +58,7 @@ export default function Contact() {
                 <input
                   required
                   type="email"
-                  placeholder="Email"
+                  placeholder={t("emailPlaceholder")}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="rounded-lg border border-white/15 bg-white/[0.03] px-4 py-3 text-sm placeholder:text-fg/40 focus:border-gold focus:outline-none"
@@ -67,7 +67,7 @@ export default function Contact() {
               <textarea
                 required
                 rows={4}
-                placeholder="What's on your mind?"
+                placeholder={t("messagePlaceholder")}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full rounded-lg border border-white/15 bg-white/[0.03] px-4 py-3 text-sm placeholder:text-fg/40 focus:border-gold focus:outline-none"
@@ -77,12 +77,10 @@ export default function Contact() {
                 disabled={status === "sending"}
                 className="gold-btn rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg disabled:opacity-60"
               >
-                {status === "sending" ? "Sending …" : "Send message"}
+                {status === "sending" ? t("sending") : t("send")}
               </button>
               {status === "error" && (
-                <p className="text-sm text-red-400">
-                  Something went wrong. Please try again in a few minutes.
-                </p>
+                <p className="text-sm text-red-400">{t("error")}</p>
               )}
             </form>
           )}

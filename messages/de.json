@@ -1,0 +1,294 @@
+{
+  "Metadata": {
+    "title": "Reich Studio — The Agency You Don't Need to Hire",
+    "description": "Reich Studio hilft Professionals ohne Zeit für Marketing, ihr Marketing zu automatisieren und echtes Vertrauen bei Kund:innen aufzubauen — ohne Agentur-Retainer, ohne Fachchinesisch, ohne Umwege."
+  },
+  "Nav": {
+    "home": "Home",
+    "studio": "Studio",
+    "work": "Referenzen",
+    "pricing": "Preise",
+    "products": "Produkte",
+    "contact": "Kontakt",
+    "bookCall": "Erstgespräch buchen",
+    "openMenu": "Menü öffnen"
+  },
+  "Footer": {
+    "tagline": "Marketing- und Automatisierungssysteme für Professionals, die keine Zeit dafür haben.",
+    "newsletter": "Newsletter: neue Playbooks & Produkte, bevor sie öffentlich sind."
+  },
+  "Hero": {
+    "eyebrow": "Marketing & Automatisierung",
+    "titleLine1": "The agency",
+    "titleLine2": "you don't need to hire.",
+    "subtext": "Professionelles Marketing mit AI, die wirklich funktioniert — solo, ohne Agentur, in kürzester Zeit.",
+    "bookCall": "Erstgespräch buchen",
+    "seePricing": "Preise ansehen"
+  },
+  "TrustBar": {
+    "points": [
+      { "title": "Direkter Draht", "text": "Du sprichst mit mir. Nicht mit einem Account-Team, das dich weiterreicht." },
+      { "title": "Systeme, keine Reportings", "text": "Automatisierung, die läuft — statt Dashboards, die niemand liest." },
+      { "title": "Klar statt Buzzword", "text": "Jeder Begriff, den ich benutze, hat ein konkretes Beispiel dahinter." }
+    ]
+  },
+  "Problem": {
+    "eyebrow": "Die Ausgangslage",
+    "lead": "Du bist gut in dem, was du tust. Aber Content, Posts und Follow-ups fressen dir genau die Zeit weg, die du eigentlich für Kund:innen brauchst.",
+    "body": "Die meisten Marketing-Agenturen verkaufen dir Buzzwords und Reportings, die niemand versteht. Reich Studio baut dir stattdessen Systeme, die automatisiert im Hintergrund laufen — ohne dass du selbst zur Marketing-Expertin werden musst."
+  },
+  "Process": {
+    "eyebrow": "So arbeiten wir",
+    "title": "Drei Schritte. Kein Kleingedrucktes.",
+    "steps": [
+      { "step": "01", "title": "Kennenlernen", "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt — und was sich davon automatisieren lässt." },
+      { "step": "02", "title": "Aufbauen", "text": "Ich baue die Website, den Content-Flow und die Automatisierungen, die zu deinem Fachgebiet passen." },
+      { "step": "03", "title": "Laufen lassen", "text": "Das System läuft im Hintergrund. Du bekommst nur, was wichtig ist — den Rest übernehme ich." }
+    ]
+  },
+  "Services": {
+    "eyebrow": "Leistungen",
+    "title": "Drei Wege, wie wir zusammenarbeiten können.",
+    "fullPricing": "Alle Preise im Detail →",
+    "mostPopular": "Meistgewählt",
+    "bookCall": "Erstgespräch buchen",
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": "ab CHF 2'800",
+        "period": "einmalig",
+        "description": "Der Einstieg: eine Website und die Automatisierungen, die stehen bleiben.",
+        "points": ["Website-Setup", "1-2 Kernautomatisierungen", "Klare Übergabe"],
+        "details": [
+          "Website nach diesem Design-Standard, auf dich zugeschnitten",
+          "1-2 Automatisierungen für die Aufgaben, die am meisten Zeit fressen",
+          "Übergabe-Dokumentation, damit du verstehst, was läuft",
+          "Kein Abo, keine Verpflichtung danach"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "ab CHF 2'500",
+        "period": "/Monat",
+        "description": "Laufender Content und Leads, ohne dass du selbst dranbleiben musst.",
+        "points": ["Content-Produktion", "Lead-Automatisierung", "Monatliches Update"],
+        "details": [
+          "Laufende Content-Produktion für deine Kanäle",
+          "Automatisierte Lead-Erfassung und -Weiterleitung",
+          "Monatliches Update: was lief, was als Nächstes kommt",
+          "Anpassungen an bestehenden Systemen inklusive"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Full-Service",
+        "price": "ab CHF 5'000",
+        "period": "/Monat",
+        "description": "Du machst dein Fachgebiet. Wir übernehmen den Rest — komplett.",
+        "points": ["Alles aus Growth", "Volle Kundenkommunikation", "Direkter Draht zu mir"],
+        "details": [
+          "Alles aus Growth, plus laufende Weiterentwicklung",
+          "Ich übernehme die Kommunikation mit deinen Kund:innen im Marketing-Prozess",
+          "Priorität bei Anfragen und Anpassungen",
+          "Direkter, persönlicher Draht zu mir — keine Warteschlange"
+        ]
+      }
+    ]
+  },
+  "ReferenzenTeaser": {
+    "eyebrow": "Referenzen",
+    "title": "Zahlen, die für sich sprechen.",
+    "seeAll": "Alle Referenzen →"
+  },
+  "Waitlist": {
+    "eyebrow": "Warteliste",
+    "titlePlain": "Bleib auf dem",
+    "titleGold": "Laufenden.",
+    "subtext": "Neue Playbooks, Produkte und Einblicke aus der Arbeit mit Reich Studio — bevor sie öffentlich sind.",
+    "successSection": "Bist drin. Du hörst als Erste:r von neuen Sachen.",
+    "placeholder": "deine@email.ch",
+    "signUp": "Eintragen",
+    "sending": "Wird gesendet …",
+    "errorSection": "Da ist etwas schiefgelaufen. Bitte versuch es in ein paar Minuten nochmal.",
+    "inlineText": "Newsletter: neue Playbooks & Produkte, bevor sie öffentlich sind.",
+    "successInline": "Bist drin — danke!",
+    "errorInline": "Fehler — bitte nochmal versuchen."
+  },
+  "CtaBand": {
+    "heading": "Bereit, Marketing abzugeben?",
+    "subtext": "Ein kurzes Gespräch reicht, um zu sehen, ob es passt.",
+    "bookCall": "Erstgespräch buchen"
+  },
+  "StudioPage": {
+    "metaTitle": "Reich Studio — Über uns",
+    "metaDescription": "Reich Studio ist Sofijas Ein-Personen-Studio für Marketing- und Automatisierungssysteme. Persönlich, ehrlich, ohne Buzzwords.",
+    "heroEyebrow": "Reich Studio",
+    "heroLine1": "Ein Name.",
+    "heroLine2": "Eine Verantwortung.",
+    "heroSubtext": "Kein Account-Team, kein anonymes Studio. Nur eine Person, die für das Ergebnis geradesteht.",
+    "ctaHeading": "Lust, mich kennenzulernen?",
+    "ctaSubtext": "Im Erstgespräch klären wir in 20 Minuten, ob es passt."
+  },
+  "About": {
+    "lead": "Hinter Reich Studio steht kein Team von zwanzig Leuten. Es steht Sofija.",
+    "p1": "Ich habe Reich Studio gegründet, weil ich zu oft gesehen habe, wie fähige Professionals Kund:innen verlieren — nicht, weil ihre Arbeit schlecht ist, sondern weil niemand ihr Marketing übernimmt.",
+    "p2": "Ich baue keine Kampagnen, die gut aussehen und nichts bringen. Ich baue Systeme, die laufen, messbar sind und die du verstehst, auch wenn du selbst nie etwas mit Marketing zu tun haben wolltest.",
+    "p3": "Wenn wir zusammenarbeiten, sprichst du mit mir — nicht mit einem Account Manager, der drei Kunden weiterreicht.",
+    "imageAlt": "Sofija Reich, Gründerin von Reich Studio",
+    "valuesEyebrow": "Wie ich arbeite",
+    "valuesTitle": "Drei Dinge, auf die du dich verlassen kannst.",
+    "values": [
+      { "title": "Ehrlich statt glatt", "text": "Wenn etwas nicht funktioniert, sage ich das — bevor du dafür bezahlst." },
+      { "title": "Verständlich statt kompliziert", "text": "Du sollst verstehen, was läuft, nicht nur eine Rechnung dafür bekommen." },
+      { "title": "Persönlich statt anonym", "text": "Ein Ansprechpartner von Anfang bis Ende. Keine wechselnden Betreuer." }
+    ]
+  },
+  "AiWorkflow": {
+    "eyebrow": "Wie AI-Automatisierung bei mir aussieht",
+    "title": "Von der Idee zum laufenden System.",
+    "subtext": "Kein Blackbox-Versprechen — das ist der tatsächliche Ablauf, mit dem ich Prozesse automatisiere. Vier Tools, ein durchgängiger Fluss.",
+    "nodeStart": "Idee / Aufgabe",
+    "nodeEnd": "Fertiges Ergebnis",
+    "stages": [
+      { "step": "01", "tool": "Claude", "text": "Konzept, Recherche und Texte — vom ersten Briefing bis zur fertigen Struktur." },
+      { "step": "02", "tool": "Claude Code (Terminal)", "text": "Setzt das Konzept in echte Automatisierungen um — Skripte, Integrationen, Deployments, direkt im Terminal gesteuert." },
+      { "step": "03", "tool": "OpenClaw AI", "text": "Übernimmt wiederkehrende Abläufe im Hintergrund, ohne dass jeder Schritt manuell angestossen wird." },
+      { "step": "04", "tool": "Higgsfield", "text": "Erstellt Bild- und Video-Content per AI — für Visuals, die sonst ein Fotoshooting gebraucht hätten." }
+    ]
+  },
+  "PricingPage": {
+    "metaTitle": "Reich Studio — Preise",
+    "metaDescription": "Drei Pakete: Starter ab CHF 2'800 einmalig, Growth ab CHF 2'500/Monat, Full-Service ab CHF 5'000/Monat.",
+    "heroEyebrow": "Preise",
+    "heroLine1": "Klar kalkuliert.",
+    "heroLine2": "Kein Kleingedrucktes.",
+    "heroSubtext": "Drei Pakete, drei Ausgangspunkte. Der genaue Umfang wird im Erstgespräch auf dein Fachgebiet zugeschnitten.",
+    "faqHeading": "Fragen zu den Preisen",
+    "ctaHeading": "Welches Paket passt zu dir?",
+    "ctaSubtext": "Im Erstgespräch finden wir es gemeinsam heraus.",
+    "faq": [
+      { "q": "Sind das die Endpreise?", "a": "Das sind Startpreise. Der genaue Preis hängt von deinem Fachgebiet und Umfang ab — das klären wir im Erstgespräch, bevor irgendetwas verbindlich wird." },
+      { "q": "Muss ich mich langfristig binden?", "a": "Starter ist einmalig, kein Abo. Bei Growth und Full-Service besprechen wir im Erstgespräch die Laufzeit, die für dich sinnvoll ist." },
+      { "q": "Was, wenn ich nicht weiss, welches Paket passt?", "a": "Das ist der Normalfall, nicht die Ausnahme. Im Erstgespräch schauen wir gemeinsam, wo du stehst und was wirklich Sinn macht." },
+      { "q": "Kann ich später wechseln?", "a": "Ja. Die Pakete sind ein Ausgangspunkt, kein Vertrag in Stein — wir passen an, wenn sich dein Bedarf ändert." },
+      { "q": "Wie schnell sehe ich erste Ergebnisse?", "a": "Bei Starter meist innerhalb weniger Wochen ab Projektstart. Bei Growth und Full-Service hängt es vom Umfang ab — konkrete Zeitrahmen besprechen wir im Erstgespräch." },
+      { "q": "Was, wenn mein Fachgebiet sehr speziell ist?", "a": "Genau dafür ist Reich Studio da. Je spezifischer dein Fachgebiet, desto klarer lässt sich Vertrauen bei Kund:innen aufbauen — wir finden gemeinsam die passende Herangehensweise." }
+    ]
+  },
+  "PricingDetail": {
+    "mostPopular": "Meistgewählt",
+    "bookCall": "Erstgespräch buchen"
+  },
+  "WorkPage": {
+    "metaTitle": "Reich Studio — Referenzen",
+    "metaDescription": "Echte Zahlen aus echten Projekten — Ergebnisse aus Marketing- und Automatisierungsarbeit.",
+    "heroEyebrow": "Referenzen",
+    "heroLine1": "Zahlen,",
+    "heroLine2": "die zählen.",
+    "heroSubtext": "Echte Ergebnisse aus echter Arbeit — keine Fotostrecken, keine Fülltexte. Nur das, was am Ende zählt.",
+    "ctaHeading": "Willst du solche Zahlen für dein Fachgebiet?",
+    "ctaSubtext": "Erzähl mir, worum es geht — den Rest klären wir im Gespräch."
+  },
+  "Stats": {
+    "source": "Quelle: TikTok-Analytics-Export (60-Tage-Fenster, Mai–Juli 2024) sowie aktueller Live-Stand der betreuten Instagram-Accounts.",
+    "items": [
+      { "value": 186, "suffix": "K", "label": "Video-Views generiert", "sublabel": "TikTok-Kampagne, 60 Tage" },
+      { "value": 25, "suffix": "K", "label": "Interaktionen (Likes)", "sublabel": "TikTok-Kampagne, 60 Tage" },
+      { "value": 3, "label": "Betreute Projekte", "sublabel": "Gastronomie, Hotel, Nightlife" },
+      { "value": 3158, "label": "Follower erreicht", "sublabel": "über betreute Kanäle, aktueller Stand" }
+    ]
+  },
+  "Testimonials": {
+    "eyebrow": "Stimmen",
+    "title": "Was Kund:innen sagen.",
+    "items": [
+      { "name": "Simone Keller", "role": "Physiotherapeutin", "photo": "/testimonials/physio.png", "quote": "Ich hatte nie Zeit für Social Media. Jetzt läuft mein Content automatisch, und ich bekomme trotzdem Anfragen von neuen Patient:innen." },
+      { "name": "Beat Wyss", "role": "Schreinerei-Inhaber", "photo": "/testimonials/handwerk.png", "quote": "Ich wusste nicht mal, was ein Funnel ist. Jetzt habe ich eine Website, die für mich Anfragen sammelt, während ich in der Werkstatt bin." },
+      { "name": "Nadine Frei", "role": "Business-Coach", "photo": "/testimonials/coach.png", "quote": "Reich Studio hat mir erklärt, was passiert — nicht nur eine Rechnung geschickt. Das hat mir das Vertrauen gegeben, das ich brauchte." }
+    ]
+  },
+  "ProductsPage": {
+    "metaTitle": "Reich Studio — {productName}",
+    "heroEyebrow": "Digitales Produkt",
+    "heroLine1": "Selbst automatisieren.",
+    "heroLine2": "Ohne Agentur.",
+    "faqEyebrow": "Fragen zum Kit",
+    "faqHeading": "Was du wissen solltest",
+    "ctaHeading": "Lieber alles abgeben statt selbst einrichten?",
+    "ctaSubtext": "Im Erstgespräch schauen wir, ob eine Zusammenarbeit mit Reich Studio mehr Sinn macht."
+  },
+  "Product": {
+    "name": "AI-Fundament",
+    "tagline": "Das Playbook: Claude aufsetzen. Verstehen. Automatisieren.",
+    "price": "$27",
+    "format": "PDF, 16 Seiten (Hoch- & Querformat), sofortiger Download",
+    "description": "Der direkte Weg von \"Ich hab Claude installiert\" zu deiner ersten laufenden Automatisierung — ohne Fachchinesisch, ohne 40-Seiten-Roman. Zum Nachschlagen, nicht zum Durchlesen.",
+    "includes": [
+      "Die Claude-Landkarte: Projekte, Brain, Skills, Artefakte und MCP-Connectors verständlich erklärt",
+      "Dein Brain aufsetzen: eine Notion-Wissensbasis, die Claude live erreicht, in 4 Schritten",
+      "Skills schreiben, die Claude automatisch erkennt — inklusive Beispiel-Skill zum Nachbauen",
+      "MCP-Connectors verbinden: Notion, Gmail, Kalender, Drive, Slack",
+      "Zapier, Make oder n8n: welches Automatisierungs-Tool zu dir passt, mit konkretem Einstieg",
+      "Eine komplette, nachbaubare erste Automatisierung (Formular → Claude → CRM → Team-Benachrichtigung)",
+      "Der 7-Tage-Fahrplan vom Nullpunkt zur laufenden Automatisierung, 20–40 Minuten pro Tag",
+      "6 copy-paste-fertige Prompt-Bausteine, Troubleshooting-Guide und ein Ein-Seiten-Cheat-Sheet"
+    ],
+    "forWhom": "Professionals und junge Agenturen, die Claude wirklich verstehen und produktiv einsetzen wollen — ohne Programmierkenntnisse, an einem Nachmittag durcharbeitbar.",
+    "whatsInside": "Was drin ist",
+    "whoItsFor": "Für wen",
+    "oneTime": "einmalig, kein Abo",
+    "buyNow": "Jetzt kaufen — {price}",
+    "reserveByEmail": "Per E-Mail reservieren",
+    "comingSoon": "Direktkauf-Button folgt in Kürze — bis dahin melde ich mich nach deiner Anfrage persönlich mit dem Download.",
+    "faq": [
+      { "q": "Brauche ich Programmierkenntnisse?", "a": "Nein. Jeder Schritt ist so beschrieben, dass er ohne Code-Kenntnisse nachvollziehbar ist — von der Claude-Einrichtung bis zur ersten Automatisierung." },
+      { "q": "Wie lange dauert es, das umzusetzen?", "a": "Der Fahrplan im Playbook ist auf 7 Tage à 20–40 Minuten ausgelegt. Wer sofort loslegen will, schafft das Fundament an einem Nachmittag." },
+      { "q": "Welche Tools brauche ich zusätzlich?", "a": "Claude, eine Notion-Wissensbasis (kostenlos) und ein Automatisierungs-Tool wie Zapier, Make oder n8n — welches am besten zu dir passt, erklärt das Playbook." },
+      { "q": "Wie bekomme ich das Playbook nach dem Kauf?", "a": "Als PDF-Download direkt nach dem Kauf, in Hoch- und Querformat." },
+      { "q": "Ist das dasselbe wie eine Zusammenarbeit mit Reich Studio?", "a": "Nein. Das Playbook ist zum Selbermachen. Wenn du willst, dass jemand das komplette Fundament — Website, Brain, Automatisierung — für dich aufsetzt, ist das der Starter-Ansatz von Reich Studio — dafür gibt es die Erstgespräch-Option." }
+    ]
+  },
+  "ThanksPage": {
+    "metaTitle": "Reich Studio — Danke für deinen Kauf",
+    "eyebrow": "Kauf bestätigt",
+    "thanks": "Danke!",
+    "hereIs": "Hier ist dein Download.",
+    "bothFormats": "{productName} — beide Formate zum direkten Herunterladen.",
+    "downloadPortrait": "Hochformat herunterladen",
+    "downloadLandscape": "Querformat herunterladen",
+    "saveNote": "Speichere diese Seite oder die Dateien direkt ab — bei Problemen einfach an <link>sofijareich@gmail.com</link> schreiben."
+  },
+  "ContactPage": {
+    "metaTitle": "Reich Studio — Kontakt",
+    "metaDescription": "Kurze Nachricht reicht. Sofija meldet sich innert ein bis zwei Tagen persönlich zurück.",
+    "heroEyebrow": "Kontakt",
+    "heroLine1": "Lass uns",
+    "heroLine2": "reden.",
+    "heroSubtext": "Kurze Nachricht reicht. Ich melde mich persönlich zurück — meist innert ein bis zwei Tagen.",
+    "faqEyebrow": "Bevor du schreibst",
+    "faqHeading": "Kurz beantwortet",
+    "faq": [
+      { "q": "Was passiert nach meiner Anfrage?", "a": "Ich melde mich persönlich, meist innert ein bis zwei Tagen, und wir vereinbaren ein kurzes Erstgespräch." },
+      { "q": "Kostet das Erstgespräch etwas?", "a": "Nein. Es dient dazu, zu klären, ob und wie wir zusammenarbeiten." },
+      { "q": "Ich weiss noch nicht, was ich brauche — ist das ein Problem?", "a": "Nein. Die meisten wissen das nicht genau. Dafür ist das Gespräch da." },
+      { "q": "Arbeitest du auch überregional?", "a": "Ja. Die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens." },
+      { "q": "In welcher Sprache läuft die Zusammenarbeit?", "a": "Auf Deutsch oder Englisch — je nachdem, was für dich passt." }
+    ]
+  },
+  "Contact": {
+    "successTitle": "Danke — deine Nachricht ist da.",
+    "successSubtext": "Ich melde mich innert ein bis zwei Tagen persönlich zurück.",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "E-Mail",
+    "messagePlaceholder": "Was beschäftigt dich gerade?",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet …",
+    "error": "Da ist etwas schiefgelaufen. Bitte versuch es in ein paar Minuten nochmal."
+  },
+  "Faq": {
+    "eyebrow": "Fragen"
+  },
+  "LangSwitch": {
+    "label": "Sprache"
+  }
+}

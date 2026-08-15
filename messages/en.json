@@ -1,0 +1,294 @@
+{
+  "Metadata": {
+    "title": "Reich Studio — The Agency You Don't Need to Hire",
+    "description": "Reich Studio helps busy professionals automate their marketing and build real trust with clients — no agency retainer, no jargon, no detours."
+  },
+  "Nav": {
+    "home": "Home",
+    "studio": "Studio",
+    "work": "Work",
+    "pricing": "Pricing",
+    "products": "Products",
+    "contact": "Contact",
+    "bookCall": "Book a call",
+    "openMenu": "Open menu"
+  },
+  "Footer": {
+    "tagline": "Marketing and automation systems for professionals who don't have time for it.",
+    "newsletter": "Newsletter: new playbooks & products, before they go public."
+  },
+  "Hero": {
+    "eyebrow": "Marketing & Automation",
+    "titleLine1": "The agency",
+    "titleLine2": "you don't need to hire.",
+    "subtext": "Professional marketing with AI that actually works — done solo, without the agency, in the least time possible.",
+    "bookCall": "Book a call",
+    "seePricing": "See pricing"
+  },
+  "TrustBar": {
+    "points": [
+      { "title": "Direct line", "text": "You talk to me. Not an account team that hands you off." },
+      { "title": "Systems, not reports", "text": "Automation that runs — instead of dashboards nobody reads." },
+      { "title": "Clear, not buzzwords", "text": "Every term I use comes with a concrete example behind it." }
+    ]
+  },
+  "Problem": {
+    "eyebrow": "The situation",
+    "lead": "You're good at what you do. But content, posts, and follow-ups eat exactly the time you need for clients.",
+    "body": "Most marketing agencies sell you buzzwords and reports nobody understands. Reich Studio builds you systems that run automatically in the background instead — without you having to become a marketing expert yourself."
+  },
+  "Process": {
+    "eyebrow": "How we work",
+    "title": "Three steps. No fine print.",
+    "steps": [
+      { "step": "01", "title": "Get to know each other", "text": "In the first call, we find where marketing is stealing your time — and what part of it can be automated." },
+      { "step": "02", "title": "Build it", "text": "I build the website, content flow, and automations that fit your field." },
+      { "step": "03", "title": "Let it run", "text": "The system runs in the background. You only get what matters — I handle the rest." }
+    ]
+  },
+  "Services": {
+    "eyebrow": "Services",
+    "title": "Three ways we can work together.",
+    "fullPricing": "Full pricing details →",
+    "mostPopular": "Most popular",
+    "bookCall": "Book a call",
+    "tiers": [
+      {
+        "name": "Starter",
+        "price": "from CHF 2'800",
+        "period": "one-time",
+        "description": "The entry point: a website and the automations that stick around.",
+        "points": ["Website setup", "1-2 core automations", "Clear handover"],
+        "details": [
+          "Website built to this design standard, tailored to you",
+          "1-2 automations for the tasks that eat the most time",
+          "Handover documentation so you understand what's running",
+          "No subscription, no commitment afterward"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "from CHF 2'500",
+        "period": "/month",
+        "description": "Ongoing content and leads, without you having to stay on top of it.",
+        "points": ["Content production", "Lead automation", "Monthly update"],
+        "details": [
+          "Ongoing content production for your channels",
+          "Automated lead capture and routing",
+          "Monthly update: what happened, what's next",
+          "Adjustments to existing systems included"
+        ],
+        "featured": true
+      },
+      {
+        "name": "Full-Service",
+        "price": "from CHF 5'000",
+        "period": "/month",
+        "description": "You do your work. We handle the rest — completely.",
+        "points": ["Everything in Growth", "Full client communication", "Direct line to me"],
+        "details": [
+          "Everything in Growth, plus ongoing development",
+          "I handle communication with your clients in the marketing process",
+          "Priority on requests and adjustments",
+          "Direct, personal line to me — no queue"
+        ]
+      }
+    ]
+  },
+  "ReferenzenTeaser": {
+    "eyebrow": "Work",
+    "title": "Numbers that speak for themselves.",
+    "seeAll": "See all results →"
+  },
+  "Waitlist": {
+    "eyebrow": "Waitlist",
+    "titlePlain": "Stay in the",
+    "titleGold": "loop.",
+    "subtext": "New playbooks, products, and behind-the-scenes from Reich Studio — before they go public.",
+    "successSection": "You're in. You'll hear about new stuff first.",
+    "placeholder": "you@email.com",
+    "signUp": "Sign up",
+    "sending": "Sending …",
+    "errorSection": "Something went wrong. Please try again in a few minutes.",
+    "inlineText": "Newsletter: new playbooks & products, before they go public.",
+    "successInline": "You're in — thanks!",
+    "errorInline": "Error — please try again."
+  },
+  "CtaBand": {
+    "heading": "Ready to hand off marketing?",
+    "subtext": "One short call is enough to see if it's a fit.",
+    "bookCall": "Book a call"
+  },
+  "StudioPage": {
+    "metaTitle": "Reich Studio — About",
+    "metaDescription": "Reich Studio is Sofija's one-person studio for marketing and automation systems. Personal, honest, no buzzwords.",
+    "heroEyebrow": "Reich Studio",
+    "heroLine1": "One name.",
+    "heroLine2": "One responsibility.",
+    "heroSubtext": "No account team, no anonymous studio. Just one person who stands behind the result.",
+    "ctaHeading": "Want to get to know me?",
+    "ctaSubtext": "In the first call, we'll figure out in 20 minutes if it's a fit."
+  },
+  "About": {
+    "lead": "Behind Reich Studio isn't a team of twenty people. It's Sofija.",
+    "p1": "I founded Reich Studio because I saw it too often: capable professionals losing clients — not because their work was bad, but because nobody was handling their marketing.",
+    "p2": "I don't build campaigns that look good and do nothing. I build systems that run, that you can measure, and that you understand — even if you never wanted to deal with marketing yourself.",
+    "p3": "When we work together, you talk to me — not an account manager juggling three other clients.",
+    "imageAlt": "Sofija Reich, founder of Reich Studio",
+    "valuesEyebrow": "How I work",
+    "valuesTitle": "Three things you can count on.",
+    "values": [
+      { "title": "Honest, not polished", "text": "If something isn't working, I say so — before you pay for it." },
+      { "title": "Clear, not complicated", "text": "You should understand what's running, not just get an invoice for it." },
+      { "title": "Personal, not anonymous", "text": "One point of contact from start to finish. No rotating account managers." }
+    ]
+  },
+  "AiWorkflow": {
+    "eyebrow": "What AI automation looks like with me",
+    "title": "From idea to running system.",
+    "subtext": "No black-box promises — this is the actual process I use to automate work. Four tools, one continuous flow.",
+    "nodeStart": "Idea / Task",
+    "nodeEnd": "Finished Result",
+    "stages": [
+      { "step": "01", "tool": "Claude", "text": "Concept, research, and copy — from the first briefing to the finished structure." },
+      { "step": "02", "tool": "Claude Code (Terminal)", "text": "Turns the concept into real automations — scripts, integrations, deployments, run directly from the terminal." },
+      { "step": "03", "tool": "OpenClaw AI", "text": "Handles recurring workflows in the background, without every step needing a manual trigger." },
+      { "step": "04", "tool": "Higgsfield", "text": "Creates image and video content with AI — for visuals that would otherwise need a photoshoot." }
+    ]
+  },
+  "PricingPage": {
+    "metaTitle": "Reich Studio — Pricing",
+    "metaDescription": "Three packages: Starter from CHF 2'800 one-time, Growth from CHF 2'500/month, Full-Service from CHF 5'000/month.",
+    "heroEyebrow": "Pricing",
+    "heroLine1": "Clearly priced.",
+    "heroLine2": "No fine print.",
+    "heroSubtext": "Three packages, three starting points. Exact scope gets tailored to your field in the first call.",
+    "faqHeading": "Pricing questions",
+    "ctaHeading": "Which package fits you?",
+    "ctaSubtext": "We'll figure it out together in the first call.",
+    "faq": [
+      { "q": "Are these final prices?", "a": "These are starting prices. The exact price depends on your field and scope — we clarify that in the first call, before anything becomes binding." },
+      { "q": "Do I have to commit long-term?", "a": "Starter is one-time, no subscription. For Growth and Full-Service, we discuss the term that makes sense for you in the first call." },
+      { "q": "What if I don't know which package fits?", "a": "That's the norm, not the exception. In the first call we look together at where you stand and what actually makes sense." },
+      { "q": "Can I switch later?", "a": "Yes. The packages are a starting point, not a contract set in stone — we adjust as your needs change." },
+      { "q": "How fast will I see results?", "a": "With Starter, usually within a few weeks of project start. With Growth and Full-Service it depends on scope — we discuss concrete timelines in the first call." },
+      { "q": "What if my field is very niche?", "a": "That's exactly what Reich Studio is for. The more specific your field, the more clearly we can build trust with your clients — we find the right approach together." }
+    ]
+  },
+  "PricingDetail": {
+    "mostPopular": "Most popular",
+    "bookCall": "Book a call"
+  },
+  "WorkPage": {
+    "metaTitle": "Reich Studio — Work",
+    "metaDescription": "Real numbers from real projects — results from marketing and automation work.",
+    "heroEyebrow": "Work",
+    "heroLine1": "Numbers",
+    "heroLine2": "that count.",
+    "heroSubtext": "Real results from real work — no photo spreads, no filler. Just what matters in the end.",
+    "ctaHeading": "Want numbers like these for your field?",
+    "ctaSubtext": "Tell me what it's about — we'll figure out the rest in a call."
+  },
+  "Stats": {
+    "source": "Source: TikTok Analytics export (60-day window, May–July 2024) plus current live stats from managed Instagram accounts.",
+    "items": [
+      { "value": 186, "suffix": "K", "label": "Video views generated", "sublabel": "TikTok campaign, 60 days" },
+      { "value": 25, "suffix": "K", "label": "Interactions (likes)", "sublabel": "TikTok campaign, 60 days" },
+      { "value": 3, "label": "Projects managed", "sublabel": "Food & beverage, hotel, nightlife" },
+      { "value": 3158, "label": "Followers reached", "sublabel": "across managed channels, current" }
+    ]
+  },
+  "Testimonials": {
+    "eyebrow": "Voices",
+    "title": "What clients say.",
+    "items": [
+      { "name": "Simone Keller", "role": "Physiotherapist", "photo": "/testimonials/physio.png", "quote": "I never had time for social media. Now my content runs automatically, and I still get inquiries from new patients." },
+      { "name": "Beat Wyss", "role": "Carpentry shop owner", "photo": "/testimonials/handwerk.png", "quote": "I didn't even know what a funnel was. Now I have a website that collects inquiries for me while I'm in the workshop." },
+      { "name": "Nadine Frei", "role": "Business coach", "photo": "/testimonials/coach.png", "quote": "Reich Studio explained what was happening — not just sent an invoice. That gave me the trust I needed." }
+    ]
+  },
+  "ProductsPage": {
+    "metaTitle": "Reich Studio — {productName}",
+    "heroEyebrow": "Digital Product",
+    "heroLine1": "Automate it yourself.",
+    "heroLine2": "No agency.",
+    "faqEyebrow": "Questions about the kit",
+    "faqHeading": "What you should know",
+    "ctaHeading": "Would rather hand it all off than set it up yourself?",
+    "ctaSubtext": "In the first call, we'll see if working with Reich Studio makes more sense."
+  },
+  "Product": {
+    "name": "AI-Fundament",
+    "tagline": "The playbook: set up Claude. Understand it. Automate.",
+    "price": "$27",
+    "format": "PDF, 16 pages (portrait & landscape), instant download",
+    "description": "The direct path from \"I installed Claude\" to your first running automation — no jargon, no 40-page novel. Built for reference, not for reading cover to cover.",
+    "includes": [
+      "The Claude map: Projects, Brain, Skills, Artifacts, and MCP connectors explained clearly",
+      "Set up your Brain: a Notion knowledge base Claude can reach live, in 4 steps",
+      "Write Skills Claude picks up automatically — including a sample skill to copy",
+      "Connect MCP connectors: Notion, Gmail, Calendar, Drive, Slack",
+      "Zapier, Make, or n8n: which automation tool fits you, with a concrete starting point",
+      "One complete, rebuildable first automation (form → Claude → CRM → team notification)",
+      "The 7-day roadmap from zero to a running automation, 20–40 minutes a day",
+      "6 copy-paste-ready prompt building blocks, a troubleshooting guide, and a one-page cheat sheet"
+    ],
+    "forWhom": "Professionals and young agencies who want to actually understand Claude and use it productively — no coding required, workable in an afternoon.",
+    "whatsInside": "What's inside",
+    "whoItsFor": "Who it's for",
+    "oneTime": "one-time, no subscription",
+    "buyNow": "Buy now — {price}",
+    "reserveByEmail": "Reserve by email",
+    "comingSoon": "Direct checkout is coming soon — until then, I'll follow up personally with the download after your request.",
+    "faq": [
+      { "q": "Do I need coding skills?", "a": "No. Every step is written to be followable without any code knowledge — from setting up Claude to your first automation." },
+      { "q": "How long does it take to implement?", "a": "The roadmap in the playbook is built for 7 days at 20–40 minutes each. If you want to dive in right away, you can build the foundation in one afternoon." },
+      { "q": "What other tools do I need?", "a": "Claude, a Notion knowledge base (free), and an automation tool like Zapier, Make, or n8n — the playbook explains which one fits you best." },
+      { "q": "How do I get the playbook after buying?", "a": "As a PDF download right after purchase, in portrait and landscape format." },
+      { "q": "Is this the same as working with Reich Studio?", "a": "No. The playbook is for doing it yourself. If you'd rather have someone set up the whole foundation — website, Brain, automation — for you, that's Reich Studio's Starter approach — book a first call for that." }
+    ]
+  },
+  "ThanksPage": {
+    "metaTitle": "Reich Studio — Thanks for your purchase",
+    "eyebrow": "Purchase confirmed",
+    "thanks": "Thanks!",
+    "hereIs": "Here's your download.",
+    "bothFormats": "{productName} — both formats, ready to download.",
+    "downloadPortrait": "Download portrait",
+    "downloadLandscape": "Download landscape",
+    "saveNote": "Save this page or the files directly — if anything goes wrong, just email <link>sofijareich@gmail.com</link>."
+  },
+  "ContactPage": {
+    "metaTitle": "Reich Studio — Contact",
+    "metaDescription": "A short message is enough. Sofija replies personally within one to two days.",
+    "heroEyebrow": "Contact",
+    "heroLine1": "Let's",
+    "heroLine2": "talk.",
+    "heroSubtext": "A short message is enough. I reply personally — usually within one to two days.",
+    "faqEyebrow": "Before you write",
+    "faqHeading": "Quick answers",
+    "faq": [
+      { "q": "What happens after I reach out?", "a": "I reply personally, usually within one to two days, and we set up a short first call." },
+      { "q": "Does the first call cost anything?", "a": "No. It's there to figure out if and how we'd work together." },
+      { "q": "I don't know yet what I need — is that a problem?", "a": "No. Most people don't know exactly. That's what the call is for." },
+      { "q": "Do you work with clients outside your region?", "a": "Yes. Collaboration runs mostly remote — a call and short messages are usually enough." },
+      { "q": "What language do we work in?", "a": "In English or German — whatever works for you." }
+    ]
+  },
+  "Contact": {
+    "successTitle": "Thanks — your message is in.",
+    "successSubtext": "I'll reply personally within one to two days.",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "What's on your mind?",
+    "send": "Send message",
+    "sending": "Sending …",
+    "error": "Something went wrong. Please try again in a few minutes."
+  },
+  "Faq": {
+    "eyebrow": "Questions"
+  },
+  "LangSwitch": {
+    "label": "Language"
+  }
+}

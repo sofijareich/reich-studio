@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/produkte/danke",
+      disallow: ["/products/thanks", "/produkte/danke", "/de/produkte/danke"],
     },
     sitemap: "https://reichstudio.ch/sitemap.xml",
   };

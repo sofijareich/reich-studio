@@ -1,25 +1,27 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
-
-const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/studio", label: "Studio" },
-  { href: "/referenzen", label: "Work" },
-  { href: "/preise", label: "Pricing" },
-  { href: "/produkte", label: "Products" },
-  { href: "/kontakt", label: "Contact" },
-];
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
+  const t = useTranslations("Nav");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
+
+  const NAV_LINKS = [
+    { href: "/" as const, label: t("home") },
+    { href: "/studio" as const, label: t("studio") },
+    { href: "/work" as const, label: t("work") },
+    { href: "/pricing" as const, label: t("pricing") },
+    { href: "/products" as const, label: t("products") },
+    { href: "/contact" as const, label: t("contact") },
+  ];
 
   useEffect(() => {
     function onScroll() {
@@ -72,16 +74,19 @@ export default function Header() {
           })}
         </nav>
 
-        <Link
-          href="/kontakt"
-          className="gold-btn hidden rounded-full px-5 py-2 text-sm font-semibold text-bg md:inline-block"
-        >
-          Book a call
-        </Link>
+        <div className="hidden items-center gap-4 md:flex">
+          <LanguageSwitcher />
+          <Link
+            href="/contact"
+            className="gold-btn rounded-full px-5 py-2 text-sm font-semibold text-bg"
+          >
+            {t("bookCall")}
+          </Link>
+        </div>
 
         <button
           type="button"
-          aria-label="Open menu"
+          aria-label={t("openMenu")}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
           className="flex h-9 w-9 flex-col items-center justify-center gap-1.5 md:hidden"
@@ -113,13 +118,16 @@ export default function Header() {
               </Link>
             );
           })}
-          <Link
-            href="/kontakt"
-            onClick={() => setOpen(false)}
-            className="gold-btn mt-3 rounded-full px-5 py-3 text-center text-sm font-semibold text-bg"
-          >
-            Book a call
-          </Link>
+          <div className="mt-3 flex items-center justify-between gap-3">
+            <LanguageSwitcher mobile />
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="gold-btn flex-1 rounded-full px-5 py-3 text-center text-sm font-semibold text-bg"
+            >
+              {t("bookCall")}
+            </Link>
+          </div>
         </nav>
       )}
     </header>

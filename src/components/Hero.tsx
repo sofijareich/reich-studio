@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 
-export default function Hero() {
+export default async function Hero() {
+  const t = await getTranslations("Hero");
+
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24 pb-16 sm:px-10 sm:pb-20">
       <div className="absolute inset-0 -z-10">
@@ -20,15 +24,15 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-6xl">
         <div>
           <p className="rise-in eyebrow mb-6" style={{ animationDelay: "0.05s" }}>
-            Marketing &amp; Automation
+            {t("eyebrow")}
           </p>
 
           <h1 className="display-heading max-w-3xl">
             <span className="rise-in block" style={{ animationDelay: "0.15s" }}>
-              The agency
+              {t("titleLine1")}
             </span>
             <span className="rise-in gold-text block" style={{ animationDelay: "0.35s" }}>
-              you don&apos;t need to hire.
+              {t("titleLine2")}
             </span>
           </h1>
 
@@ -36,26 +40,25 @@ export default function Hero() {
             className="rise-in mt-8 max-w-lg text-base text-fg/60 sm:text-lg"
             style={{ animationDelay: "0.62s" }}
           >
-            Professional marketing with AI that actually works — done solo,
-            without the agency, in the least time possible.
+            {t("subtext")}
           </p>
 
           <div
             className="rise-in mt-10 flex flex-wrap items-center gap-5"
             style={{ animationDelay: "0.78s" }}
           >
-            <a
-              href="/kontakt"
+            <Link
+              href="/contact"
               className="gold-btn inline-block rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg"
             >
-              Book a call
-            </a>
-            <a
-              href="/preise"
+              {t("bookCall")}
+            </Link>
+            <Link
+              href="/pricing"
               className="text-sm font-medium text-fg/60 underline underline-offset-4 hover:text-fg"
             >
-              See pricing
-            </a>
+              {t("seePricing")}
+            </Link>
           </div>
         </div>
       </div>

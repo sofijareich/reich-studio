@@ -1,22 +1,39 @@
 import type { Metadata } from "next";
-import { product } from "@/lib/product";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: `Reich Studio — Thanks for your purchase`,
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "ThanksPage" });
+  return {
+    title: t("metaTitle"),
+    robots: { index: false, follow: false },
+  };
+}
 
-export default function DankePage() {
+export default async function ThanksPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("ThanksPage");
+  const tProduct = await getTranslations("Product");
+
   return (
     <section className="relative overflow-hidden px-6 pt-40 pb-28 sm:px-10 sm:pt-48">
       <div className="glow h-72 w-72 -translate-x-1/2 -translate-y-1/4" style={{ top: 0, left: "50%" }} />
       <div className="relative mx-auto max-w-2xl text-center">
-        <p className="eyebrow mb-6">Purchase confirmed</p>
+        <p className="eyebrow mb-6">{t("eyebrow")}</p>
         <h1 className="display-heading text-4xl sm:text-6xl">
-          Thanks! <span className="gold-text">Here&apos;s your download.</span>
+          {t("thanks")} <span className="gold-text">{t("hereIs")}</span>
         </h1>
         <p className="mx-auto mt-8 max-w-lg text-lg text-fg/60">
-          {product.name} — both formats, ready to download.
+          {t("bothFormats", { productName: tProduct("name") })}
         </p>
 
         <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -25,23 +42,25 @@ export default function DankePage() {
             download
             className="gold-btn inline-block w-full rounded-full px-8 py-4 text-center text-sm font-semibold text-bg sm:w-auto"
           >
-            Download portrait
+            {t("downloadPortrait")}
           </a>
           <a
             href="/downloads/AI-Fundament-Querformat.pdf"
             download
             className="inline-block w-full rounded-full border border-gold/40 px-8 py-4 text-center text-sm font-semibold text-gold sm:w-auto"
           >
-            Download landscape
+            {t("downloadLandscape")}
           </a>
         </div>
 
         <p className="mt-10 text-sm text-fg/45">
-          Save this page or the files directly — if anything goes wrong, just email{" "}
-          <a href="mailto:sofijareich@gmail.com" className="underline">
-            sofijareich@gmail.com
-          </a>
-          .
+          {t.rich("saveNote", {
+            link: (chunks) => (
+              <a href="mailto:sofijareich@gmail.com" className="underline">
+                {chunks}
+              </a>
+            ),
+          })}
         </p>
       </div>
     </section>

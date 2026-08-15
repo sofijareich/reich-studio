@@ -1,26 +1,27 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Logo from "./Logo";
 import { WaitlistInline } from "./Waitlist";
 
-const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/studio", label: "Studio" },
-  { href: "/referenzen", label: "Work" },
-  { href: "/preise", label: "Pricing" },
-  { href: "/produkte", label: "Products" },
-  { href: "/kontakt", label: "Contact" },
-];
+export default async function Footer() {
+  const t = await getTranslations("Nav");
+  const tf = await getTranslations("Footer");
 
-export default function Footer() {
+  const NAV_LINKS = [
+    { href: "/" as const, label: t("home") },
+    { href: "/studio" as const, label: t("studio") },
+    { href: "/work" as const, label: t("work") },
+    { href: "/pricing" as const, label: t("pricing") },
+    { href: "/products" as const, label: t("products") },
+    { href: "/contact" as const, label: t("contact") },
+  ];
+
   return (
     <footer className="border-t border-white/5 px-6 py-12 sm:px-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
         <div>
           <Logo />
-          <p className="mt-3 max-w-xs text-sm text-fg/40">
-            Marketing and automation systems for professionals who don&apos;t
-            have time for it.
-          </p>
+          <p className="mt-3 max-w-xs text-sm text-fg/40">{tf("tagline")}</p>
         </div>
 
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-fg/60">

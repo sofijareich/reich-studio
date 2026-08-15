@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Reveal from "./Reveal";
 
 export default function Faq({
-  eyebrow = "Questions",
+  eyebrow,
   heading,
   items,
 }: {
@@ -12,13 +13,15 @@ export default function Faq({
   heading: string;
   items: { q: string; a: string }[];
 }) {
+  const t = useTranslations("Faq");
   const [open, setOpen] = useState<number | null>(null);
+  const resolvedEyebrow = eyebrow ?? t("eyebrow");
 
   return (
     <section className="px-6 py-20 sm:px-10">
       <div className="mx-auto max-w-3xl">
         <Reveal>
-          <p className="eyebrow mb-4">{eyebrow}</p>
+          <p className="eyebrow mb-4">{resolvedEyebrow}</p>
           <h2 className="mb-12 text-3xl font-semibold tracking-tight sm:text-4xl">
             {heading}
           </h2>

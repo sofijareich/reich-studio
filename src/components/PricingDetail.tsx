@@ -1,7 +1,13 @@
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Reveal from "./Reveal";
-import { services } from "@/lib/services";
+import type { Service } from "@/lib/services";
 
-export default function PricingDetail() {
+export default async function PricingDetail() {
+  const t = await getTranslations("Services");
+  const tp = await getTranslations("PricingDetail");
+  const services = t.raw("tiers") as Service[];
+
   return (
     <section className="px-6 pb-20 sm:px-10">
       <div className="mx-auto max-w-6xl" data-mascot-spot="preise">
@@ -14,7 +20,7 @@ export default function PricingDetail() {
                 }`}
               >
                 {service.featured && (
-                  <p className="eyebrow mb-4">Most popular</p>
+                  <p className="eyebrow mb-4">{tp("mostPopular")}</p>
                 )}
                 <h3 className="text-xl font-semibold">{service.name}</h3>
                 <p className="mt-4 text-4xl font-semibold tracking-tight">
@@ -35,14 +41,14 @@ export default function PricingDetail() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href="/kontakt"
+                <Link
+                  href="/contact"
                   className={`mt-8 inline-block rounded-full px-6 py-3 text-center text-sm font-semibold ${
                     service.featured ? "gold-btn text-bg" : "border border-gold/40 text-gold"
                   }`}
                 >
-                  Book a call
-                </a>
+                  {tp("bookCall")}
+                </Link>
               </div>
             </Reveal>
           ))}

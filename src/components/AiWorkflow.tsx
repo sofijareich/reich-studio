@@ -1,27 +1,5 @@
+import { getTranslations } from "next-intl/server";
 import Reveal from "./Reveal";
-
-const STAGES = [
-  {
-    step: "01",
-    tool: "Claude",
-    text: "Concept, research, and copy — from the first briefing to the finished structure.",
-  },
-  {
-    step: "02",
-    tool: "Claude Code (Terminal)",
-    text: "Turns the concept into real automations — scripts, integrations, deployments, run directly from the terminal.",
-  },
-  {
-    step: "03",
-    tool: "OpenClaw AI",
-    text: "Handles recurring workflows in the background, without every step needing a manual trigger.",
-  },
-  {
-    step: "04",
-    tool: "Higgsfield",
-    text: "Creates image and video content with AI — for visuals that would otherwise need a photoshoot.",
-  },
-];
 
 function Arrow({ vertical = false }: { vertical?: boolean }) {
   return (
@@ -52,44 +30,45 @@ function Node({ label }: { label: string }) {
   );
 }
 
-export default function AiWorkflow() {
+export default async function AiWorkflow() {
+  const t = await getTranslations("AiWorkflow");
+  const stages = t.raw("stages") as { step: string; tool: string; text: string }[];
+
   return (
     <section className="px-6 pb-20 sm:px-10">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="eyebrow mb-4">What AI automation looks like with me</p>
+          <p className="eyebrow mb-4">{t("eyebrow")}</p>
           <h2 className="mb-4 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-            From idea to running system.
+            {t("title")}
           </h2>
-          <p className="mb-16 max-w-xl text-fg/60">
-            No black-box promises — this is the actual process I use to automate work. Four tools, one continuous flow.
-          </p>
+          <p className="mb-16 max-w-xl text-fg/60">{t("subtext")}</p>
         </Reveal>
 
         <Reveal>
           <div className="hidden md:block">
-            <Node label="Idea / Task" />
+            <Node label={t("nodeStart")} />
             <div className="mt-2 grid items-stretch" style={{ gridTemplateColumns: "1fr 32px 1fr 32px 1fr 32px 1fr" }}>
-              {STAGES.map((s, i) => (
+              {stages.map((s, i) => (
                 <div key={s.tool} className="contents">
                   <div className="card-surface flex flex-col rounded-2xl p-6">
                     <p className="gold-text text-3xl font-semibold">{s.step}</p>
                     <h3 className="mt-3 text-base font-semibold">{s.tool}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-fg/60">{s.text}</p>
                   </div>
-                  {i < STAGES.length - 1 && <Arrow />}
+                  {i < stages.length - 1 && <Arrow />}
                 </div>
               ))}
             </div>
             <div className="mt-2 flex justify-end">
-              <Node label="Finished Result" />
+              <Node label={t("nodeEnd")} />
             </div>
           </div>
 
           <div className="flex flex-col items-stretch gap-0 md:hidden">
-            <Node label="Idea / Task" />
+            <Node label={t("nodeStart")} />
             <Arrow vertical />
-            {STAGES.map((s) => (
+            {stages.map((s) => (
               <div key={s.tool}>
                 <div className="card-surface flex flex-col rounded-2xl p-6">
                   <p className="gold-text text-3xl font-semibold">{s.step}</p>
@@ -99,7 +78,7 @@ export default function AiWorkflow() {
                 <Arrow vertical />
               </div>
             ))}
-            <Node label="Finished Result" />
+            <Node label={t("nodeEnd")} />
           </div>
         </Reveal>
       </div>
