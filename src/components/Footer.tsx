@@ -4,11 +4,11 @@ import { WaitlistInline } from "./Waitlist";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/studio", label: "Reich Studio" },
-  { href: "/referenzen", label: "Referenzen" },
-  { href: "/preise", label: "Preise" },
-  { href: "/produkte", label: "Produkte" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/studio", label: "Studio" },
+  { href: "/referenzen", label: "Work" },
+  { href: "/preise", label: "Pricing" },
+  { href: "/produkte", label: "Products" },
+  { href: "/kontakt", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -18,8 +18,8 @@ export default function Footer() {
         <div>
           <Logo />
           <p className="mt-3 max-w-xs text-sm text-fg/40">
-            Marketing- und Automatisierungssysteme für Professionals, die
-            keine Zeit dafür haben.
+            Marketing and automation systems for professionals who don&apos;t
+            have time for it.
           </p>
         </div>
 

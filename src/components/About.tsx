@@ -3,16 +3,16 @@ import Reveal from "./Reveal";
 
 const VALUES = [
   {
-    title: "Ehrlich statt glatt",
-    text: "Wenn etwas nicht funktioniert, sage ich das — bevor du dafür bezahlst.",
+    title: "Honest, not polished",
+    text: "If something isn't working, I say so — before you pay for it.",
   },
   {
-    title: "Verständlich statt kompliziert",
-    text: "Du sollst verstehen, was läuft, nicht nur eine Rechnung dafür bekommen.",
+    title: "Clear, not complicated",
+    text: "You should understand what's running, not just get an invoice for it.",
   },
   {
-    title: "Persönlich statt anonym",
-    text: "Ein Ansprechpartner von Anfang bis Ende. Keine wechselnden Betreuer.",
+    title: "Personal, not anonymous",
+    text: "One point of contact from start to finish. No rotating account managers.",
   },
 ];
 
@@ -24,24 +24,23 @@ export default function About() {
           <Reveal>
             <div className="space-y-5 text-lg leading-relaxed text-fg/70">
               <p className="text-2xl font-medium text-fg">
-                Hinter Reich Studio steht kein Team von zwanzig Leuten. Es
-                steht Sofija.
+                Behind Reich Studio isn&apos;t a team of twenty people.
+                It&apos;s Sofija.
               </p>
               <p>
-                Ich habe Reich Studio gegründet, weil ich zu oft gesehen habe,
-                wie fähige Professionals Kunden verlieren — nicht, weil ihre
-                Arbeit schlecht ist, sondern weil niemand ihr Marketing
-                übernimmt.
+                I founded Reich Studio because I saw it too often: capable
+                professionals losing clients — not because their work was
+                bad, but because nobody was handling their marketing.
               </p>
               <p>
-                Ich baue keine Kampagnen, die gut aussehen und nichts
-                bringen. Ich baue Systeme, die laufen, messbar sind und die
-                du verstehst, auch wenn du selbst nie etwas mit Marketing zu
-                tun haben wolltest.
+                I don&apos;t build campaigns that look good and do nothing.
+                I build systems that run, that you can measure, and that
+                you understand — even if you never wanted to deal with
+                marketing yourself.
               </p>
               <p>
-                Wenn wir zusammenarbeiten, sprichst du mit mir — nicht mit
-                einem Account Manager, der drei Kunden weiterreicht.
+                When we work together, you talk to me — not an account
+                manager juggling three other clients.
               </p>
             </div>
           </Reveal>
@@ -50,7 +49,7 @@ export default function About() {
             <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-gold/30">
               <Image
                 src="/images/sofija.jpg"
-                alt="Sofija Reich, Gründerin von Reich Studio"
+                alt="Sofija Reich, founder of Reich Studio"
                 fill
                 className="object-cover"
                 priority
@@ -63,9 +62,9 @@ export default function About() {
       <section className="px-6 py-20 sm:px-10">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <p className="eyebrow mb-4">Wie ich arbeite</p>
+            <p className="eyebrow mb-4">How I work</p>
             <h2 className="mb-16 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-              Drei Dinge, auf die du dich verlassen kannst.
+              Three things you can count on.
             </h2>
           </Reveal>
           <div className="grid gap-10 sm:grid-cols-3">

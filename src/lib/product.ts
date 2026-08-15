@@ -1,43 +1,43 @@
 export const product = {
   name: "AI-Fundament",
-  tagline: "Das Playbook: Claude aufsetzen. Verstehen. Automatisieren.",
+  tagline: "The playbook: set up Claude. Understand it. Automate.",
   price: "$27",
-  format: "PDF, 16 Seiten (Hoch- & Querformat), sofortiger Download",
+  format: "PDF, 16 pages (portrait & landscape), instant download",
   description:
-    "Der direkte Weg von \"Ich hab Claude installiert\" zu deiner ersten laufenden Automatisierung — ohne Fachchinesisch, ohne 40-Seiten-Roman. Zum Nachschlagen, nicht zum Durchlesen.",
+    "The direct path from \"I installed Claude\" to your first running automation — no jargon, no 40-page novel. Built for reference, not for reading cover to cover.",
   includes: [
-    "Die Claude-Landkarte: Projekte, Brain, Skills, Artefakte und MCP-Connectors verständlich erklärt",
-    "Dein Brain aufsetzen: eine Notion-Wissensbasis, die Claude live erreicht, in 4 Schritten",
-    "Skills schreiben, die Claude automatisch erkennt — inklusive Beispiel-Skill zum Nachbauen",
-    "MCP-Connectors verbinden: Notion, Gmail, Kalender, Drive, Slack",
-    "Zapier, Make oder n8n: welches Automatisierungs-Tool zu dir passt, mit konkretem Einstieg",
-    "Eine komplette, nachbaubare erste Automatisierung (Formular → Claude → CRM → Team-Benachrichtigung)",
-    "Der 7-Tage-Fahrplan vom Nullpunkt zur laufenden Automatisierung, 20–40 Minuten pro Tag",
-    "6 copy-paste-fertige Prompt-Bausteine, Troubleshooting-Guide und ein Ein-Seiten-Cheat-Sheet",
+    "The Claude map: Projects, Brain, Skills, Artifacts, and MCP connectors explained clearly",
+    "Set up your Brain: a Notion knowledge base Claude can reach live, in 4 steps",
+    "Write Skills Claude picks up automatically — including a sample skill to copy",
+    "Connect MCP connectors: Notion, Gmail, Calendar, Drive, Slack",
+    "Zapier, Make, or n8n: which automation tool fits you, with a concrete starting point",
+    "One complete, rebuildable first automation (form → Claude → CRM → team notification)",
+    "The 7-day roadmap from zero to a running automation, 20–40 minutes a day",
+    "6 copy-paste-ready prompt building blocks, a troubleshooting guide, and a one-page cheat sheet",
   ],
   forWhom:
-    "Professionals und junge Agenturen, die Claude wirklich verstehen und produktiv einsetzen wollen — ohne Programmierkenntnisse, an einem Nachmittag durcharbeitbar.",
+    "Professionals and young agencies who want to actually understand Claude and use it productively — no coding required, workable in an afternoon.",
 };
 
 export const productFaq = [
   {
-    q: "Brauche ich Programmierkenntnisse?",
-    a: "Nein. Jeder Schritt ist so beschrieben, dass er ohne Code-Kenntnisse nachvollziehbar ist — von der Claude-Einrichtung bis zur ersten Automatisierung.",
+    q: "Do I need coding skills?",
+    a: "No. Every step is written to be followable without any code knowledge — from setting up Claude to your first automation.",
   },
   {
-    q: "Wie lange dauert es, das umzusetzen?",
-    a: "Der Fahrplan im Playbook ist auf 7 Tage à 20–40 Minuten ausgelegt. Wer sofort loslegen will, schafft das Fundament an einem Nachmittag.",
+    q: "How long does it take to implement?",
+    a: "The roadmap in the playbook is built for 7 days at 20–40 minutes each. If you want to dive in right away, you can build the foundation in one afternoon.",
   },
   {
-    q: "Welche Tools brauche ich zusätzlich?",
-    a: "Claude, eine Notion-Wissensbasis (kostenlos) und ein Automatisierungs-Tool wie Zapier, Make oder n8n — welches am besten zu dir passt, erklärt das Playbook.",
+    q: "What other tools do I need?",
+    a: "Claude, a Notion knowledge base (free), and an automation tool like Zapier, Make, or n8n — the playbook explains which one fits you best.",
   },
   {
-    q: "Wie bekomme ich das Playbook nach dem Kauf?",
-    a: "Als PDF-Download direkt nach dem Kauf, in Hoch- und Querformat.",
+    q: "How do I get the playbook after buying?",
+    a: "As a PDF download right after purchase, in portrait and landscape format.",
   },
   {
-    q: "Ist das dasselbe wie eine Zusammenarbeit mit Reich Studio?",
-    a: "Nein. Das Playbook ist zum Selbermachen. Wenn du willst, dass jemand das komplette Fundament — Website, Brain, Automatisierung — für dich aufsetzt, ist das der Starter-Ansatz von Reich Studio — dafür gibt es die Erstgespräch-Option.",
+    q: "Is this the same as working with Reich Studio?",
+    a: "No. The playbook is for doing it yourself. If you'd rather have someone set up the whole foundation — website, Brain, automation — for you, that's Reich Studio's Starter approach — book a first call for that.",
   },
 ];

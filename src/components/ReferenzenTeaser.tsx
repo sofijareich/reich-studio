@@ -12,16 +12,16 @@ export default function ReferenzenTeaser() {
         <Reveal>
           <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
             <div>
-              <p className="eyebrow mb-4">Referenzen</p>
+              <p className="eyebrow mb-4">Work</p>
               <h2 className="max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
-                Zahlen, die für sich sprechen.
+                Numbers that speak for themselves.
               </h2>
             </div>
             <Link
               href="/referenzen"
               className="text-sm font-medium text-gold underline underline-offset-4"
             >
-              Alle Referenzen →
+              See all results →
             </Link>
           </div>
         </Reveal>

@@ -2,16 +2,16 @@ import Reveal from "./Reveal";
 
 const POINTS = [
   {
-    title: "Direkter Draht",
-    text: "Du sprichst mit mir. Nicht mit einem Account-Team, das dich weiterreicht.",
+    title: "Direct line",
+    text: "You talk to me. Not an account team that hands you off.",
   },
   {
-    title: "Systeme, keine Reportings",
-    text: "Automatisierung, die läuft — statt Dashboards, die niemand liest.",
+    title: "Systems, not reports",
+    text: "Automation that runs — instead of dashboards nobody reads.",
   },
   {
-    title: "Klar statt Buzzword",
-    text: "Jeder Begriff, den ich benutze, hat ein konkretes Beispiel dahinter.",
+    title: "Clear, not buzzwords",
+    text: "Every term I use comes with a concrete example behind it.",
   },
 ];
 

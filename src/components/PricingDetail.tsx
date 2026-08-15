@@ -14,7 +14,7 @@ export default function PricingDetail() {
                 }`}
               >
                 {service.featured && (
-                  <p className="eyebrow mb-4">Meistgewählt</p>
+                  <p className="eyebrow mb-4">Most popular</p>
                 )}
                 <h3 className="text-xl font-semibold">{service.name}</h3>
                 <p className="mt-4 text-4xl font-semibold tracking-tight">
@@ -41,7 +41,7 @@ export default function PricingDetail() {
                     service.featured ? "gold-btn text-bg" : "border border-gold/40 text-gold"
                   }`}
                 >
-                  Erstgespräch buchen
+                  Book a call
                 </a>
               </div>
             </Reveal>

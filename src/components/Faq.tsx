@@ -4,7 +4,7 @@ import { useState } from "react";
 import Reveal from "./Reveal";
 
 export default function Faq({
-  eyebrow = "Fragen",
+  eyebrow = "Questions",
   heading,
   items,
 }: {

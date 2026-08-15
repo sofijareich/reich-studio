@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const VALID_SOURCES = ["Startseite", "Footer"] as const;
+const VALID_SOURCES = ["Homepage", "Footer"] as const;
 
 export async function POST(request: Request) {
   const { email, source } = await request.json();
@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   if (!email || typeof email !== "string" || !EMAIL_RE.test(email)) {
     return NextResponse.json({ error: "Invalid email" }, { status: 400 });
   }
-  const safeSource = VALID_SOURCES.includes(source) ? source : "Startseite";
+  const safeSource = VALID_SOURCES.includes(source) ? source : "Homepage";
 
   const apiKey = process.env.NOTION_API_KEY;
   const databaseId = process.env.NOTION_WAITLIST_DATABASE_ID;

@@ -39,9 +39,9 @@ export default function Contact() {
         <Reveal>
           {status === "sent" ? (
             <div className="card-surface-gold rounded-2xl p-8 text-center">
-              <p className="text-lg font-medium">Danke — deine Nachricht ist da.</p>
+              <p className="text-lg font-medium">Thanks — your message is in.</p>
               <p className="mt-2 text-sm text-fg/60">
-                Ich melde mich innert ein bis zwei Tagen persönlich zurück.
+                I&apos;ll reply personally within one to two days.
               </p>
             </div>
           ) : (
@@ -58,7 +58,7 @@ export default function Contact() {
                 <input
                   required
                   type="email"
-                  placeholder="E-Mail"
+                  placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="rounded-lg border border-white/15 bg-white/[0.03] px-4 py-3 text-sm placeholder:text-fg/40 focus:border-gold focus:outline-none"
@@ -67,7 +67,7 @@ export default function Contact() {
               <textarea
                 required
                 rows={4}
-                placeholder="Was beschäftigt dich gerade?"
+                placeholder="What's on your mind?"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full rounded-lg border border-white/15 bg-white/[0.03] px-4 py-3 text-sm placeholder:text-fg/40 focus:border-gold focus:outline-none"
@@ -77,11 +77,11 @@ export default function Contact() {
                 disabled={status === "sending"}
                 className="gold-btn rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg disabled:opacity-60"
               >
-                {status === "sending" ? "Wird gesendet …" : "Nachricht senden"}
+                {status === "sending" ? "Sending …" : "Send message"}
               </button>
               {status === "error" && (
                 <p className="text-sm text-red-400">
-                  Da ist etwas schiefgelaufen. Bitte versuch es in ein paar Minuten nochmal.
+                  Something went wrong. Please try again in a few minutes.
                 </p>
               )}
             </form>

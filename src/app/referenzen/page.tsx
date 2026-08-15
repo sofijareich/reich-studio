@@ -7,23 +7,23 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "/referenzen",
-  "Reich Studio — Referenzen",
-  "Echte Zahlen aus echten Projekten — Ergebnisse aus Marketing- und Automatisierungsarbeit."
+  "Reich Studio — Work",
+  "Real numbers from real projects — results from marketing and automation work."
 );
 
 export default function ReferenzenPage() {
   return (
     <>
       <PageHero
-        eyebrow="Referenzen"
-        lines={["Zahlen,", "die zählen."]}
-        subtext="Echte Ergebnisse aus echter Arbeit — keine Fotostrecken, keine Fülltexte. Nur das, was am Ende zählt."
+        eyebrow="Work"
+        lines={["Numbers", "that count."]}
+        subtext="Real results from real work — no photo spreads, no filler. Just what matters in the end."
       />
       <StatsOverview stats={stats} source={statsSource} />
       <Testimonials />
       <CtaBand
-        heading="Willst du solche Zahlen für dein Fachgebiet?"
-        subtext="Erzähl mir, worum es geht — den Rest klären wir im Gespräch."
+        heading="Want numbers like these for your field?"
+        subtext="Tell me what it's about — we'll figure out the rest in a call."
       />
     </>
   );

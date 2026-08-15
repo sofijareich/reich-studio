@@ -1,8 +1,8 @@
 import Reveal from "./Reveal";
 
 export default function CtaBand({
-  heading = "Bereit, Marketing abzugeben?",
-  subtext = "Ein kurzes Gespräch reicht, um zu sehen, ob es passt.",
+  heading = "Ready to hand off marketing?",
+  subtext = "One short call is enough to see if it's a fit.",
 }: {
   heading?: string;
   subtext?: string;
@@ -19,7 +19,7 @@ export default function CtaBand({
           href="/kontakt"
           className="gold-btn mt-10 inline-block rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg"
         >
-          Erstgespräch buchen
+          Book a call
         </a>
       </Reveal>
     </section>

@@ -11,19 +11,19 @@ export default function ProduktePage() {
   return (
     <>
       <PageHero
-        eyebrow="Digitales Produkt"
-        lines={["Selbst automatisieren.", "Ohne Agentur."]}
+        eyebrow="Digital Product"
+        lines={["Automate it yourself.", "No agency."]}
         subtext={product.description}
       />
       <ProductDetail />
       <Faq
-        eyebrow="Fragen zum Kit"
-        heading="Was du wissen solltest"
+        eyebrow="Questions about the kit"
+        heading="What you should know"
         items={productFaq}
       />
       <CtaBand
-        heading="Lieber alles abgeben statt selbst einrichten?"
-        subtext="Im Erstgespräch schauen wir, ob eine Zusammenarbeit mit Reich Studio mehr Sinn macht."
+        heading="Would rather hand it all off than set it up yourself?"
+        subtext="In the first call, we'll see if working with Reich Studio makes more sense."
       />
     </>
   );

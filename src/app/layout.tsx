@@ -11,9 +11,9 @@ const inter = Inter({
   display: "swap",
 });
 
-const TITLE = "Reich Studio — Marketing- und KI-Automatisierung für Professionals";
+const TITLE = "Reich Studio — The Agency You Don't Need to Hire";
 const DESCRIPTION =
-  "Reich Studio hilft Professionals ohne Zeit für Marketing, ihr Fachgebiet zu automatisieren und Vertrauen bei Endkunden aufzubauen. Ohne Fachchinesisch, ohne Umwege.";
+  "Reich Studio helps busy professionals automate their marketing and build real trust with clients — no agency retainer, no jargon, no detours.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://reichstudio.ch"),
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     url: "/",
     siteName: "Reich Studio",
-    locale: "de_CH",
+    locale: "en_CH",
     type: "website",
   },
   twitter: {
@@ -57,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${inter.variable} h-full`}>
+    <html lang="en" className={`${inter.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-bg text-fg antialiased">
         <script
           type="application/ld+json"

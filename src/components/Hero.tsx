@@ -20,15 +20,15 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-6xl">
         <div>
           <p className="rise-in eyebrow mb-6" style={{ animationDelay: "0.05s" }}>
-            Marketing &amp; Automatisierung
+            Marketing &amp; Automation
           </p>
 
           <h1 className="display-heading max-w-3xl">
             <span className="rise-in block" style={{ animationDelay: "0.15s" }}>
-              Fachgebiet automatisieren.
+              Automate your work.
             </span>
             <span className="rise-in gold-text block" style={{ animationDelay: "0.35s" }}>
-              Vertrauen aufbauen.
+              Build real trust.
             </span>
           </h1>
 
@@ -36,10 +36,9 @@ export default function Hero() {
             className="rise-in mt-8 max-w-lg text-base text-fg/60 sm:text-lg"
             style={{ animationDelay: "0.62s" }}
           >
-            Ich helfe Professionals, die keine Zeit für Marketing haben, ihr
-            Fachgebiet voll zu automatisieren und Vertrauen zu Endkunden
-            aufzubauen — ohne sich in geringster Weise damit auskennen zu
-            müssen.
+            I help busy professionals fully automate their marketing and
+            build real trust with clients — without needing to understand
+            any of it themselves.
           </p>
 
           <div
@@ -50,13 +49,13 @@ export default function Hero() {
               href="/kontakt"
               className="gold-btn inline-block rounded-full px-8 py-4 text-sm font-semibold tracking-wide text-bg"
             >
-              Erstgespräch buchen
+              Book a call
             </a>
             <a
               href="/preise"
               className="text-sm font-medium text-fg/60 underline underline-offset-4 hover:text-fg"
             >
-              Preise ansehen
+              See pricing
             </a>
           </div>
         </div>

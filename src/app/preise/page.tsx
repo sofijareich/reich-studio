@@ -6,34 +6,34 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
   "/preise",
-  "Reich Studio — Preise",
-  "Drei Pakete: Starter ab CHF 2'800 einmalig, Growth ab CHF 2'500/Monat, Full-Service ab CHF 5'000/Monat."
+  "Reich Studio — Pricing",
+  "Three packages: Starter from CHF 2'800 one-time, Growth from CHF 2'500/month, Full-Service from CHF 5'000/month."
 );
 
 const FAQ_ITEMS = [
   {
-    q: "Sind das die Endpreise?",
-    a: "Das sind Startpreise. Der genaue Preis hängt von deinem Fachgebiet und Umfang ab — das klären wir im Erstgespräch, bevor irgendetwas verbindlich wird.",
+    q: "Are these final prices?",
+    a: "These are starting prices. The exact price depends on your field and scope — we clarify that in the first call, before anything becomes binding.",
   },
   {
-    q: "Muss ich mich langfristig binden?",
-    a: "Starter ist einmalig, kein Abo. Bei Growth und Full-Service besprechen wir im Erstgespräch die Laufzeit, die für dich sinnvoll ist.",
+    q: "Do I have to commit long-term?",
+    a: "Starter is one-time, no subscription. For Growth and Full-Service, we discuss the term that makes sense for you in the first call.",
   },
   {
-    q: "Was, wenn ich nicht weiß, welches Paket passt?",
-    a: "Das ist der Normalfall, nicht die Ausnahme. Im Erstgespräch schauen wir gemeinsam, wo du stehst und was wirklich Sinn macht.",
+    q: "What if I don't know which package fits?",
+    a: "That's the norm, not the exception. In the first call we look together at where you stand and what actually makes sense.",
   },
   {
-    q: "Kann ich später wechseln?",
-    a: "Ja. Die Pakete sind ein Ausgangspunkt, kein Vertrag in Stein — wir passen an, wenn sich dein Bedarf ändert.",
+    q: "Can I switch later?",
+    a: "Yes. The packages are a starting point, not a contract set in stone — we adjust as your needs change.",
   },
   {
-    q: "Wie schnell sehe ich erste Ergebnisse?",
-    a: "Bei Starter meist innerhalb weniger Wochen ab Projektstart. Bei Growth und Full-Service hängt es vom Umfang ab — konkrete Zeitrahmen besprechen wir im Erstgespräch.",
+    q: "How fast will I see results?",
+    a: "With Starter, usually within a few weeks of project start. With Growth and Full-Service it depends on scope — we discuss concrete timelines in the first call.",
   },
   {
-    q: "Was, wenn mein Fachgebiet sehr speziell ist?",
-    a: "Genau dafür ist Reich Studio da. Je spezifischer dein Fachgebiet, desto klarer lässt sich Vertrauen bei Endkund:innen aufbauen — wir finden gemeinsam die passende Herangehensweise.",
+    q: "What if my field is very niche?",
+    a: "That's exactly what Reich Studio is for. The more specific your field, the more clearly we can build trust with your clients — we find the right approach together.",
   },
 ];
 
@@ -41,15 +41,15 @@ export default function PreisePage() {
   return (
     <>
       <PageHero
-        eyebrow="Preise"
-        lines={["Klar kalkuliert.", "Kein Kleingedrucktes."]}
-        subtext="Drei Pakete, drei Ausgangspunkte. Der genaue Umfang wird im Erstgespräch auf dein Fachgebiet zugeschnitten."
+        eyebrow="Pricing"
+        lines={["Clearly priced.", "No fine print."]}
+        subtext="Three packages, three starting points. Exact scope gets tailored to your field in the first call."
       />
       <PricingDetail />
-      <Faq heading="Fragen zu den Preisen" items={FAQ_ITEMS} />
+      <Faq heading="Pricing questions" items={FAQ_ITEMS} />
       <CtaBand
-        heading="Welches Paket passt zu dir?"
-        subtext="Im Erstgespräch finden wir es gemeinsam heraus."
+        heading="Which package fits you?"
+        subtext="We'll figure it out together in the first call."
       />
     </>
   );

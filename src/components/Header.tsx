@@ -7,11 +7,11 @@ import Logo from "./Logo";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/studio", label: "Reich Studio" },
-  { href: "/referenzen", label: "Referenzen" },
-  { href: "/preise", label: "Preise" },
-  { href: "/produkte", label: "Produkte" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/studio", label: "Studio" },
+  { href: "/referenzen", label: "Work" },
+  { href: "/preise", label: "Pricing" },
+  { href: "/produkte", label: "Products" },
+  { href: "/kontakt", label: "Contact" },
 ];
 
 export default function Header() {
@@ -76,12 +76,12 @@ export default function Header() {
           href="/kontakt"
           className="gold-btn hidden rounded-full px-5 py-2 text-sm font-semibold text-bg md:inline-block"
         >
-          Erstgespräch buchen
+          Book a call
         </Link>
 
         <button
           type="button"
-          aria-label="Menü öffnen"
+          aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
           className="flex h-9 w-9 flex-col items-center justify-center gap-1.5 md:hidden"
@@ -118,7 +118,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="gold-btn mt-3 rounded-full px-5 py-3 text-center text-sm font-semibold text-bg"
           >
-            Erstgespräch buchen
+            Book a call
           </Link>
         </nav>
       )}

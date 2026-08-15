@@ -39,7 +39,7 @@ export function OgCard({ logoSrc }: { logoSrc: string }) {
           letterSpacing: 1,
         }}
       >
-        Marketing &amp; KI-Automatisierung für Professionals
+        The Agency You Don&apos;t Need to Hire
       </div>
     </div>
   );

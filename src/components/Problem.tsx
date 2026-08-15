@@ -5,17 +5,16 @@ export default function Problem() {
     <section className="px-6 py-28 sm:px-10">
       <div className="mx-auto max-w-3xl">
         <Reveal>
-          <p className="eyebrow mb-6">Die Ausgangslage</p>
+          <p className="eyebrow mb-6">The situation</p>
           <p className="text-2xl leading-snug font-medium sm:text-3xl">
-            Du bist gut in dem, was du tust. Aber Content, Posts und
-            Follow-ups fressen dir genau die Zeit weg, die du eigentlich für
-            Kund:innen brauchst.
+            You&apos;re good at what you do. But content, posts, and
+            follow-ups eat exactly the time you need for clients.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-fg/60">
-            Die meisten Marketing-Agenturen verkaufen dir Buzzwords und
-            Reportings, die niemand versteht. Reich Studio baut dir
-            stattdessen Systeme, die automatisiert im Hintergrund laufen —
-            ohne dass du selbst zur Marketing-Expertin werden musst.
+            Most marketing agencies sell you buzzwords and reports nobody
+            understands. Reich Studio builds you systems that run
+            automatically in the background instead — without you having
+            to become a marketing expert yourself.
           </p>
         </Reveal>
       </div>
