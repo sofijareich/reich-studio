@@ -37,7 +37,7 @@ export default async function Footer() {
 
       <div className="mx-auto mt-10 flex max-w-6xl flex-col items-start justify-between gap-4 border-t border-white/5 pt-6 text-xs text-fg/40 sm:flex-row sm:items-center">
         <p>
-          Reich Studio — © {new Date().getFullYear()}
+          Reich Studio — {tf("location")} — © {new Date().getFullYear()}
         </p>
         <a href="mailto:sofijareich@gmail.com" className="hover:text-fg/70">
           sofijareich@gmail.com

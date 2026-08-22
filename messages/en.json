@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Reich Studio — The Agency You Don't Need to Hire",
-    "description": "Reich Studio helps busy professionals automate their marketing and build real trust with clients — no agency retainer, no jargon, no detours."
+    "title": "Reich Studio Sursee — Marketing & AI Automation Agency",
+    "description": "Marketing & AI automation agency in Sursee, Switzerland. Reich Studio helps busy professionals automate their marketing and build real client trust."
   },
   "Nav": {
     "home": "Home",
@@ -15,10 +15,11 @@
   },
   "Footer": {
     "tagline": "Marketing and automation systems for professionals who don't have time for it.",
-    "newsletter": "Newsletter: new playbooks & products, before they go public."
+    "newsletter": "Newsletter: new playbooks & products, before they go public.",
+    "location": "Sursee, Switzerland"
   },
   "Hero": {
-    "eyebrow": "Marketing & Automation",
+    "eyebrow": "Marketing & Automation · Sursee",
     "titleLine1": "The agency",
     "titleLine2": "you don't need to hire.",
     "subtext": "Professional marketing with AI that actually works — done solo, without the agency, in the least time possible.",
@@ -120,12 +121,12 @@
     "bookCall": "Book a call"
   },
   "StudioPage": {
-    "metaTitle": "Reich Studio — About",
-    "metaDescription": "Reich Studio is Sofija's one-person studio for marketing and automation systems. Personal, honest, no buzzwords.",
+    "metaTitle": "Reich Studio — About | Marketing Studio in Sursee",
+    "metaDescription": "Reich Studio is Sofija's one-person studio for marketing and automation systems, based in Sursee, Switzerland. Personal, honest, no buzzwords.",
     "heroEyebrow": "Reich Studio",
     "heroLine1": "One name.",
     "heroLine2": "One responsibility.",
-    "heroSubtext": "No account team, no anonymous studio. Just one person who stands behind the result.",
+    "heroSubtext": "No account team, no anonymous studio. Just one person in Sursee who stands behind the result.",
     "ctaHeading": "Want to get to know me?",
     "ctaSubtext": "In the first call, we'll figure out in 20 minutes if it's a fit."
   },
@@ -260,7 +261,7 @@
   },
   "ContactPage": {
     "metaTitle": "Reich Studio — Contact",
-    "metaDescription": "A short message is enough. Sofija replies personally within one to two days.",
+    "metaDescription": "A short message is enough. Sofija from Reich Studio in Sursee, Switzerland replies personally within one to two days.",
     "heroEyebrow": "Contact",
     "heroLine1": "Let's",
     "heroLine2": "talk.",
@@ -271,7 +272,7 @@
       { "q": "What happens after I reach out?", "a": "I reply personally, usually within one to two days, and we set up a short first call." },
       { "q": "Does the first call cost anything?", "a": "No. It's there to figure out if and how we'd work together." },
       { "q": "I don't know yet what I need — is that a problem?", "a": "No. Most people don't know exactly. That's what the call is for." },
-      { "q": "Do you work with clients outside your region?", "a": "Yes. Collaboration runs mostly remote — a call and short messages are usually enough." },
+      { "q": "Do you work with clients outside your region?", "a": "Yes — I'm based in Sursee, Switzerland, but collaboration runs mostly remote. A call and short messages are usually enough." },
       { "q": "What language do we work in?", "a": "In English or German — whatever works for you." }
     ]
   },

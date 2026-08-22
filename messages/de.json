@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Reich Studio — The Agency You Don't Need to Hire",
-    "description": "Reich Studio hilft Professionals ohne Zeit für Marketing, ihr Marketing zu automatisieren und echtes Vertrauen bei Kund:innen aufzubauen — ohne Agentur-Retainer, ohne Fachchinesisch, ohne Umwege."
+    "title": "Reich Studio Sursee — Marketing Agentur & KI-Automation",
+    "description": "Marketing- & KI-Automation-Agentur in Sursee. Reich Studio automatisiert dein Marketing und baut echtes Vertrauen bei Kund:innen auf — ohne Agentur-Retainer."
   },
   "Nav": {
     "home": "Home",
@@ -15,10 +15,11 @@
   },
   "Footer": {
     "tagline": "Marketing- und Automatisierungssysteme für Professionals, die keine Zeit dafür haben.",
-    "newsletter": "Newsletter: neue Playbooks & Produkte, bevor sie öffentlich sind."
+    "newsletter": "Newsletter: neue Playbooks & Produkte, bevor sie öffentlich sind.",
+    "location": "Sursee, Schweiz"
   },
   "Hero": {
-    "eyebrow": "Marketing & Automatisierung",
+    "eyebrow": "Marketing & Automatisierung · Sursee",
     "titleLine1": "The agency",
     "titleLine2": "you don't need to hire.",
     "subtext": "Professionelles Marketing mit AI, die wirklich funktioniert — solo, ohne Agentur, in kürzester Zeit.",
@@ -120,12 +121,12 @@
     "bookCall": "Erstgespräch buchen"
   },
   "StudioPage": {
-    "metaTitle": "Reich Studio — Über uns",
-    "metaDescription": "Reich Studio ist Sofijas Ein-Personen-Studio für Marketing- und Automatisierungssysteme. Persönlich, ehrlich, ohne Buzzwords.",
+    "metaTitle": "Reich Studio — Über uns | Marketing Studio Sursee",
+    "metaDescription": "Reich Studio ist Sofijas Ein-Personen-Studio für Marketing- und Automatisierungssysteme mit Sitz in Sursee. Persönlich, ehrlich, ohne Buzzwords.",
     "heroEyebrow": "Reich Studio",
     "heroLine1": "Ein Name.",
     "heroLine2": "Eine Verantwortung.",
-    "heroSubtext": "Kein Account-Team, kein anonymes Studio. Nur eine Person, die für das Ergebnis geradesteht.",
+    "heroSubtext": "Kein Account-Team, kein anonymes Studio. Nur eine Person in Sursee, die für das Ergebnis geradesteht.",
     "ctaHeading": "Lust, mich kennenzulernen?",
     "ctaSubtext": "Im Erstgespräch klären wir in 20 Minuten, ob es passt."
   },
@@ -260,7 +261,7 @@
   },
   "ContactPage": {
     "metaTitle": "Reich Studio — Kontakt",
-    "metaDescription": "Kurze Nachricht reicht. Sofija meldet sich innert ein bis zwei Tagen persönlich zurück.",
+    "metaDescription": "Kurze Nachricht reicht. Sofija von Reich Studio in Sursee meldet sich innert ein bis zwei Tagen persönlich zurück.",
     "heroEyebrow": "Kontakt",
     "heroLine1": "Lass uns",
     "heroLine2": "reden.",
@@ -271,7 +272,7 @@
       { "q": "Was passiert nach meiner Anfrage?", "a": "Ich melde mich persönlich, meist innert ein bis zwei Tagen, und wir vereinbaren ein kurzes Erstgespräch." },
       { "q": "Kostet das Erstgespräch etwas?", "a": "Nein. Es dient dazu, zu klären, ob und wie wir zusammenarbeiten." },
       { "q": "Ich weiss noch nicht, was ich brauche — ist das ein Problem?", "a": "Nein. Die meisten wissen das nicht genau. Dafür ist das Gespräch da." },
-      { "q": "Arbeitest du auch überregional?", "a": "Ja. Die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens." },
+      { "q": "Arbeitest du auch überregional?", "a": "Ja. Ich sitze in Sursee (Kanton Luzern), aber die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens." },
       { "q": "In welcher Sprache läuft die Zusammenarbeit?", "a": "Auf Deutsch oder Englisch — je nachdem, was für dich passt." }
     ]
   },

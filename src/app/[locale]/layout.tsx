@@ -75,13 +75,27 @@ export default async function LocaleLayout({
   const JSON_LD = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": "https://reichstudio.ch/#organization",
     name: "Reich Studio",
     url: "https://reichstudio.ch",
     logo: "https://reichstudio.ch/icon.png",
     image: "https://reichstudio.ch/opengraph-image",
     description,
     email: "sofijareich@gmail.com",
-    areaServed: "CH",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Sursee",
+      addressRegion: "LU",
+      addressCountry: "CH",
+    },
+    areaServed: ["Sursee", "Luzern", "Sempachersee", "Schweiz", "Switzerland"],
+    knowsAbout: [
+      "Marketing Automation",
+      "AI Automation",
+      "KI-Automation",
+      "Content Marketing",
+      "Marketing Agentur",
+    ],
     founder: {
       "@type": "Person",
       name: "Sofija Reich",
