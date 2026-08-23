@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageHero from "@/components/PageHero";
 import ProductDetail from "@/components/ProductDetail";
 import Faq from "@/components/Faq";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import CtaBand from "@/components/CtaBand";
 import { pageMetadata } from "@/lib/seo";
 
@@ -42,6 +43,7 @@ export default async function ProductsPage({
       />
       <ProductDetail />
       <Faq eyebrow={t("faqEyebrow")} heading={t("faqHeading")} items={faqItems} />
+      <FaqJsonLd items={faqItems} />
       <CtaBand heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
     </>
   );

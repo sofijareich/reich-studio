@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageHero from "@/components/PageHero";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -34,6 +35,7 @@ export default async function ContactPage({
       />
       <Contact />
       <Faq eyebrow={t("faqEyebrow")} heading={t("faqHeading")} items={faqItems} />
+      <FaqJsonLd items={faqItems} />
     </>
   );
 }

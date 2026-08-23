@@ -16,6 +16,14 @@ export default async function Footer() {
     { href: "/contact" as const, label: t("contact") },
   ];
 
+  const SERVICE_LINKS = [
+    { href: "/services/ai-automation" as const, label: t("aiAutomation") },
+    {
+      href: "/services/marketing-automation" as const,
+      label: t("marketingAutomation"),
+    },
+  ];
+
   return (
     <footer className="border-t border-white/5 px-6 py-12 sm:px-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
@@ -26,6 +34,17 @@ export default async function Footer() {
 
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-fg/60">
           {NAV_LINKS.map((link) => (
+            <Link key={link.href} href={link.href} className="hover:text-fg">
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <nav className="flex flex-col gap-2 text-sm text-fg/60">
+          <p className="text-xs tracking-wide text-fg/40 uppercase">
+            {t("services")}
+          </p>
+          {SERVICE_LINKS.map((link) => (
             <Link key={link.href} href={link.href} className="hover:text-fg">
               {link.label}
             </Link>

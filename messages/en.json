@@ -11,7 +11,10 @@
     "products": "Products",
     "contact": "Contact",
     "bookCall": "Book a call",
-    "openMenu": "Open menu"
+    "openMenu": "Open menu",
+    "aiAutomation": "AI Automation",
+    "marketingAutomation": "Marketing Automation",
+    "services": "Services"
   },
   "Footer": {
     "tagline": "Marketing and automation systems for professionals who don't have time for it.",
@@ -28,9 +31,18 @@
   },
   "TrustBar": {
     "points": [
-      { "title": "Direct line", "text": "You talk to me. Not an account team that hands you off." },
-      { "title": "Systems, not reports", "text": "Automation that runs — instead of dashboards nobody reads." },
-      { "title": "Clear, not buzzwords", "text": "Every term I use comes with a concrete example behind it." }
+      {
+        "title": "Direct line",
+        "text": "You talk to me. Not an account team that hands you off."
+      },
+      {
+        "title": "Systems, not reports",
+        "text": "Automation that runs — instead of dashboards nobody reads."
+      },
+      {
+        "title": "Clear, not buzzwords",
+        "text": "Every term I use comes with a concrete example behind it."
+      }
     ]
   },
   "Problem": {
@@ -42,9 +54,21 @@
     "eyebrow": "How we work",
     "title": "Three steps. No fine print.",
     "steps": [
-      { "step": "01", "title": "Get to know each other", "text": "In the first call, we find where marketing is stealing your time — and what part of it can be automated." },
-      { "step": "02", "title": "Build it", "text": "I build the website, content flow, and automations that fit your field." },
-      { "step": "03", "title": "Let it run", "text": "The system runs in the background. You only get what matters — I handle the rest." }
+      {
+        "step": "01",
+        "title": "Get to know each other",
+        "text": "In the first call, we find where marketing is stealing your time — and what part of it can be automated."
+      },
+      {
+        "step": "02",
+        "title": "Build it",
+        "text": "I build the website, content flow, and automations that fit your field."
+      },
+      {
+        "step": "03",
+        "title": "Let it run",
+        "text": "The system runs in the background. You only get what matters — I handle the rest."
+      }
     ]
   },
   "Services": {
@@ -59,7 +83,11 @@
         "price": "from CHF 2'800",
         "period": "one-time",
         "description": "The entry point: a website and the automations that stick around.",
-        "points": ["Website setup", "1-2 core automations", "Clear handover"],
+        "points": [
+          "Website setup",
+          "1-2 core automations",
+          "Clear handover"
+        ],
         "details": [
           "Website built to this design standard, tailored to you",
           "1-2 automations for the tasks that eat the most time",
@@ -72,7 +100,11 @@
         "price": "from CHF 2'500",
         "period": "/month",
         "description": "Ongoing content and leads, without you having to stay on top of it.",
-        "points": ["Content production", "Lead automation", "Monthly update"],
+        "points": [
+          "Content production",
+          "Lead automation",
+          "Monthly update"
+        ],
         "details": [
           "Ongoing content production for your channels",
           "Automated lead capture and routing",
@@ -86,7 +118,11 @@
         "price": "from CHF 5'000",
         "period": "/month",
         "description": "You do your work. We handle the rest — completely.",
-        "points": ["Everything in Growth", "Full client communication", "Direct line to me"],
+        "points": [
+          "Everything in Growth",
+          "Full client communication",
+          "Direct line to me"
+        ],
         "details": [
           "Everything in Growth, plus ongoing development",
           "I handle communication with your clients in the marketing process",
@@ -139,9 +175,18 @@
     "valuesEyebrow": "How I work",
     "valuesTitle": "Three things you can count on.",
     "values": [
-      { "title": "Honest, not polished", "text": "If something isn't working, I say so — before you pay for it." },
-      { "title": "Clear, not complicated", "text": "You should understand what's running, not just get an invoice for it." },
-      { "title": "Personal, not anonymous", "text": "One point of contact from start to finish. No rotating account managers." }
+      {
+        "title": "Honest, not polished",
+        "text": "If something isn't working, I say so — before you pay for it."
+      },
+      {
+        "title": "Clear, not complicated",
+        "text": "You should understand what's running, not just get an invoice for it."
+      },
+      {
+        "title": "Personal, not anonymous",
+        "text": "One point of contact from start to finish. No rotating account managers."
+      }
     ]
   },
   "AiWorkflow": {
@@ -151,10 +196,26 @@
     "nodeStart": "Idea / Task",
     "nodeEnd": "Finished Result",
     "stages": [
-      { "step": "01", "tool": "Claude", "text": "Concept, research, and copy — from the first briefing to the finished structure." },
-      { "step": "02", "tool": "Claude Code (Terminal)", "text": "Turns the concept into real automations — scripts, integrations, deployments, run directly from the terminal." },
-      { "step": "03", "tool": "OpenClaw AI", "text": "Handles recurring workflows in the background, without every step needing a manual trigger." },
-      { "step": "04", "tool": "Higgsfield", "text": "Creates image and video content with AI — for visuals that would otherwise need a photoshoot." }
+      {
+        "step": "01",
+        "tool": "Claude",
+        "text": "Concept, research, and copy — from the first briefing to the finished structure."
+      },
+      {
+        "step": "02",
+        "tool": "Claude Code (Terminal)",
+        "text": "Turns the concept into real automations — scripts, integrations, deployments, run directly from the terminal."
+      },
+      {
+        "step": "03",
+        "tool": "OpenClaw AI",
+        "text": "Handles recurring workflows in the background, without every step needing a manual trigger."
+      },
+      {
+        "step": "04",
+        "tool": "Higgsfield",
+        "text": "Creates image and video content with AI — for visuals that would otherwise need a photoshoot."
+      }
     ]
   },
   "PricingPage": {
@@ -168,12 +229,30 @@
     "ctaHeading": "Which package fits you?",
     "ctaSubtext": "We'll figure it out together in the first call.",
     "faq": [
-      { "q": "Are these final prices?", "a": "These are starting prices. The exact price depends on your field and scope — we clarify that in the first call, before anything becomes binding." },
-      { "q": "Do I have to commit long-term?", "a": "Starter is one-time, no subscription. For Growth and Full-Service, we discuss the term that makes sense for you in the first call." },
-      { "q": "What if I don't know which package fits?", "a": "That's the norm, not the exception. In the first call we look together at where you stand and what actually makes sense." },
-      { "q": "Can I switch later?", "a": "Yes. The packages are a starting point, not a contract set in stone — we adjust as your needs change." },
-      { "q": "How fast will I see results?", "a": "With Starter, usually within a few weeks of project start. With Growth and Full-Service it depends on scope — we discuss concrete timelines in the first call." },
-      { "q": "What if my field is very niche?", "a": "That's exactly what Reich Studio is for. The more specific your field, the more clearly we can build trust with your clients — we find the right approach together." }
+      {
+        "q": "Are these final prices?",
+        "a": "These are starting prices. The exact price depends on your field and scope — we clarify that in the first call, before anything becomes binding."
+      },
+      {
+        "q": "Do I have to commit long-term?",
+        "a": "Starter is one-time, no subscription. For Growth and Full-Service, we discuss the term that makes sense for you in the first call."
+      },
+      {
+        "q": "What if I don't know which package fits?",
+        "a": "That's the norm, not the exception. In the first call we look together at where you stand and what actually makes sense."
+      },
+      {
+        "q": "Can I switch later?",
+        "a": "Yes. The packages are a starting point, not a contract set in stone — we adjust as your needs change."
+      },
+      {
+        "q": "How fast will I see results?",
+        "a": "With Starter, usually within a few weeks of project start. With Growth and Full-Service it depends on scope — we discuss concrete timelines in the first call."
+      },
+      {
+        "q": "What if my field is very niche?",
+        "a": "That's exactly what Reich Studio is for. The more specific your field, the more clearly we can build trust with your clients — we find the right approach together."
+      }
     ]
   },
   "PricingDetail": {
@@ -193,19 +272,52 @@
   "Stats": {
     "source": "Source: TikTok Analytics export (60-day window, May–July 2024) plus current live stats from managed Instagram accounts.",
     "items": [
-      { "value": 186, "suffix": "K", "label": "Video views generated", "sublabel": "TikTok campaign, 60 days" },
-      { "value": 25, "suffix": "K", "label": "Interactions (likes)", "sublabel": "TikTok campaign, 60 days" },
-      { "value": 3, "label": "Projects managed", "sublabel": "Food & beverage, hotel, nightlife" },
-      { "value": 3158, "label": "Followers reached", "sublabel": "across managed channels, current" }
+      {
+        "value": 186,
+        "suffix": "K",
+        "label": "Video views generated",
+        "sublabel": "TikTok campaign, 60 days"
+      },
+      {
+        "value": 25,
+        "suffix": "K",
+        "label": "Interactions (likes)",
+        "sublabel": "TikTok campaign, 60 days"
+      },
+      {
+        "value": 3,
+        "label": "Projects managed",
+        "sublabel": "Food & beverage, hotel, nightlife"
+      },
+      {
+        "value": 3158,
+        "label": "Followers reached",
+        "sublabel": "across managed channels, current"
+      }
     ]
   },
   "Testimonials": {
     "eyebrow": "Voices",
     "title": "What clients say.",
     "items": [
-      { "name": "Simone Keller", "role": "Physiotherapist", "photo": "/testimonials/physio.png", "quote": "I never had time for social media. Now my content runs automatically, and I still get inquiries from new patients." },
-      { "name": "Beat Wyss", "role": "Carpentry shop owner", "photo": "/testimonials/handwerk.png", "quote": "I didn't even know what a funnel was. Now I have a website that collects inquiries for me while I'm in the workshop." },
-      { "name": "Nadine Frei", "role": "Business coach", "photo": "/testimonials/coach.png", "quote": "Reich Studio explained what was happening — not just sent an invoice. That gave me the trust I needed." }
+      {
+        "name": "Simone Keller",
+        "role": "Physiotherapist",
+        "photo": "/testimonials/physio.png",
+        "quote": "I never had time for social media. Now my content runs automatically, and I still get inquiries from new patients."
+      },
+      {
+        "name": "Beat Wyss",
+        "role": "Carpentry shop owner",
+        "photo": "/testimonials/handwerk.png",
+        "quote": "I didn't even know what a funnel was. Now I have a website that collects inquiries for me while I'm in the workshop."
+      },
+      {
+        "name": "Nadine Frei",
+        "role": "Business coach",
+        "photo": "/testimonials/coach.png",
+        "quote": "Reich Studio explained what was happening — not just sent an invoice. That gave me the trust I needed."
+      }
     ]
   },
   "ProductsPage": {
@@ -242,11 +354,26 @@
     "reserveByEmail": "Reserve by email",
     "comingSoon": "Direct checkout is coming soon — until then, I'll follow up personally with the download after your request.",
     "faq": [
-      { "q": "Do I need coding skills?", "a": "No. Every step is written to be followable without any code knowledge — from setting up Claude to your first automation." },
-      { "q": "How long does it take to implement?", "a": "The roadmap in the playbook is built for 7 days at 20–40 minutes each. If you want to dive in right away, you can build the foundation in one afternoon." },
-      { "q": "What other tools do I need?", "a": "Claude, a Notion knowledge base (free), and an automation tool like Zapier, Make, or n8n — the playbook explains which one fits you best." },
-      { "q": "How do I get the playbook after buying?", "a": "As a PDF download right after purchase, in portrait and landscape format." },
-      { "q": "Is this the same as working with Reich Studio?", "a": "No. The playbook is for doing it yourself. If you'd rather have someone set up the whole foundation — website, Brain, automation — for you, that's Reich Studio's Starter approach — book a first call for that." }
+      {
+        "q": "Do I need coding skills?",
+        "a": "No. Every step is written to be followable without any code knowledge — from setting up Claude to your first automation."
+      },
+      {
+        "q": "How long does it take to implement?",
+        "a": "The roadmap in the playbook is built for 7 days at 20–40 minutes each. If you want to dive in right away, you can build the foundation in one afternoon."
+      },
+      {
+        "q": "What other tools do I need?",
+        "a": "Claude, a Notion knowledge base (free), and an automation tool like Zapier, Make, or n8n — the playbook explains which one fits you best."
+      },
+      {
+        "q": "How do I get the playbook after buying?",
+        "a": "As a PDF download right after purchase, in portrait and landscape format."
+      },
+      {
+        "q": "Is this the same as working with Reich Studio?",
+        "a": "No. The playbook is for doing it yourself. If you'd rather have someone set up the whole foundation — website, Brain, automation — for you, that's Reich Studio's Starter approach — book a first call for that."
+      }
     ]
   },
   "ThanksPage": {
@@ -269,11 +396,26 @@
     "faqEyebrow": "Before you write",
     "faqHeading": "Quick answers",
     "faq": [
-      { "q": "What happens after I reach out?", "a": "I reply personally, usually within one to two days, and we set up a short first call." },
-      { "q": "Does the first call cost anything?", "a": "No. It's there to figure out if and how we'd work together." },
-      { "q": "I don't know yet what I need — is that a problem?", "a": "No. Most people don't know exactly. That's what the call is for." },
-      { "q": "Do you work with clients outside your region?", "a": "Yes — I'm based in Sursee, Switzerland, but collaboration runs mostly remote. A call and short messages are usually enough." },
-      { "q": "What language do we work in?", "a": "In English or German — whatever works for you." }
+      {
+        "q": "What happens after I reach out?",
+        "a": "I reply personally, usually within one to two days, and we set up a short first call."
+      },
+      {
+        "q": "Does the first call cost anything?",
+        "a": "No. It's there to figure out if and how we'd work together."
+      },
+      {
+        "q": "I don't know yet what I need — is that a problem?",
+        "a": "No. Most people don't know exactly. That's what the call is for."
+      },
+      {
+        "q": "Do you work with clients outside your region?",
+        "a": "Yes — I'm based in Sursee, Switzerland, but collaboration runs mostly remote. A call and short messages are usually enough."
+      },
+      {
+        "q": "What language do we work in?",
+        "a": "In English or German — whatever works for you."
+      }
     ]
   },
   "Contact": {
@@ -291,5 +433,135 @@
   },
   "LangSwitch": {
     "label": "Language"
+  },
+  "AiAutomationPage": {
+    "metaTitle": "AI Automation for Small Businesses | Reich Studio Sursee",
+    "metaDescription": "AI automation for small businesses in Sursee and central Switzerland: processes that run in the background instead of dashboards nobody reads. Concrete examples, no buzzwords.",
+    "heroEyebrow": "Service · AI Automation",
+    "heroLine1": "Work that",
+    "heroLine2": "does itself.",
+    "heroSubtext": "I build AI-powered workflows that take over the repetitive work — so you can focus on clients instead of copy-paste.",
+    "introLead": "Most small businesses lose hours every week to tasks a machine could handle.",
+    "introBody": "Copying enquiries into a spreadsheet by hand, emailing back and forth about appointments, forgetting follow-ups, reformatting the same content three times. I look at where your time actually goes, then build an automation for it that runs quietly in the background. Not another tool you have to learn — a system that simply works.",
+    "blocksEyebrow": "What I build",
+    "blocksHeading": "Typical automations",
+    "blocks": [
+      {
+        "title": "Capture enquiries automatically",
+        "text": "Contact forms, DMs and emails land in your system already structured — with a notification, so nothing slips through."
+      },
+      {
+        "title": "Follow-ups that send themselves",
+        "text": "Anyone who reaches out gets the right message at the right time, without you having to remember anything."
+      },
+      {
+        "title": "Content distribution",
+        "text": "One piece gets prepared and published across several channels automatically, instead of you adapting it by hand three times."
+      },
+      {
+        "title": "Social media automation",
+        "text": "Comments, DMs and interested people get answered and recorded automatically — for example through an n8n workflow."
+      },
+      {
+        "title": "Connect your internal tools",
+        "text": "Your tools finally talk to each other: form, calendar, Notion, email and invoicing as one chain instead of five islands."
+      },
+      {
+        "title": "Reporting without manual work",
+        "text": "The numbers collect themselves. You get an overview that is actually accurate, without maintaining spreadsheets."
+      }
+    ],
+    "faqHeading": "Common questions about AI automation",
+    "faq": [
+      {
+        "q": "What does AI automation cost?",
+        "a": "A clearly scoped first workflow starts at CHF 2'800 one-time. Ongoing support with several automations runs from CHF 2'500 per month. We work out what makes sense for you on the first call."
+      },
+      {
+        "q": "Do I need technical knowledge?",
+        "a": "No. I build and maintain the system. You end up with something that runs, plus a short explanation of what happens where."
+      },
+      {
+        "q": "Which tools do you use?",
+        "a": "It depends on the job — often n8n for workflows, Notion as the data layer, and various AI models for text and image work. I pick based on your needs, not on a favourite tool."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "A first working automation is usually live within two to four weeks. Larger systems then grow step by step."
+      },
+      {
+        "q": "Do you only work in Sursee?",
+        "a": "I am based in Sursee and work with a lot of clients from central Switzerland. The work runs mostly remote though, so location is not a limitation."
+      }
+    ],
+    "schemaName": "AI Automation for Small Businesses",
+    "schemaType": "AI Automation",
+    "ctaHeading": "Where are you losing time right now?",
+    "ctaSubtext": "On the first call we look at your workflows and find out what can be automated."
+  },
+  "MarketingAutomationPage": {
+    "metaTitle": "Marketing Automation | Reich Studio Sursee",
+    "metaDescription": "Marketing automation for freelancers and small businesses in Sursee: content, follow-ups and leads run automatically — no agency retainer, no jargon.",
+    "heroEyebrow": "Service · Marketing Automation",
+    "heroLine1": "Marketing",
+    "heroLine2": "that runs without you.",
+    "heroSubtext": "Stay visible without spending time on it every day — with systems instead of constant effort.",
+    "introLead": "Marketing rarely fails on the idea. It fails because nobody has time to keep it up.",
+    "introBody": "You know you should post regularly and follow up with people who showed interest. But between client appointments it never happens. Instead of handing you another to-do list, I build a process that keeps running even when you are buried in day-to-day work for three weeks.",
+    "blocksEyebrow": "What I build",
+    "blocksHeading": "Building blocks of your system",
+    "blocks": [
+      {
+        "title": "A content calendar that fills itself",
+        "text": "Topics get prepared and scheduled automatically, instead of you facing a blank page every Monday."
+      },
+      {
+        "title": "Lead capture with no gaps",
+        "text": "Every enquiry lands in the right place automatically — with source, date and status."
+      },
+      {
+        "title": "Automatic follow-up messages",
+        "text": "Interested people get the right message at the right time, even when it is not on your mind."
+      },
+      {
+        "title": "Newsletter without manual work",
+        "text": "Sign-up, welcome message and sending run as one chain instead of three separate tasks."
+      },
+      {
+        "title": "Repurposing your content",
+        "text": "One longer piece automatically turns into several shorter formats for different channels."
+      },
+      {
+        "title": "An overview you can trust",
+        "text": "You see at a glance what is working — without collecting numbers by hand."
+      }
+    ],
+    "faqHeading": "Common questions about marketing automation",
+    "faq": [
+      {
+        "q": "How is this different from a traditional agency?",
+        "a": "An agency does the marketing for you as long as you keep paying. I build you a system that belongs to you and keeps running. No retainer that has to continue forever for anything to happen."
+      },
+      {
+        "q": "What does it cost?",
+        "a": "Getting started with a scoped system is CHF 2'800 one-time, ongoing work from CHF 2'500 per month. Details are on the pricing page."
+      },
+      {
+        "q": "Does this work for small businesses?",
+        "a": "Especially then. The smaller the team, the bigger the effect when recurring tasks disappear."
+      },
+      {
+        "q": "Do I have to switch my existing tools?",
+        "a": "Usually not. I mostly connect what you already use rather than forcing something new on you."
+      },
+      {
+        "q": "What happens if something stops working?",
+        "a": "You contact me directly, not a support ticket system. With ongoing support, maintenance is included."
+      }
+    ],
+    "schemaName": "Marketing Automation",
+    "schemaType": "Marketing Automation",
+    "ctaHeading": "Shall we automate your marketing?",
+    "ctaSubtext": "A 20-minute first call is enough to see where the biggest lever is."
   }
 }

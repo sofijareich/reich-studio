@@ -11,7 +11,10 @@
     "products": "Produkte",
     "contact": "Kontakt",
     "bookCall": "Erstgespräch buchen",
-    "openMenu": "Menü öffnen"
+    "openMenu": "Menü öffnen",
+    "aiAutomation": "KI-Automatisierung",
+    "marketingAutomation": "Marketing-Automatisierung",
+    "services": "Leistungen"
   },
   "Footer": {
     "tagline": "Marketing- und Automatisierungssysteme für Professionals, die keine Zeit dafür haben.",
@@ -28,9 +31,18 @@
   },
   "TrustBar": {
     "points": [
-      { "title": "Direkter Draht", "text": "Du sprichst mit mir. Nicht mit einem Account-Team, das dich weiterreicht." },
-      { "title": "Systeme, keine Reportings", "text": "Automatisierung, die läuft — statt Dashboards, die niemand liest." },
-      { "title": "Klar statt Buzzword", "text": "Jeder Begriff, den ich benutze, hat ein konkretes Beispiel dahinter." }
+      {
+        "title": "Direkter Draht",
+        "text": "Du sprichst mit mir. Nicht mit einem Account-Team, das dich weiterreicht."
+      },
+      {
+        "title": "Systeme, keine Reportings",
+        "text": "Automatisierung, die läuft — statt Dashboards, die niemand liest."
+      },
+      {
+        "title": "Klar statt Buzzword",
+        "text": "Jeder Begriff, den ich benutze, hat ein konkretes Beispiel dahinter."
+      }
     ]
   },
   "Problem": {
@@ -42,9 +54,21 @@
     "eyebrow": "So arbeiten wir",
     "title": "Drei Schritte. Kein Kleingedrucktes.",
     "steps": [
-      { "step": "01", "title": "Kennenlernen", "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt — und was sich davon automatisieren lässt." },
-      { "step": "02", "title": "Aufbauen", "text": "Ich baue die Website, den Content-Flow und die Automatisierungen, die zu deinem Fachgebiet passen." },
-      { "step": "03", "title": "Laufen lassen", "text": "Das System läuft im Hintergrund. Du bekommst nur, was wichtig ist — den Rest übernehme ich." }
+      {
+        "step": "01",
+        "title": "Kennenlernen",
+        "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt — und was sich davon automatisieren lässt."
+      },
+      {
+        "step": "02",
+        "title": "Aufbauen",
+        "text": "Ich baue die Website, den Content-Flow und die Automatisierungen, die zu deinem Fachgebiet passen."
+      },
+      {
+        "step": "03",
+        "title": "Laufen lassen",
+        "text": "Das System läuft im Hintergrund. Du bekommst nur, was wichtig ist — den Rest übernehme ich."
+      }
     ]
   },
   "Services": {
@@ -59,7 +83,11 @@
         "price": "ab CHF 2'800",
         "period": "einmalig",
         "description": "Der Einstieg: eine Website und die Automatisierungen, die stehen bleiben.",
-        "points": ["Website-Setup", "1-2 Kernautomatisierungen", "Klare Übergabe"],
+        "points": [
+          "Website-Setup",
+          "1-2 Kernautomatisierungen",
+          "Klare Übergabe"
+        ],
         "details": [
           "Website nach diesem Design-Standard, auf dich zugeschnitten",
           "1-2 Automatisierungen für die Aufgaben, die am meisten Zeit fressen",
@@ -72,7 +100,11 @@
         "price": "ab CHF 2'500",
         "period": "/Monat",
         "description": "Laufender Content und Leads, ohne dass du selbst dranbleiben musst.",
-        "points": ["Content-Produktion", "Lead-Automatisierung", "Monatliches Update"],
+        "points": [
+          "Content-Produktion",
+          "Lead-Automatisierung",
+          "Monatliches Update"
+        ],
         "details": [
           "Laufende Content-Produktion für deine Kanäle",
           "Automatisierte Lead-Erfassung und -Weiterleitung",
@@ -86,7 +118,11 @@
         "price": "ab CHF 5'000",
         "period": "/Monat",
         "description": "Du machst dein Fachgebiet. Wir übernehmen den Rest — komplett.",
-        "points": ["Alles aus Growth", "Volle Kundenkommunikation", "Direkter Draht zu mir"],
+        "points": [
+          "Alles aus Growth",
+          "Volle Kundenkommunikation",
+          "Direkter Draht zu mir"
+        ],
         "details": [
           "Alles aus Growth, plus laufende Weiterentwicklung",
           "Ich übernehme die Kommunikation mit deinen Kund:innen im Marketing-Prozess",
@@ -139,9 +175,18 @@
     "valuesEyebrow": "Wie ich arbeite",
     "valuesTitle": "Drei Dinge, auf die du dich verlassen kannst.",
     "values": [
-      { "title": "Ehrlich statt glatt", "text": "Wenn etwas nicht funktioniert, sage ich das — bevor du dafür bezahlst." },
-      { "title": "Verständlich statt kompliziert", "text": "Du sollst verstehen, was läuft, nicht nur eine Rechnung dafür bekommen." },
-      { "title": "Persönlich statt anonym", "text": "Ein Ansprechpartner von Anfang bis Ende. Keine wechselnden Betreuer." }
+      {
+        "title": "Ehrlich statt glatt",
+        "text": "Wenn etwas nicht funktioniert, sage ich das — bevor du dafür bezahlst."
+      },
+      {
+        "title": "Verständlich statt kompliziert",
+        "text": "Du sollst verstehen, was läuft, nicht nur eine Rechnung dafür bekommen."
+      },
+      {
+        "title": "Persönlich statt anonym",
+        "text": "Ein Ansprechpartner von Anfang bis Ende. Keine wechselnden Betreuer."
+      }
     ]
   },
   "AiWorkflow": {
@@ -151,10 +196,26 @@
     "nodeStart": "Idee / Aufgabe",
     "nodeEnd": "Fertiges Ergebnis",
     "stages": [
-      { "step": "01", "tool": "Claude", "text": "Konzept, Recherche und Texte — vom ersten Briefing bis zur fertigen Struktur." },
-      { "step": "02", "tool": "Claude Code (Terminal)", "text": "Setzt das Konzept in echte Automatisierungen um — Skripte, Integrationen, Deployments, direkt im Terminal gesteuert." },
-      { "step": "03", "tool": "OpenClaw AI", "text": "Übernimmt wiederkehrende Abläufe im Hintergrund, ohne dass jeder Schritt manuell angestossen wird." },
-      { "step": "04", "tool": "Higgsfield", "text": "Erstellt Bild- und Video-Content per AI — für Visuals, die sonst ein Fotoshooting gebraucht hätten." }
+      {
+        "step": "01",
+        "tool": "Claude",
+        "text": "Konzept, Recherche und Texte — vom ersten Briefing bis zur fertigen Struktur."
+      },
+      {
+        "step": "02",
+        "tool": "Claude Code (Terminal)",
+        "text": "Setzt das Konzept in echte Automatisierungen um — Skripte, Integrationen, Deployments, direkt im Terminal gesteuert."
+      },
+      {
+        "step": "03",
+        "tool": "OpenClaw AI",
+        "text": "Übernimmt wiederkehrende Abläufe im Hintergrund, ohne dass jeder Schritt manuell angestossen wird."
+      },
+      {
+        "step": "04",
+        "tool": "Higgsfield",
+        "text": "Erstellt Bild- und Video-Content per AI — für Visuals, die sonst ein Fotoshooting gebraucht hätten."
+      }
     ]
   },
   "PricingPage": {
@@ -168,12 +229,30 @@
     "ctaHeading": "Welches Paket passt zu dir?",
     "ctaSubtext": "Im Erstgespräch finden wir es gemeinsam heraus.",
     "faq": [
-      { "q": "Sind das die Endpreise?", "a": "Das sind Startpreise. Der genaue Preis hängt von deinem Fachgebiet und Umfang ab — das klären wir im Erstgespräch, bevor irgendetwas verbindlich wird." },
-      { "q": "Muss ich mich langfristig binden?", "a": "Starter ist einmalig, kein Abo. Bei Growth und Full-Service besprechen wir im Erstgespräch die Laufzeit, die für dich sinnvoll ist." },
-      { "q": "Was, wenn ich nicht weiss, welches Paket passt?", "a": "Das ist der Normalfall, nicht die Ausnahme. Im Erstgespräch schauen wir gemeinsam, wo du stehst und was wirklich Sinn macht." },
-      { "q": "Kann ich später wechseln?", "a": "Ja. Die Pakete sind ein Ausgangspunkt, kein Vertrag in Stein — wir passen an, wenn sich dein Bedarf ändert." },
-      { "q": "Wie schnell sehe ich erste Ergebnisse?", "a": "Bei Starter meist innerhalb weniger Wochen ab Projektstart. Bei Growth und Full-Service hängt es vom Umfang ab — konkrete Zeitrahmen besprechen wir im Erstgespräch." },
-      { "q": "Was, wenn mein Fachgebiet sehr speziell ist?", "a": "Genau dafür ist Reich Studio da. Je spezifischer dein Fachgebiet, desto klarer lässt sich Vertrauen bei Kund:innen aufbauen — wir finden gemeinsam die passende Herangehensweise." }
+      {
+        "q": "Sind das die Endpreise?",
+        "a": "Das sind Startpreise. Der genaue Preis hängt von deinem Fachgebiet und Umfang ab — das klären wir im Erstgespräch, bevor irgendetwas verbindlich wird."
+      },
+      {
+        "q": "Muss ich mich langfristig binden?",
+        "a": "Starter ist einmalig, kein Abo. Bei Growth und Full-Service besprechen wir im Erstgespräch die Laufzeit, die für dich sinnvoll ist."
+      },
+      {
+        "q": "Was, wenn ich nicht weiss, welches Paket passt?",
+        "a": "Das ist der Normalfall, nicht die Ausnahme. Im Erstgespräch schauen wir gemeinsam, wo du stehst und was wirklich Sinn macht."
+      },
+      {
+        "q": "Kann ich später wechseln?",
+        "a": "Ja. Die Pakete sind ein Ausgangspunkt, kein Vertrag in Stein — wir passen an, wenn sich dein Bedarf ändert."
+      },
+      {
+        "q": "Wie schnell sehe ich erste Ergebnisse?",
+        "a": "Bei Starter meist innerhalb weniger Wochen ab Projektstart. Bei Growth und Full-Service hängt es vom Umfang ab — konkrete Zeitrahmen besprechen wir im Erstgespräch."
+      },
+      {
+        "q": "Was, wenn mein Fachgebiet sehr speziell ist?",
+        "a": "Genau dafür ist Reich Studio da. Je spezifischer dein Fachgebiet, desto klarer lässt sich Vertrauen bei Kund:innen aufbauen — wir finden gemeinsam die passende Herangehensweise."
+      }
     ]
   },
   "PricingDetail": {
@@ -193,19 +272,52 @@
   "Stats": {
     "source": "Quelle: TikTok-Analytics-Export (60-Tage-Fenster, Mai–Juli 2024) sowie aktueller Live-Stand der betreuten Instagram-Accounts.",
     "items": [
-      { "value": 186, "suffix": "K", "label": "Video-Views generiert", "sublabel": "TikTok-Kampagne, 60 Tage" },
-      { "value": 25, "suffix": "K", "label": "Interaktionen (Likes)", "sublabel": "TikTok-Kampagne, 60 Tage" },
-      { "value": 3, "label": "Betreute Projekte", "sublabel": "Gastronomie, Hotel, Nightlife" },
-      { "value": 3158, "label": "Follower erreicht", "sublabel": "über betreute Kanäle, aktueller Stand" }
+      {
+        "value": 186,
+        "suffix": "K",
+        "label": "Video-Views generiert",
+        "sublabel": "TikTok-Kampagne, 60 Tage"
+      },
+      {
+        "value": 25,
+        "suffix": "K",
+        "label": "Interaktionen (Likes)",
+        "sublabel": "TikTok-Kampagne, 60 Tage"
+      },
+      {
+        "value": 3,
+        "label": "Betreute Projekte",
+        "sublabel": "Gastronomie, Hotel, Nightlife"
+      },
+      {
+        "value": 3158,
+        "label": "Follower erreicht",
+        "sublabel": "über betreute Kanäle, aktueller Stand"
+      }
     ]
   },
   "Testimonials": {
     "eyebrow": "Stimmen",
     "title": "Was Kund:innen sagen.",
     "items": [
-      { "name": "Simone Keller", "role": "Physiotherapeutin", "photo": "/testimonials/physio.png", "quote": "Ich hatte nie Zeit für Social Media. Jetzt läuft mein Content automatisch, und ich bekomme trotzdem Anfragen von neuen Patient:innen." },
-      { "name": "Beat Wyss", "role": "Schreinerei-Inhaber", "photo": "/testimonials/handwerk.png", "quote": "Ich wusste nicht mal, was ein Funnel ist. Jetzt habe ich eine Website, die für mich Anfragen sammelt, während ich in der Werkstatt bin." },
-      { "name": "Nadine Frei", "role": "Business-Coach", "photo": "/testimonials/coach.png", "quote": "Reich Studio hat mir erklärt, was passiert — nicht nur eine Rechnung geschickt. Das hat mir das Vertrauen gegeben, das ich brauchte." }
+      {
+        "name": "Simone Keller",
+        "role": "Physiotherapeutin",
+        "photo": "/testimonials/physio.png",
+        "quote": "Ich hatte nie Zeit für Social Media. Jetzt läuft mein Content automatisch, und ich bekomme trotzdem Anfragen von neuen Patient:innen."
+      },
+      {
+        "name": "Beat Wyss",
+        "role": "Schreinerei-Inhaber",
+        "photo": "/testimonials/handwerk.png",
+        "quote": "Ich wusste nicht mal, was ein Funnel ist. Jetzt habe ich eine Website, die für mich Anfragen sammelt, während ich in der Werkstatt bin."
+      },
+      {
+        "name": "Nadine Frei",
+        "role": "Business-Coach",
+        "photo": "/testimonials/coach.png",
+        "quote": "Reich Studio hat mir erklärt, was passiert — nicht nur eine Rechnung geschickt. Das hat mir das Vertrauen gegeben, das ich brauchte."
+      }
     ]
   },
   "ProductsPage": {
@@ -242,11 +354,26 @@
     "reserveByEmail": "Per E-Mail reservieren",
     "comingSoon": "Direktkauf-Button folgt in Kürze — bis dahin melde ich mich nach deiner Anfrage persönlich mit dem Download.",
     "faq": [
-      { "q": "Brauche ich Programmierkenntnisse?", "a": "Nein. Jeder Schritt ist so beschrieben, dass er ohne Code-Kenntnisse nachvollziehbar ist — von der Claude-Einrichtung bis zur ersten Automatisierung." },
-      { "q": "Wie lange dauert es, das umzusetzen?", "a": "Der Fahrplan im Playbook ist auf 7 Tage à 20–40 Minuten ausgelegt. Wer sofort loslegen will, schafft das Fundament an einem Nachmittag." },
-      { "q": "Welche Tools brauche ich zusätzlich?", "a": "Claude, eine Notion-Wissensbasis (kostenlos) und ein Automatisierungs-Tool wie Zapier, Make oder n8n — welches am besten zu dir passt, erklärt das Playbook." },
-      { "q": "Wie bekomme ich das Playbook nach dem Kauf?", "a": "Als PDF-Download direkt nach dem Kauf, in Hoch- und Querformat." },
-      { "q": "Ist das dasselbe wie eine Zusammenarbeit mit Reich Studio?", "a": "Nein. Das Playbook ist zum Selbermachen. Wenn du willst, dass jemand das komplette Fundament — Website, Brain, Automatisierung — für dich aufsetzt, ist das der Starter-Ansatz von Reich Studio — dafür gibt es die Erstgespräch-Option." }
+      {
+        "q": "Brauche ich Programmierkenntnisse?",
+        "a": "Nein. Jeder Schritt ist so beschrieben, dass er ohne Code-Kenntnisse nachvollziehbar ist — von der Claude-Einrichtung bis zur ersten Automatisierung."
+      },
+      {
+        "q": "Wie lange dauert es, das umzusetzen?",
+        "a": "Der Fahrplan im Playbook ist auf 7 Tage à 20–40 Minuten ausgelegt. Wer sofort loslegen will, schafft das Fundament an einem Nachmittag."
+      },
+      {
+        "q": "Welche Tools brauche ich zusätzlich?",
+        "a": "Claude, eine Notion-Wissensbasis (kostenlos) und ein Automatisierungs-Tool wie Zapier, Make oder n8n — welches am besten zu dir passt, erklärt das Playbook."
+      },
+      {
+        "q": "Wie bekomme ich das Playbook nach dem Kauf?",
+        "a": "Als PDF-Download direkt nach dem Kauf, in Hoch- und Querformat."
+      },
+      {
+        "q": "Ist das dasselbe wie eine Zusammenarbeit mit Reich Studio?",
+        "a": "Nein. Das Playbook ist zum Selbermachen. Wenn du willst, dass jemand das komplette Fundament — Website, Brain, Automatisierung — für dich aufsetzt, ist das der Starter-Ansatz von Reich Studio — dafür gibt es die Erstgespräch-Option."
+      }
     ]
   },
   "ThanksPage": {
@@ -269,11 +396,26 @@
     "faqEyebrow": "Bevor du schreibst",
     "faqHeading": "Kurz beantwortet",
     "faq": [
-      { "q": "Was passiert nach meiner Anfrage?", "a": "Ich melde mich persönlich, meist innert ein bis zwei Tagen, und wir vereinbaren ein kurzes Erstgespräch." },
-      { "q": "Kostet das Erstgespräch etwas?", "a": "Nein. Es dient dazu, zu klären, ob und wie wir zusammenarbeiten." },
-      { "q": "Ich weiss noch nicht, was ich brauche — ist das ein Problem?", "a": "Nein. Die meisten wissen das nicht genau. Dafür ist das Gespräch da." },
-      { "q": "Arbeitest du auch überregional?", "a": "Ja. Ich sitze in Sursee (Kanton Luzern), aber die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens." },
-      { "q": "In welcher Sprache läuft die Zusammenarbeit?", "a": "Auf Deutsch oder Englisch — je nachdem, was für dich passt." }
+      {
+        "q": "Was passiert nach meiner Anfrage?",
+        "a": "Ich melde mich persönlich, meist innert ein bis zwei Tagen, und wir vereinbaren ein kurzes Erstgespräch."
+      },
+      {
+        "q": "Kostet das Erstgespräch etwas?",
+        "a": "Nein. Es dient dazu, zu klären, ob und wie wir zusammenarbeiten."
+      },
+      {
+        "q": "Ich weiss noch nicht, was ich brauche — ist das ein Problem?",
+        "a": "Nein. Die meisten wissen das nicht genau. Dafür ist das Gespräch da."
+      },
+      {
+        "q": "Arbeitest du auch überregional?",
+        "a": "Ja. Ich sitze in Sursee (Kanton Luzern), aber die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens."
+      },
+      {
+        "q": "In welcher Sprache läuft die Zusammenarbeit?",
+        "a": "Auf Deutsch oder Englisch — je nachdem, was für dich passt."
+      }
     ]
   },
   "Contact": {
@@ -291,5 +433,135 @@
   },
   "LangSwitch": {
     "label": "Sprache"
+  },
+  "AiAutomationPage": {
+    "metaTitle": "KI-Automatisierung für KMU | Reich Studio Sursee",
+    "metaDescription": "KI-Automatisierung für KMU in Sursee und der Zentralschweiz: Prozesse, die im Hintergrund laufen statt Dashboards, die niemand liest. Konkrete Beispiele statt Buzzwords.",
+    "heroEyebrow": "Leistung · KI-Automatisierung",
+    "heroLine1": "Arbeit, die",
+    "heroLine2": "sich selbst macht.",
+    "heroSubtext": "Ich baue KI-gestützte Abläufe, die Routinearbeit übernehmen — damit du dich um Kund:innen kümmerst statt um Copy-Paste.",
+    "introLead": "Die meisten KMU verlieren jede Woche Stunden an Aufgaben, die eine Maschine übernehmen könnte.",
+    "introBody": "Anfragen manuell in eine Tabelle übertragen, Termine hin und her mailen, Follow-ups vergessen, Content dreimal neu formatieren. Ich schaue mir an, wo bei dir konkret Zeit verloren geht, und baue dafür eine Automatisierung, die still im Hintergrund läuft. Keine Software, die du erst lernen musst — ein System, das einfach funktioniert.",
+    "blocksEyebrow": "Was ich baue",
+    "blocksHeading": "Typische Automatisierungen",
+    "blocks": [
+      {
+        "title": "Anfragen automatisch erfassen",
+        "text": "Kontaktformular, DM oder Mail landen strukturiert in deinem System — inklusive Benachrichtigung, damit keine Anfrage untergeht."
+      },
+      {
+        "title": "Follow-ups, die von selbst rausgehen",
+        "text": "Wer sich gemeldet hat, bekommt automatisch die passende Nachricht zur richtigen Zeit. Ohne dass du an irgendetwas denken musst."
+      },
+      {
+        "title": "Content-Verteilung",
+        "text": "Ein Beitrag wird automatisch für mehrere Kanäle aufbereitet und veröffentlicht, statt dass du ihn dreimal von Hand anpasst."
+      },
+      {
+        "title": "Social-Media-Automatisierung",
+        "text": "Kommentare, DMs und Interessent:innen werden automatisch beantwortet und erfasst — zum Beispiel per n8n-Workflow."
+      },
+      {
+        "title": "Interne Abläufe verbinden",
+        "text": "Deine Tools reden endlich miteinander: Formular, Kalender, Notion, Mail und Buchhaltung in einer Kette statt fünf Insellösungen."
+      },
+      {
+        "title": "Reporting ohne Handarbeit",
+        "text": "Zahlen sammeln sich selbst ein. Du bekommst eine Übersicht, die stimmt, ohne dafür Tabellen zu pflegen."
+      }
+    ],
+    "faqHeading": "Häufige Fragen zur KI-Automatisierung",
+    "faq": [
+      {
+        "q": "Was kostet KI-Automatisierung?",
+        "a": "Ein klar abgegrenzter erster Workflow startet bei CHF 2'800 einmalig. Laufende Betreuung mit mehreren Automatisierungen liegt bei CHF 2'500 pro Monat. Was für dich sinnvoll ist, klären wir im Erstgespräch."
+      },
+      {
+        "q": "Brauche ich technisches Vorwissen?",
+        "a": "Nein. Ich baue und betreue das System. Du bekommst am Ende etwas, das läuft, plus eine kurze Erklärung, was wo passiert."
+      },
+      {
+        "q": "Welche Tools setzt du ein?",
+        "a": "Je nach Aufgabe — häufig n8n für Workflows, Notion als Datenbasis und verschiedene KI-Modelle für Text- und Bildarbeit. Ich wähle nach deinem Bedarf, nicht nach Lieblingstool."
+      },
+      {
+        "q": "Wie lange dauert die Umsetzung?",
+        "a": "Eine erste funktionierende Automatisierung steht meist innert zwei bis vier Wochen. Grössere Systeme wachsen dann Schritt für Schritt."
+      },
+      {
+        "q": "Arbeitest du nur in Sursee?",
+        "a": "Ich sitze in Sursee und arbeite viel mit Kund:innen aus der Zentralschweiz. Die Umsetzung läuft aber grösstenteils remote, deshalb ist der Standort kein Hindernis."
+      }
+    ],
+    "schemaName": "KI-Automatisierung für KMU",
+    "schemaType": "AI Automation",
+    "ctaHeading": "Wo verlierst du gerade Zeit?",
+    "ctaSubtext": "Im Erstgespräch schauen wir uns deine Abläufe an und finden heraus, was sich automatisieren lässt."
+  },
+  "MarketingAutomationPage": {
+    "metaTitle": "Marketing-Automatisierung | Reich Studio Sursee",
+    "metaDescription": "Marketing-Automatisierung für Selbstständige und KMU in Sursee: Content, Follow-ups und Leads laufen automatisch — ohne Agentur-Retainer und ohne Fachchinesisch.",
+    "heroEyebrow": "Leistung · Marketing-Automatisierung",
+    "heroLine1": "Marketing,",
+    "heroLine2": "das ohne dich läuft.",
+    "heroSubtext": "Sichtbar bleiben, ohne jeden Tag Zeit dafür zu haben — mit Systemen statt Dauer-Aufwand.",
+    "introLead": "Marketing scheitert selten an der Idee. Es scheitert daran, dass niemand Zeit hat, es durchzuhalten.",
+    "introBody": "Du weisst, dass du regelmässig posten und dich bei Interessent:innen melden solltest. Aber zwischen Kundenterminen bleibt das liegen. Statt dir noch eine To-do-Liste zu geben, baue ich dir einen Ablauf, der auch dann weiterläuft, wenn du drei Wochen im Tagesgeschäft steckst.",
+    "blocksEyebrow": "Was ich baue",
+    "blocksHeading": "Bausteine deines Systems",
+    "blocks": [
+      {
+        "title": "Content-Kalender, der sich füllt",
+        "text": "Themen werden vorbereitet und automatisch eingeplant, statt dass du jeden Montag vor einem leeren Blatt sitzt."
+      },
+      {
+        "title": "Lead-Erfassung ohne Lücken",
+        "text": "Jede Anfrage landet automatisch am richtigen Ort — mit Quelle, Datum und Status."
+      },
+      {
+        "title": "Automatische Nachfassnachrichten",
+        "text": "Interessent:innen bekommen zur richtigen Zeit die passende Nachricht, auch wenn du gerade nicht dran denkst."
+      },
+      {
+        "title": "Newsletter ohne Handarbeit",
+        "text": "Anmeldungen, Willkommensnachricht und Versand laufen als eine Kette statt als drei getrennte Aufgaben."
+      },
+      {
+        "title": "Wiederverwertung von Inhalten",
+        "text": "Aus einem längeren Beitrag entstehen automatisch mehrere kürzere Formate für verschiedene Kanäle."
+      },
+      {
+        "title": "Übersicht, die stimmt",
+        "text": "Du siehst auf einen Blick, was funktioniert — ohne dafür Zahlen von Hand zusammenzusuchen."
+      }
+    ],
+    "faqHeading": "Häufige Fragen zur Marketing-Automatisierung",
+    "faq": [
+      {
+        "q": "Was ist der Unterschied zu einer klassischen Agentur?",
+        "a": "Eine Agentur macht das Marketing für dich, solange du zahlst. Ich baue dir ein System, das dir gehört und weiterläuft. Kein Retainer, der ewig weiterlaufen muss, damit etwas passiert."
+      },
+      {
+        "q": "Was kostet das?",
+        "a": "Der Einstieg mit einem abgegrenzten System liegt bei CHF 2'800 einmalig, laufende Zusammenarbeit ab CHF 2'500 pro Monat. Details findest du auf der Preisseite."
+      },
+      {
+        "q": "Funktioniert das auch für kleine Unternehmen?",
+        "a": "Gerade dann. Je kleiner das Team, desto grösser der Effekt, wenn wiederkehrende Aufgaben wegfallen."
+      },
+      {
+        "q": "Muss ich meine bestehenden Tools wechseln?",
+        "a": "In der Regel nicht. Ich verbinde meistens das, was du schon nutzt, statt dir etwas Neues aufzuzwingen."
+      },
+      {
+        "q": "Was passiert, wenn etwas nicht mehr läuft?",
+        "a": "Du meldest dich direkt bei mir, nicht bei einem Support-Ticket-System. Bei laufender Betreuung ist die Wartung inbegriffen."
+      }
+    ],
+    "schemaName": "Marketing-Automatisierung",
+    "schemaType": "Marketing Automation",
+    "ctaHeading": "Sollen wir dein Marketing automatisieren?",
+    "ctaSubtext": "20 Minuten Erstgespräch reichen, um zu sehen, wo der grösste Hebel liegt."
   }
 }

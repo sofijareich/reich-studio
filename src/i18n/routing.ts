@@ -7,6 +7,14 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/studio": "/studio",
+    "/services/ai-automation": {
+      en: "/services/ai-automation",
+      de: "/leistungen/ki-automatisierung",
+    },
+    "/services/marketing-automation": {
+      en: "/services/marketing-automation",
+      de: "/leistungen/marketing-automatisierung",
+    },
     "/work": {
       en: "/work",
       de: "/referenzen",
