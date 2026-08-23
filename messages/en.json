@@ -435,14 +435,14 @@
     "label": "Language"
   },
   "AiAutomationPage": {
-    "metaTitle": "AI Automation for Small Businesses | Reich Studio Sursee",
-    "metaDescription": "AI automation for small businesses in Sursee and central Switzerland: processes that run in the background instead of dashboards nobody reads. Concrete examples, no buzzwords.",
-    "heroEyebrow": "Service · AI Automation",
+    "metaTitle": "AI Automation for Marketing | Reich Studio Sursee",
+    "metaDescription": "AI automation for marketing in Sursee: content, enquiries and follow-ups run automatically. Not a software project — a marketing system that keeps running without you.",
+    "heroEyebrow": "Service · AI in Marketing",
     "heroLine1": "Work that",
     "heroLine2": "does itself.",
     "heroSubtext": "I build AI-powered workflows that take over the repetitive work — so you can focus on clients instead of copy-paste.",
-    "introLead": "Most small businesses lose hours every week to tasks a machine could handle.",
-    "introBody": "Copying enquiries into a spreadsheet by hand, emailing back and forth about appointments, forgetting follow-ups, reformatting the same content three times. I look at where your time actually goes, then build an automation for it that runs quietly in the background. Not another tool you have to learn — a system that simply works.",
+    "introLead": "Most automation providers build you software. I take over your marketing.",
+    "introBody": "If you need a customer portal or a custom application, a software firm serves you better. I use AI where visibility is at stake: content that gets made without you sitting down for it, enquiries that do not slip through, follow-ups that send themselves. Marketing work a machine can take over — not an IT project.",
     "blocksEyebrow": "What I build",
     "blocksHeading": "Typical automations",
     "blocks": [
@@ -494,7 +494,7 @@
         "a": "I am based in Sursee and work with a lot of clients from central Switzerland. The work runs mostly remote though, so location is not a limitation."
       }
     ],
-    "schemaName": "AI Automation for Small Businesses",
+    "schemaName": "AI Automation for Marketing",
     "schemaType": "AI Automation",
     "ctaHeading": "Where are you losing time right now?",
     "ctaSubtext": "On the first call we look at your workflows and find out what can be automated."

@@ -435,14 +435,14 @@
     "label": "Sprache"
   },
   "AiAutomationPage": {
-    "metaTitle": "KI-Automatisierung für KMU | Reich Studio Sursee",
-    "metaDescription": "KI-Automatisierung für KMU in Sursee und der Zentralschweiz: Prozesse, die im Hintergrund laufen statt Dashboards, die niemand liest. Konkrete Beispiele statt Buzzwords.",
-    "heroEyebrow": "Leistung · KI-Automatisierung",
+    "metaTitle": "KI-Automatisierung fürs Marketing | Reich Studio Sursee",
+    "metaDescription": "KI-Automatisierung fürs Marketing in Sursee: Content, Anfragen und Follow-ups laufen automatisch. Kein Software-Projekt — ein Marketing-System, das ohne dich weiterläuft.",
+    "heroEyebrow": "Leistung · KI im Marketing",
     "heroLine1": "Arbeit, die",
     "heroLine2": "sich selbst macht.",
     "heroSubtext": "Ich baue KI-gestützte Abläufe, die Routinearbeit übernehmen — damit du dich um Kund:innen kümmerst statt um Copy-Paste.",
-    "introLead": "Die meisten KMU verlieren jede Woche Stunden an Aufgaben, die eine Maschine übernehmen könnte.",
-    "introBody": "Anfragen manuell in eine Tabelle übertragen, Termine hin und her mailen, Follow-ups vergessen, Content dreimal neu formatieren. Ich schaue mir an, wo bei dir konkret Zeit verloren geht, und baue dafür eine Automatisierung, die still im Hintergrund läuft. Keine Software, die du erst lernen musst — ein System, das einfach funktioniert.",
+    "introLead": "Die meisten Automatisierungs-Anbieter bauen dir Software. Ich übernehme dein Marketing.",
+    "introBody": "Wenn du ein Kundenportal oder eine individuelle Anwendung brauchst, bist du bei einer Software-Firma besser aufgehoben. Ich setze KI dort ein, wo es um Sichtbarkeit geht: Inhalte, die entstehen ohne dass du davor sitzt, Anfragen die nicht untergehen, Nachfassnachrichten die von selbst rausgehen. Marketing-Arbeit, die eine Maschine übernehmen kann — nicht ein IT-Projekt.",
     "blocksEyebrow": "Was ich baue",
     "blocksHeading": "Typische Automatisierungen",
     "blocks": [
@@ -494,7 +494,7 @@
         "a": "Ich sitze in Sursee und arbeite viel mit Kund:innen aus der Zentralschweiz. Die Umsetzung läuft aber grösstenteils remote, deshalb ist der Standort kein Hindernis."
       }
     ],
-    "schemaName": "KI-Automatisierung für KMU",
+    "schemaName": "KI-Automatisierung fürs Marketing",
     "schemaType": "AI Automation",
     "ctaHeading": "Wo verlierst du gerade Zeit?",
     "ctaSubtext": "Im Erstgespräch schauen wir uns deine Abläufe an und finden heraus, was sich automatisieren lässt."
