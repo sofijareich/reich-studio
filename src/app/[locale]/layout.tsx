@@ -33,6 +33,9 @@ export async function generateMetadata({
     metadataBase: new URL("https://reichstudio.ch"),
     title,
     description,
+    verification: {
+      google: "google3cb80c9e60067638",
+    },
     alternates: {
       canonical: locale === routing.defaultLocale ? "/" : `/${locale}`,
       languages: {
