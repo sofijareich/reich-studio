@@ -267,6 +267,12 @@
     "heroLine2": "echte Arbeit.",
     "heroSubtext": "Kein Showreel, keine Stock-Fotos. Drei Projekte, so wie sie tatsächlich gelaufen sind — mit allem, was dazugehört.",
     "navLabel": "Projekte",
+    "viewAllPhotos": "Alle Fotos",
+    "allPhotosHeading": "Alle Fotos",
+    "closeLightbox": "Schliessen",
+    "backToGrid": "Zurück zur Übersicht",
+    "prevPhoto": "Vorheriges Foto",
+    "nextPhoto": "Nächstes Foto",
     "originLabel": "Ausgangslage",
     "approachLabel": "Vorgehen",
     "ctaHeading": "Willst du auch so ein Projekt?",
@@ -333,11 +339,14 @@
           { "alt": "Testvideo für Instagram Reel" },
           { "alt": "DJ-Set mit Feuer-Show in der All in One Bar" },
           { "alt": "Stimmung in der All in One Bar" },
-          { "alt": "Event-Moment in der All in One Bar" }
+          { "alt": "Event-Moment in der All in One Bar" },
+          { "alt": "Ambiente in der All in One Bar" },
+          { "alt": "DJ-Set in der All in One Bar" },
+          { "alt": "Live-Performance in der All in One Bar" }
         ],
         "testimonial": {
           "quote": "Wir von All In One haben mit Sofija eine sehr positive Erfahrung gemacht. Die Zusammenarbeit war von Anfang an unkompliziert, angenehm und professionell. Sie hat bei uns verschiedene Fotos und Videos aufgenommen und daraus ein wirklich gelungenes Video zusammengestellt.\n\nBesonders geschätzt haben wir, dass Sofija unsere Vorstellungen gut verstanden und gleichzeitig eigene Ideen eingebracht hat. Während der Aufnahmen war sie engagiert, flexibel und hat sich gut auf unsere Wünsche eingestellt. Auch mit dem Endergebnis sind wir sehr zufrieden.\n\nInsgesamt hat die Zusammenarbeit wirklich Spass gemacht und wir können Sofija und ihre Arbeit auf jeden Fall weiterempfehlen. Vielen Dank für die tolle Zusammenarbeit!",
-          "author": "Leiter der Bar",
+          "author": "Mahmut, Leiter der Bar",
           "role": "All in One Bar, Ebikon"
         }
       }

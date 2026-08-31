@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Reveal from "./Reveal";
 import DecodeNumber from "./DecodeNumber";
+import PortfolioGallery from "./PortfolioGallery";
 import type { PortfolioProject as PortfolioProjectType } from "@/lib/portfolio";
 import { portfolioMedia } from "@/lib/portfolioMedia";
 
@@ -9,11 +9,20 @@ export default function PortfolioProject({
   originLabel,
   approachLabel,
   index,
+  galleryLabels,
 }: {
   project: PortfolioProjectType;
   originLabel: string;
   approachLabel: string;
   index: number;
+  galleryLabels: {
+    viewAllPhotos: string;
+    allPhotosHeading: string;
+    closeLightbox: string;
+    backToGrid: string;
+    prevPhoto: string;
+    nextPhoto: string;
+  };
 }) {
   const media = portfolioMedia[project.id] ?? [];
 
@@ -73,40 +82,11 @@ export default function PortfolioProject({
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {media.map((item, i) => {
-            const caption = project.gallery[i]?.alt ?? "";
-            return (
-              <Reveal key={item.src} className={i === 0 ? "sm:col-span-2 lg:col-span-2" : ""}>
-                <div className="card-surface overflow-hidden rounded-2xl">
-                  {item.type === "video" ? (
-                    <video
-                      controls
-                      preload="metadata"
-                      className="aspect-video w-full bg-black/40 object-cover"
-                      aria-label={caption}
-                    >
-                      <source src={item.src} />
-                    </video>
-                  ) : (
-                    <div className="relative aspect-video w-full">
-                      <Image
-                        src={item.src}
-                        alt={caption}
-                        fill
-                        sizes="(min-width: 1024px) 480px, (min-width: 640px) 50vw, 100vw"
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  {caption && (
-                    <p className="px-4 py-3 text-xs text-fg/45">{caption}</p>
-                  )}
-                </div>
-              </Reveal>
-            );
-          })}
-        </div>
+        <PortfolioGallery
+          media={media}
+          captions={project.gallery.map((g) => g.alt)}
+          labels={galleryLabels}
+        />
 
         {project.testimonial && (
           <Reveal>

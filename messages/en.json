@@ -267,6 +267,12 @@
     "heroLine2": "real work.",
     "heroSubtext": "No showreel, no stock photos. Three projects, exactly as they happened — with everything that came with them.",
     "navLabel": "Projects",
+    "viewAllPhotos": "View all photos",
+    "allPhotosHeading": "All photos",
+    "closeLightbox": "Close",
+    "backToGrid": "Back to overview",
+    "prevPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
     "originLabel": "Starting point",
     "approachLabel": "Approach",
     "ctaHeading": "Want a project like this for your field?",
@@ -333,11 +339,14 @@
           { "alt": "Test video for Instagram Reel" },
           { "alt": "DJ set with fire show at the All in One Bar" },
           { "alt": "The crowd at the All in One Bar" },
-          { "alt": "An event moment at the All in One Bar" }
+          { "alt": "An event moment at the All in One Bar" },
+          { "alt": "Ambiance at the All in One Bar" },
+          { "alt": "DJ set at the All in One Bar" },
+          { "alt": "Live performance at the All in One Bar" }
         ],
         "testimonial": {
           "quote": "We at All In One had a really positive experience working with Sofija. The collaboration was straightforward, pleasant and professional from the start. She took a range of photos and videos for us and put together a genuinely great video from them.\n\nWhat we especially appreciated was that Sofija understood what we had in mind while also bringing her own ideas to the table. During the shoot she was engaged, flexible, and adapted well to what we wanted. We're very happy with the final result too.\n\nOverall, working together was genuinely fun, and we can absolutely recommend Sofija and her work. Thank you for the great collaboration!",
-          "author": "Bar Manager",
+          "author": "Mahmut, Bar Manager",
           "role": "All in One Bar, Ebikon"
         }
       }

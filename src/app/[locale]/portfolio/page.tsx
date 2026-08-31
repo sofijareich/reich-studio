@@ -45,6 +45,14 @@ export default async function PortfolioPage({
           index={i}
           originLabel={t("originLabel")}
           approachLabel={t("approachLabel")}
+          galleryLabels={{
+            viewAllPhotos: t("viewAllPhotos"),
+            allPhotosHeading: t("allPhotosHeading"),
+            closeLightbox: t("closeLightbox"),
+            backToGrid: t("backToGrid"),
+            prevPhoto: t("prevPhoto"),
+            nextPhoto: t("nextPhoto"),
+          }}
         />
       ))}
       <CtaBand heading={t("ctaHeading")} subtext={t("ctaSubtext")} />

@@ -24,6 +24,9 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "image", src: "/referenzen/ebikon-bar/dj-fire.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/crowd.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/action.jpg" },
+    { type: "image", src: "/referenzen/ebikon-bar/bar-ambiance.jpg" },
+    { type: "image", src: "/referenzen/ebikon-bar/dj-1.jpg" },
+    { type: "image", src: "/referenzen/ebikon-bar/performer.jpg" },
   ],
 };
 
