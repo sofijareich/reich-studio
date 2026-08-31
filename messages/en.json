@@ -7,6 +7,7 @@
     "home": "Home",
     "studio": "Studio",
     "work": "Work",
+    "portfolio": "Portfolio",
     "pricing": "Pricing",
     "products": "Products",
     "contact": "Contact",
@@ -268,6 +269,85 @@
     "heroSubtext": "Real results from real work — no photo spreads, no filler. Just what matters in the end.",
     "ctaHeading": "Want numbers like these for your field?",
     "ctaSubtext": "Tell me what it's about — we'll figure out the rest in a call."
+  },
+  "PortfolioPage": {
+    "metaTitle": "Reich Studio — Portfolio",
+    "metaDescription": "Three real projects, three industries — restaurant, hospitality, and nightlife. This is what the work actually looked like.",
+    "heroEyebrow": "Portfolio",
+    "heroLine1": "Real projects,",
+    "heroLine2": "real work.",
+    "heroSubtext": "No showreel, no stock photos. Three projects, exactly as they happened — with everything that came with them.",
+    "navLabel": "Projects",
+    "originLabel": "Starting point",
+    "approachLabel": "Approach",
+    "ctaHeading": "Want a project like this for your field?",
+    "ctaSubtext": "Tell me what it's about — we'll figure out the rest in a call.",
+    "projects": [
+      {
+        "id": "sempia",
+        "name": "Restaurant Sempia",
+        "shortName": "Sempia",
+        "category": "Restaurant",
+        "logline": "Built a TikTok following from zero — guests started showing up because of the content.",
+        "duration": "10 months of ongoing work",
+        "origin": "I built a TikTok account for Sempia solo — spontaneously, with no big plan, just started. Guests soon came into the restaurant and mentioned the content directly.",
+        "approach": "In parallel, over ten months I completely redid the print material — menus, banners, sponsor boards, flyers. On Instagram, videos kept running, tailored to the audience that actually cared.",
+        "statsSource": "Source: TikTok analytics export (60-day window, May–July 2024) and the current live status of @restaurantsempia.",
+        "stats": [
+          { "value": 186, "suffix": "K", "label": "TikTok video views", "sublabel": "+3,837% in 60 days" },
+          { "value": 25, "suffix": "K", "label": "TikTok likes", "sublabel": "+17,670% over the same period" },
+          { "value": 2750, "label": "TikTok profile views", "sublabel": "+4,993% in 60 days" },
+          { "value": 384, "label": "Instagram followers today", "sublabel": "@restaurantsempia" }
+        ],
+        "gallery": [
+          { "alt": "Ad video for Restaurant Sempia" },
+          { "alt": "Sempia menu card" },
+          { "alt": "Sempia weekly menu" }
+        ]
+      },
+      {
+        "id": "hotel-sempachersee",
+        "name": "Hotel Sempachersee",
+        "shortName": "Hotel Sempachersee",
+        "category": "Hotel & Restaurant",
+        "logline": "One account, four brands: hotel, restaurant, bar and event space under one roof.",
+        "duration": "Ongoing work over several months",
+        "origin": "For Hotel Sempachersee I took over the full marketing package — minus TikTok. Under that umbrella run the restaurant Vivace, the bar & lounge LAGO, and the event space Aurora, all marketed through the shared hotel account.",
+        "approach": "Over several months I promoted events, ran ads, and kept adjusting based on results — instead of setting something up once and leaving it running.",
+        "statsSource": "Source: current live status of @hotelsempachersee.",
+        "stats": [
+          { "value": 1257, "label": "Instagram followers today", "sublabel": "@hotelsempachersee" },
+          { "value": 390, "label": "Posts", "sublabel": "since account start" },
+          { "value": 4, "label": "Brands under one roof", "sublabel": "Hotel, Vivace, LAGO, Aurora" }
+        ],
+        "gallery": [
+          { "alt": "Restaurant Vivace, interior" },
+          { "alt": "A dish at Restaurant Vivace" },
+          { "alt": "Bar setup at Restaurant Vivace" },
+          { "alt": "Before/after video of the Aurora event space" },
+          { "alt": "Promo video for the LAGO bar" },
+          { "alt": "Poster for the Winterlounge" }
+        ]
+      },
+      {
+        "id": "ebikon-bar",
+        "name": "All in One Bar, Ebikon",
+        "shortName": "All in One Bar",
+        "category": "Nightlife",
+        "logline": "One test video, captured in real moments instead of staged scenes.",
+        "duration": "Short project: one event, one reel",
+        "origin": "For the All in One Bar in Ebikon I covered one event in photo and video, made for an Instagram Reel.",
+        "approach": "The reel that captured the mood most honestly was the one that got published. Here's a look at the footage behind it.",
+        "statsSource": "",
+        "stats": [],
+        "gallery": [
+          { "alt": "Test video for Instagram Reel" },
+          { "alt": "DJ set with fire show at the All in One Bar" },
+          { "alt": "The crowd at the All in One Bar" },
+          { "alt": "An event moment at the All in One Bar" }
+        ]
+      }
+    ]
   },
   "Stats": {
     "source": "Source: TikTok Analytics export (60-day window, May–July 2024) plus current live stats from managed Instagram accounts.",
