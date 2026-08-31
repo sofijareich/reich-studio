@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     { href: "/studio", changeFrequency: "monthly", priority: 0.8 },
-    { href: "/work", changeFrequency: "monthly", priority: 0.8 },
+    { href: "/portfolio", changeFrequency: "monthly", priority: 0.8 },
     { href: "/pricing", changeFrequency: "monthly", priority: 0.8 },
     { href: "/products", changeFrequency: "monthly", priority: 0.7 },
     { href: "/contact", changeFrequency: "yearly", priority: 0.6 },

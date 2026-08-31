@@ -10,7 +10,6 @@ export default async function Footer() {
   const NAV_LINKS = [
     { href: "/" as const, label: t("home") },
     { href: "/studio" as const, label: t("studio") },
-    { href: "/work" as const, label: t("work") },
     { href: "/portfolio" as const, label: t("portfolio") },
     { href: "/pricing" as const, label: t("pricing") },
     { href: "/products" as const, label: t("products") },

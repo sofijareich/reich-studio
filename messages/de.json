@@ -6,7 +6,6 @@
   "Nav": {
     "home": "Home",
     "studio": "Studio",
-    "work": "Referenzen",
     "portfolio": "Portfolio",
     "pricing": "Preise",
     "products": "Produkte",
@@ -260,16 +259,6 @@
     "mostPopular": "Meistgewählt",
     "bookCall": "Erstgespräch buchen"
   },
-  "WorkPage": {
-    "metaTitle": "Reich Studio — Referenzen",
-    "metaDescription": "Echte Zahlen aus echten Projekten — Ergebnisse aus Marketing- und Automatisierungsarbeit.",
-    "heroEyebrow": "Referenzen",
-    "heroLine1": "Zahlen,",
-    "heroLine2": "die zählen.",
-    "heroSubtext": "Echte Ergebnisse aus echter Arbeit — keine Fotostrecken, keine Fülltexte. Nur das, was am Ende zählt.",
-    "ctaHeading": "Willst du solche Zahlen für dein Fachgebiet?",
-    "ctaSubtext": "Erzähl mir, worum es geht — den Rest klären wir im Gespräch."
-  },
   "PortfolioPage": {
     "metaTitle": "Reich Studio — Portfolio",
     "metaDescription": "Drei echte Projekte, drei Branchen — Gastronomie, Hotellerie und Nightlife. So sah die Arbeit tatsächlich aus.",
@@ -347,8 +336,8 @@
           { "alt": "Event-Moment in der All in One Bar" }
         ],
         "testimonial": {
-          "quote": "Wir von All In One haben mit Sofia eine sehr positive Erfahrung gemacht. Die Zusammenarbeit war von Anfang an unkompliziert, angenehm und professionell. Sie hat bei uns verschiedene Fotos und Videos aufgenommen und daraus ein wirklich gelungenes Video zusammengestellt.\n\nBesonders geschätzt haben wir, dass Sofia unsere Vorstellungen gut verstanden und gleichzeitig eigene Ideen eingebracht hat. Während der Aufnahmen war sie engagiert, flexibel und hat sich gut auf unsere Wünsche eingestellt. Auch mit dem Endergebnis sind wir sehr zufrieden.\n\nInsgesamt hat die Zusammenarbeit wirklich Spass gemacht und wir können Sofia und ihre Arbeit auf jeden Fall weiterempfehlen. Vielen Dank für die tolle Zusammenarbeit!",
-          "author": "Mahmut",
+          "quote": "Wir von All In One haben mit Sofija eine sehr positive Erfahrung gemacht. Die Zusammenarbeit war von Anfang an unkompliziert, angenehm und professionell. Sie hat bei uns verschiedene Fotos und Videos aufgenommen und daraus ein wirklich gelungenes Video zusammengestellt.\n\nBesonders geschätzt haben wir, dass Sofija unsere Vorstellungen gut verstanden und gleichzeitig eigene Ideen eingebracht hat. Während der Aufnahmen war sie engagiert, flexibel und hat sich gut auf unsere Wünsche eingestellt. Auch mit dem Endergebnis sind wir sehr zufrieden.\n\nInsgesamt hat die Zusammenarbeit wirklich Spass gemacht und wir können Sofija und ihre Arbeit auf jeden Fall weiterempfehlen. Vielen Dank für die tolle Zusammenarbeit!",
+          "author": "Leiter der Bar",
           "role": "All in One Bar, Ebikon"
         }
       }

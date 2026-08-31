@@ -6,7 +6,6 @@
   "Nav": {
     "home": "Home",
     "studio": "Studio",
-    "work": "Work",
     "portfolio": "Portfolio",
     "pricing": "Pricing",
     "products": "Products",
@@ -260,16 +259,6 @@
     "mostPopular": "Most popular",
     "bookCall": "Book a call"
   },
-  "WorkPage": {
-    "metaTitle": "Reich Studio — Work",
-    "metaDescription": "Real numbers from real projects — results from marketing and automation work.",
-    "heroEyebrow": "Work",
-    "heroLine1": "Numbers",
-    "heroLine2": "that count.",
-    "heroSubtext": "Real results from real work — no photo spreads, no filler. Just what matters in the end.",
-    "ctaHeading": "Want numbers like these for your field?",
-    "ctaSubtext": "Tell me what it's about — we'll figure out the rest in a call."
-  },
   "PortfolioPage": {
     "metaTitle": "Reich Studio — Portfolio",
     "metaDescription": "Three real projects, three industries — restaurant, hospitality, and nightlife. This is what the work actually looked like.",
@@ -347,8 +336,8 @@
           { "alt": "An event moment at the All in One Bar" }
         ],
         "testimonial": {
-          "quote": "We at All In One had a really positive experience working with Sofia. The collaboration was straightforward, pleasant and professional from the start. She took a range of photos and videos for us and put together a genuinely great video from them.\n\nWhat we especially appreciated was that Sofia understood what we had in mind while also bringing her own ideas to the table. During the shoot she was engaged, flexible, and adapted well to what we wanted. We're very happy with the final result too.\n\nOverall, working together was genuinely fun, and we can absolutely recommend Sofia and her work. Thank you for the great collaboration!",
-          "author": "Mahmut",
+          "quote": "We at All In One had a really positive experience working with Sofija. The collaboration was straightforward, pleasant and professional from the start. She took a range of photos and videos for us and put together a genuinely great video from them.\n\nWhat we especially appreciated was that Sofija understood what we had in mind while also bringing her own ideas to the table. During the shoot she was engaged, flexible, and adapted well to what we wanted. We're very happy with the final result too.\n\nOverall, working together was genuinely fun, and we can absolutely recommend Sofija and her work. Thank you for the great collaboration!",
+          "author": "Bar Manager",
           "role": "All in One Bar, Ebikon"
         }
       }

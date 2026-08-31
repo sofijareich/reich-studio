@@ -22,7 +22,7 @@ export default async function ReferenzenTeaser() {
               </h2>
             </div>
             <Link
-              href="/work"
+              href="/portfolio"
               className="text-sm font-medium text-gold underline underline-offset-4"
             >
               {t("seeAll")}

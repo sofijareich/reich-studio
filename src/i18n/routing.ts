@@ -15,10 +15,6 @@ export const routing = defineRouting({
       en: "/services/marketing-automation",
       de: "/leistungen/marketing-automatisierung",
     },
-    "/work": {
-      en: "/work",
-      de: "/referenzen",
-    },
     "/portfolio": "/portfolio",
     "/pricing": {
       en: "/pricing",
