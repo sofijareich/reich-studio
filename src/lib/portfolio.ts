@@ -12,4 +12,5 @@ export type PortfolioProject = {
   statsSource: string;
   stats: Stat[];
   gallery: { alt: string }[];
+  testimonial?: { quote: string; author: string; role: string };
 };

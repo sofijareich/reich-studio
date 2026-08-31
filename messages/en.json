@@ -345,7 +345,12 @@
           { "alt": "DJ set with fire show at the All in One Bar" },
           { "alt": "The crowd at the All in One Bar" },
           { "alt": "An event moment at the All in One Bar" }
-        ]
+        ],
+        "testimonial": {
+          "quote": "We at All In One had a really positive experience working with Sofia. The collaboration was straightforward, pleasant and professional from the start. She took a range of photos and videos for us and put together a genuinely great video from them.\n\nWhat we especially appreciated was that Sofia understood what we had in mind while also bringing her own ideas to the table. During the shoot she was engaged, flexible, and adapted well to what we wanted. We're very happy with the final result too.\n\nOverall, working together was genuinely fun, and we can absolutely recommend Sofia and her work. Thank you for the great collaboration!",
+          "author": "Mahmut",
+          "role": "All in One Bar, Ebikon"
+        }
       }
     ]
   },

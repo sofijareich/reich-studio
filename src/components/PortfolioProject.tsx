@@ -107,6 +107,25 @@ export default function PortfolioProject({
             );
           })}
         </div>
+
+        {project.testimonial && (
+          <Reveal>
+            <div className="card-surface-gold mt-14 rounded-2xl p-8 sm:p-10">
+              <p className="gold-text mb-2 text-5xl font-serif leading-none">&ldquo;</p>
+              <div className="max-w-3xl space-y-4 text-lg leading-relaxed text-fg/80">
+                {project.testimonial.quote.split("\n\n").map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
+              <p className="mt-6 text-sm font-semibold text-fg">
+                {project.testimonial.author}
+                <span className="ml-2 font-normal text-fg/45">
+                  — {project.testimonial.role}
+                </span>
+              </p>
+            </div>
+          </Reveal>
+        )}
       </div>
     </section>
   );
