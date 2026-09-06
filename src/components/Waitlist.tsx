@@ -7,7 +7,7 @@ import Reveal from "./Reveal";
 type Status = "idle" | "sending" | "sent" | "error";
 type Source = "Homepage" | "Footer";
 
-function useWaitlistSubmit(source: Source) {
+export function useWaitlistSubmit(source: Source) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
 

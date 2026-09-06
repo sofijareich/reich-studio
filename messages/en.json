@@ -29,6 +29,14 @@
     "bookCall": "Book a call",
     "seePricing": "See pricing"
   },
+  "HomeFigma": {
+    "marketingAutomation": "MARKETING & AUTOMATION",
+    "basedIn": "based in Switzerland, Sursee",
+    "whyTitle": "the why",
+    "trustTitle": "trust me",
+    "newsletterTitle": "STAY IN THE LOOP",
+    "submit": "submit"
+  },
   "TrustBar": {
     "points": [
       {

@@ -303,3 +303,126 @@ footer {
     opacity: 1 !important;
   }
 }
+
+/* ============================================================
+   Figma redesign — light editorial theme
+   Manrope, black on white, #D9D9D9 bands, -6% tracking.
+   Scoped to [data-home-theme="light"] (set by HomeTheme on the
+   redesigned page) so every other page keeps the dark theme
+   until the redesign rolls out site-wide.
+   ============================================================ */
+
+[data-home-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --color-gold: #000000;
+  --color-gold-light: #000000;
+  --color-gold-deep: #000000;
+  --color-gold-dim: #000000;
+}
+
+[data-home-theme="light"] body {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+/* the dark theme's decorations don't belong on the white page */
+[data-home-theme="light"] body::before {
+  content: none;
+}
+
+[data-home-theme="light"] ::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+[data-home-theme="light"] .glow,
+[data-home-theme="light"] .mascot-bob {
+  display: none;
+}
+
+[data-home-theme="light"] .gold-text {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: inherit;
+  filter: none;
+}
+
+/* the redesigned page ships its own top bar and closes on the
+   newsletter band, so the global chrome steps aside */
+[data-home-theme="light"] body > header,
+[data-home-theme="light"] body > footer {
+  display: none;
+}
+
+/* --- type scale, measured off the 1920px Figma canvas --- */
+.fg-display {
+  font-size: clamp(2.75rem, 8.33vw, 10rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+.fg-numeral {
+  font-size: clamp(2.75rem, 8.33vw, 10rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  font-weight: 400;
+}
+
+.fg-lead {
+  font-size: clamp(1.125rem, 1.77vw, 2.125rem);
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+.fg-mid {
+  font-size: clamp(1rem, 1.15vw, 1.375rem);
+  line-height: 1.4;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+.fg-small {
+  font-size: clamp(0.8125rem, 0.83vw, 1rem);
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+}
+
+.fg-page-x {
+  padding-inline: clamp(1.25rem, 4.58vw, 5.5rem);
+}
+
+.fg-band {
+  background: #d9d9d9;
+}
+
+.fg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e8e8;
+  color: #000000;
+  border-radius: 8px;
+  padding: 0.9rem 1.6rem;
+  letter-spacing: -0.05em;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.fg-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.fg-btn-dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.fg-btn-dark:hover {
+  background: #333333;
+  color: #ffffff;
+}

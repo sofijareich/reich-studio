@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -12,6 +12,14 @@ import "../globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+});
+
+// Manrope carries the Figma redesign — ExtraBold display, Regular everything else.
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["400", "500", "800"],
   display: "swap",
 });
 
@@ -106,7 +114,14 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${inter.variable} h-full`}>
+    /* suppressHydrationWarning: the redesigned page's theme script stamps
+       data-home-theme onto <html> before React hydrates (the standard theming
+       pattern — it only covers this element's own attributes). */
+    <html
+      lang={locale}
+      className={`${inter.variable} ${manrope.variable} h-full`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full flex flex-col bg-bg text-fg antialiased">
         <script
           type="application/ld+json"
