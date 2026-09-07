@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import FigmaLanguageSwitcher from "./FigmaLanguageSwitcher";
 
 const NAV = [
   { href: "/" as const, key: "home" as const },
@@ -36,6 +37,7 @@ export default async function FigmaTopNav() {
               {tNav(item.key)}
             </Link>
           ))}
+          <FigmaLanguageSwitcher />
         </nav>
       </div>
 

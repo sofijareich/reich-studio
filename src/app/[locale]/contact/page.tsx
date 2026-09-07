@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PageHero from "@/components/PageHero";
-import Contact from "@/components/Contact";
-import Faq from "@/components/Faq";
+import HomeTheme from "@/components/figma/HomeTheme";
+import FigmaPageHero from "@/components/figma/FigmaPageHero";
+import FigmaContact from "@/components/figma/FigmaContact";
+import FigmaFaq from "@/components/figma/FigmaFaq";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import { pageMetadata } from "@/lib/seo";
 
@@ -28,13 +29,14 @@ export default async function ContactPage({
 
   return (
     <>
-      <PageHero
+      <HomeTheme />
+      <FigmaPageHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
       />
-      <Contact />
-      <Faq eyebrow={t("faqEyebrow")} heading={t("faqHeading")} items={faqItems} />
+      <FigmaContact />
+      <FigmaFaq eyebrow={t("faqEyebrow")} heading={t("faqHeading")} items={faqItems} />
       <FaqJsonLd items={faqItems} />
     </>
   );
