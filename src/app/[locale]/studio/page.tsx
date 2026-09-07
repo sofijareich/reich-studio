@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PageHero from "@/components/PageHero";
-import About from "@/components/About";
-import AiWorkflow from "@/components/AiWorkflow";
-import CtaBand from "@/components/CtaBand";
+import HomeTheme from "@/components/figma/HomeTheme";
+import FigmaPageHero from "@/components/figma/FigmaPageHero";
+import FigmaAbout from "@/components/figma/FigmaAbout";
+import FigmaAiWorkflow from "@/components/figma/FigmaAiWorkflow";
+import FigmaCta from "@/components/figma/FigmaCta";
 import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -27,14 +28,15 @@ export default async function StudioPage({
 
   return (
     <>
-      <PageHero
+      <HomeTheme />
+      <FigmaPageHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
       />
-      <About />
-      <AiWorkflow />
-      <CtaBand heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
+      <FigmaAbout />
+      <FigmaAiWorkflow />
+      <FigmaCta heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
     </>
   );
 }
