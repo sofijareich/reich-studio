@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PageHero from "@/components/PageHero";
-import PricingDetail from "@/components/PricingDetail";
-import Faq from "@/components/Faq";
+import HomeTheme from "@/components/figma/HomeTheme";
+import FigmaPageHero from "@/components/figma/FigmaPageHero";
+import FigmaPricingCards from "@/components/figma/FigmaPricingCards";
+import FigmaFaq from "@/components/figma/FigmaFaq";
 import FaqJsonLd from "@/components/FaqJsonLd";
-import CtaBand from "@/components/CtaBand";
+import FigmaCta from "@/components/figma/FigmaCta";
 import { pageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -29,15 +30,16 @@ export default async function PricingPage({
 
   return (
     <>
-      <PageHero
+      <HomeTheme />
+      <FigmaPageHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
       />
-      <PricingDetail />
-      <Faq heading={t("faqHeading")} items={faqItems} />
+      <FigmaPricingCards />
+      <FigmaFaq heading={t("faqHeading")} items={faqItems} />
       <FaqJsonLd items={faqItems} />
-      <CtaBand heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
+      <FigmaCta heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
     </>
   );
 }
