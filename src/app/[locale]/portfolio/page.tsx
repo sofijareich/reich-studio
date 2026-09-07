@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import PageHero from "@/components/PageHero";
-import PortfolioNav from "@/components/PortfolioNav";
-import PortfolioProject from "@/components/PortfolioProject";
-import CtaBand from "@/components/CtaBand";
+import HomeTheme from "@/components/figma/HomeTheme";
+import FigmaPortfolioHero from "@/components/figma/FigmaPortfolioHero";
+import FigmaPortfolioNav from "@/components/figma/FigmaPortfolioNav";
+import FigmaPortfolioProject from "@/components/figma/FigmaPortfolioProject";
+import FigmaCta from "@/components/figma/FigmaCta";
 import type { PortfolioProject as PortfolioProjectType } from "@/lib/portfolio";
 import { pageMetadata } from "@/lib/seo";
 
@@ -29,17 +30,18 @@ export default async function PortfolioPage({
 
   return (
     <>
-      <PageHero
+      <HomeTheme />
+      <FigmaPortfolioHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
       />
-      <PortfolioNav
+      <FigmaPortfolioNav
         navLabel={t("navLabel")}
         projects={projects.map((p) => ({ id: p.id, shortName: p.shortName }))}
       />
       {projects.map((project, i) => (
-        <PortfolioProject
+        <FigmaPortfolioProject
           key={project.id}
           project={project}
           index={i}
@@ -55,7 +57,7 @@ export default async function PortfolioPage({
           }}
         />
       ))}
-      <CtaBand heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
+      <FigmaCta heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
     </>
   );
 }

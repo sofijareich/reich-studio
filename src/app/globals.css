@@ -426,3 +426,26 @@ footer {
   background: #333333;
   color: #ffffff;
 }
+
+/* secondary heading — for repeated section/card titles (e.g. portfolio
+   project names) that need the display family's weight without eating the
+   full hero-sized clamp() */
+.fg-h2 {
+  font-size: clamp(1.75rem, 4.2vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+}
+
+/* smaller numeral scale — repeated per-project stat values (portfolio),
+   where the full .fg-numeral hero size would overwhelm the layout */
+.fg-stat-value {
+  font-size: clamp(1.75rem, 3.2vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  font-weight: 400;
+}
+
+[data-home-theme="light"] .fg-line {
+  border-color: rgba(0, 0, 0, 0.12);
+}
