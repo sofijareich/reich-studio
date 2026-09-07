@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Mascots from "@/components/Mascots";
+import FigmaSmoothScroll from "@/components/figma/FigmaSmoothScroll";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -128,10 +129,12 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
         <NextIntlClientProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <Mascots />
+          <FigmaSmoothScroll>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <Mascots />
+          </FigmaSmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>

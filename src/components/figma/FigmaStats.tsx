@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import type { Stat } from "@/lib/referenzen";
+import FigmaReveal from "./FigmaReveal";
 
 /**
  * The Figma lays these out as a staggered diagonal rather than a grid: each
@@ -40,19 +41,20 @@ export default async function FigmaStats() {
           );
 
           return (
-            <div
-              key={stat.label}
-              className="flex flex-col gap-2 lg:flex-row lg:items-end lg:gap-[clamp(1rem,2vw,2.5rem)]"
-              style={{ marginInlineStart: `min(${layout.indent}, 30vw)` }}
-            >
-              {layout.labelSide === "left" && (
-                <div className="order-1 lg:order-none">{labelBlock}</div>
-              )}
-              <p className="fg-display order-2 lg:order-none">{formatValue(stat)}</p>
-              {layout.labelSide === "right" && (
-                <div className="order-1 lg:order-none">{labelBlock}</div>
-              )}
-            </div>
+            <FigmaReveal key={stat.label} delay={i * 0.08} y={16}>
+              <div
+                className="flex flex-col gap-2 lg:flex-row lg:items-end lg:gap-[clamp(1rem,2vw,2.5rem)]"
+                style={{ marginInlineStart: `min(${layout.indent}, 30vw)` }}
+              >
+                {layout.labelSide === "left" && (
+                  <div className="order-1 lg:order-none">{labelBlock}</div>
+                )}
+                <p className="fg-display order-2 lg:order-none">{formatValue(stat)}</p>
+                {layout.labelSide === "right" && (
+                  <div className="order-1 lg:order-none">{labelBlock}</div>
+                )}
+              </div>
+            </FigmaReveal>
           );
         })}
       </div>

@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { useWaitlistSubmit } from "../Waitlist";
+import FigmaReveal from "./FigmaReveal";
+import FigmaMagnetic from "./FigmaMagnetic";
 
 export default function FigmaNewsletter() {
   const t = useTranslations("Waitlist");
@@ -10,11 +12,13 @@ export default function FigmaNewsletter() {
 
   return (
     <section className="fg-band fg-page-x py-[clamp(3rem,9vh,5.5rem)]">
-      <h2 className="text-[clamp(1.5rem,2.6vw,3.25rem)] font-normal uppercase leading-none tracking-[-0.04em]">
-        {tHome("newsletterTitle")}
-      </h2>
+      <FigmaReveal>
+        <h2 className="text-[clamp(1.5rem,2.6vw,3.25rem)] font-normal uppercase leading-none tracking-[-0.04em]">
+          {tHome("newsletterTitle")}
+        </h2>
+      </FigmaReveal>
 
-      <div className="mt-[clamp(1.25rem,3vh,2rem)] flex gap-[clamp(0.5rem,1vw,1rem)]">
+      <FigmaReveal delay={0.1} className="mt-[clamp(1.25rem,3vh,2rem)] flex gap-[clamp(0.5rem,1vw,1rem)]">
         <svg
           viewBox="0 0 10 12"
           aria-hidden="true"
@@ -23,7 +27,7 @@ export default function FigmaNewsletter() {
           <path d="M0 0l10 6-10 6z" />
         </svg>
         <p className="fg-mid max-w-[52ch]">{t("subtext")}</p>
-      </div>
+      </FigmaReveal>
 
       {status === "sent" ? (
         <p className="fg-mid mt-[clamp(1.25rem,3vh,2rem)]">{t("successSection")}</p>
@@ -41,13 +45,15 @@ export default function FigmaNewsletter() {
             aria-label={t("placeholder")}
             className="fg-small w-full max-w-xs rounded-lg bg-white px-4 py-3 text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-black/60"
           />
-          <button
-            type="submit"
-            disabled={status === "sending"}
-            className="fg-btn fg-small fg-btn-dark lowercase disabled:opacity-60"
-          >
-            {status === "sending" ? t("sending") : tHome("submit")}
-          </button>
+          <FigmaMagnetic>
+            <button
+              type="submit"
+              disabled={status === "sending"}
+              className="fg-btn fg-small fg-btn-dark lowercase disabled:opacity-60"
+            >
+              {status === "sending" ? t("sending") : tHome("submit")}
+            </button>
+          </FigmaMagnetic>
         </form>
       )}
 
