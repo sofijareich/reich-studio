@@ -1,4 +1,6 @@
 import FigmaTopNav from "./FigmaTopNav";
+import FigmaCharReveal from "./FigmaCharReveal";
+import FigmaReveal from "./FigmaReveal";
 
 export default function FigmaPortfolioHero({
   eyebrow,
@@ -14,17 +16,21 @@ export default function FigmaPortfolioHero({
       <FigmaTopNav />
 
       <div className="pt-[clamp(3rem,9vh,7rem)]">
-        <p className="fg-small uppercase text-black/50">{eyebrow}</p>
+        <FigmaReveal y={12}>
+          <p className="fg-small uppercase text-black/50">{eyebrow}</p>
+        </FigmaReveal>
         <h1 className="fg-display mt-[clamp(0.5rem,1.5vh,1rem)] lowercase">
-          {lines.map((line) => (
+          {lines.map((line, i) => (
             <span key={line} className="block">
-              {line}
+              <FigmaCharReveal text={line} delay={0.1 + i * 0.25} />
             </span>
           ))}
         </h1>
-        <p className="fg-lead mt-[clamp(1.5rem,3vh,2.5rem)] max-w-[42ch] text-black/70">
-          {subtext}
-        </p>
+        <FigmaReveal delay={0.2} y={12}>
+          <p className="fg-lead mt-[clamp(1.5rem,3vh,2.5rem)] max-w-[42ch] text-black/70">
+            {subtext}
+          </p>
+        </FigmaReveal>
       </div>
     </section>
   );

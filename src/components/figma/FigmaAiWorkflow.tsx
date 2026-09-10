@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import FigmaReveal from "./FigmaReveal";
 
 function Arrow({ vertical = false }: { vertical?: boolean }) {
   return (
@@ -35,11 +36,13 @@ export default async function FigmaAiWorkflow() {
 
   return (
     <section className="fg-page-x py-[clamp(3rem,8vh,6rem)]">
-      <p className="fg-small uppercase text-black/50">{t("eyebrow")}</p>
-      <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">{t("title")}</h2>
-      <p className="fg-mid mt-[clamp(0.75rem,2vh,1.25rem)] max-w-[46ch] text-black/60">
-        {t("subtext")}
-      </p>
+      <FigmaReveal>
+        <p className="fg-small uppercase text-black/50">{t("eyebrow")}</p>
+        <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">{t("title")}</h2>
+        <p className="fg-mid mt-[clamp(0.75rem,2vh,1.25rem)] max-w-[46ch] text-black/60">
+          {t("subtext")}
+        </p>
+      </FigmaReveal>
 
       <div className="mt-[clamp(2.5rem,6vh,4rem)]">
         {/* desktop: horizontal flow */}
@@ -51,11 +54,11 @@ export default async function FigmaAiWorkflow() {
           >
             {stages.map((s, i) => (
               <div key={s.tool} className="contents">
-                <div className="flex flex-col border border-black/15 p-[clamp(1rem,2vw,1.5rem)]">
+                <FigmaReveal delay={i * 0.12} className="flex flex-col border border-black/15 p-[clamp(1rem,2vw,1.5rem)]">
                   <p className="fg-stat-value text-[clamp(1.5rem,2.4vw,2.25rem)]">{s.step}</p>
                   <h3 className="fg-mid mt-[0.6em] lowercase">{s.tool}</h3>
                   <p className="fg-small mt-[0.5em] text-black/60">{s.text}</p>
-                </div>
+                </FigmaReveal>
                 {i < stages.length - 1 && <Arrow />}
               </div>
             ))}

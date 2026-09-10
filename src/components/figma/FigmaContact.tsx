@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import FigmaReveal from "./FigmaReveal";
+import FigmaMagnetic from "./FigmaMagnetic";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
@@ -41,7 +43,7 @@ export default function FigmaContact() {
 
   return (
     <section className="fg-page-x pb-[clamp(3rem,8vh,6rem)]">
-      <div className="max-w-2xl">
+      <FigmaReveal className="max-w-2xl">
         {status === "sent" ? (
           <div className="border border-black p-[clamp(1.75rem,3vw,2.5rem)] text-center">
             <p className="fg-mid lowercase text-black">{t("successTitle")}</p>
@@ -75,19 +77,21 @@ export default function FigmaContact() {
               onChange={(e) => setMessage(e.target.value)}
               className="fg-mid w-full border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/40 focus:border-black focus:outline-none"
             />
-            <button
-              type="submit"
-              disabled={status === "sending"}
-              className="fg-btn fg-btn-dark fg-mid lowercase disabled:opacity-60"
-            >
-              {status === "sending" ? t("sending") : t("send")}
-            </button>
+            <FigmaMagnetic>
+              <button
+                type="submit"
+                disabled={status === "sending"}
+                className="fg-btn fg-btn-dark fg-mid lowercase disabled:opacity-60"
+              >
+                {status === "sending" ? t("sending") : t("send")}
+              </button>
+            </FigmaMagnetic>
             {status === "error" && (
               <p className="fg-small text-red-600">{t("error")}</p>
             )}
           </form>
         )}
-      </div>
+      </FigmaReveal>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import type { Service } from "@/lib/services";
+import FigmaReveal from "./FigmaReveal";
 
 /**
  * Three-tier pricing grid in the Figma editorial language. The featured
@@ -16,11 +17,12 @@ export default async function FigmaPricingCards() {
   return (
     <section className="fg-page-x pb-[clamp(3rem,8vh,6rem)]">
       <div className="grid gap-[clamp(1.5rem,3vw,2rem)] md:grid-cols-3">
-        {services.map((service) => {
+        {services.map((service, i) => {
           const featured = Boolean(service.featured);
           return (
-            <div
+            <FigmaReveal
               key={service.name}
+              delay={i * 0.1}
               className={`flex flex-col border p-[clamp(1.5rem,2.5vw,2.25rem)] ${
                 featured ? "border-black bg-black text-white" : "border-black/15 text-black"
               }`}
@@ -73,7 +75,7 @@ export default async function FigmaPricingCards() {
               >
                 {tp("bookCall")}
               </Link>
-            </div>
+            </FigmaReveal>
           );
         })}
       </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import FigmaReveal from "./FigmaReveal";
 
 /**
  * Accordion FAQ restyled from the dark gold-accented version — same
@@ -24,12 +25,14 @@ export default function FigmaFaq({
   return (
     <section className="fg-page-x py-[clamp(3rem,8vh,6rem)]">
       <div className="max-w-3xl">
-        <p className="fg-small uppercase text-black/50">{resolvedEyebrow}</p>
-        <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] mb-[clamp(2rem,5vh,3rem)] lowercase">
-          {heading}
-        </h2>
+        <FigmaReveal>
+          <p className="fg-small uppercase text-black/50">{resolvedEyebrow}</p>
+          <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] mb-[clamp(2rem,5vh,3rem)] lowercase">
+            {heading}
+          </h2>
+        </FigmaReveal>
 
-        <div className="divide-y divide-black/15 border-t border-black/15">
+        <FigmaReveal delay={0.1} className="divide-y divide-black/15 border-t border-black/15">
           {items.map((item, i) => {
             const isOpen = open === i;
             return (
@@ -63,7 +66,7 @@ export default function FigmaFaq({
               </div>
             );
           })}
-        </div>
+        </FigmaReveal>
       </div>
     </section>
   );
