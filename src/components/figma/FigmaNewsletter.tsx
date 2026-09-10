@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 import { useWaitlistSubmit } from "../Waitlist";
 import FigmaReveal from "./FigmaReveal";
-import FigmaMagnetic from "./FigmaMagnetic";
 
 export default function FigmaNewsletter() {
   const t = useTranslations("Waitlist");
@@ -11,7 +10,7 @@ export default function FigmaNewsletter() {
   const { email, setEmail, status, handleSubmit } = useWaitlistSubmit("Homepage");
 
   return (
-    <section className="fg-band fg-page-x py-[clamp(3rem,9vh,5.5rem)]">
+    <section className="fg-page-x border-t border-black/15 py-[clamp(3.5rem,10vh,6rem)]">
       <FigmaReveal>
         <h2 className="text-[clamp(1.5rem,2.6vw,3.25rem)] font-normal uppercase leading-none tracking-[-0.04em]">
           {tHome("newsletterTitle")}
@@ -32,29 +31,37 @@ export default function FigmaNewsletter() {
       {status === "sent" ? (
         <p className="fg-mid mt-[clamp(1.25rem,3vh,2rem)]">{t("successSection")}</p>
       ) : (
-        <form
-          onSubmit={handleSubmit}
-          className="mt-[clamp(1.25rem,3vh,2rem)] flex flex-wrap items-center gap-3"
-        >
-          <input
-            required
-            type="email"
-            placeholder={t("placeholder")}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            aria-label={t("placeholder")}
-            className="fg-small w-full max-w-xs rounded-lg bg-white px-4 py-3 text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-black/60"
-          />
-          <FigmaMagnetic>
+        <FigmaReveal delay={0.15}>
+          <form
+            onSubmit={handleSubmit}
+            className="mt-[clamp(1.25rem,3vh,2rem)] flex flex-wrap items-end gap-x-[clamp(1.5rem,4vw,3rem)] gap-y-4"
+          >
+            <input
+              required
+              type="email"
+              placeholder={t("placeholder")}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              aria-label={t("placeholder")}
+              className="fg-mid w-full max-w-xs border-x-0 border-t-0 border-b border-black/30 bg-transparent pb-2 text-black placeholder:text-black/40 focus:border-b-black focus:outline-none"
+            />
             <button
               type="submit"
               disabled={status === "sending"}
-              className="fg-btn fg-small fg-btn-dark lowercase disabled:opacity-60"
+              className="fg-mid group inline-flex items-baseline gap-[0.55em] lowercase text-black disabled:opacity-50"
             >
-              {status === "sending" ? t("sending") : tHome("submit")}
+              <span className="border-b border-black/30 pb-[0.12em] transition-colors group-hover:border-black">
+                {status === "sending" ? t("sending") : tHome("submit")}
+              </span>
+              <span
+                aria-hidden="true"
+                className="translate-y-[0.05em] transition-transform duration-200 group-hover:translate-x-[0.3em]"
+              >
+                &rarr;
+              </span>
             </button>
-          </FigmaMagnetic>
-        </form>
+          </form>
+        </FigmaReveal>
       )}
 
       {status === "error" && (

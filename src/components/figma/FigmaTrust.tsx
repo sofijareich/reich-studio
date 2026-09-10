@@ -5,13 +5,15 @@ type Testimonial = { name: string; role: string; quote: string };
 
 export default async function FigmaTrust() {
   const t = await getTranslations("Testimonials");
-  const tHome = await getTranslations("HomeFigma");
   const items = t.raw("items") as Testimonial[];
 
   return (
-    <section className="fg-page-x py-[clamp(4rem,10vh,8rem)]">
+    <section className="fg-page-x border-t border-black/15 py-[clamp(4rem,11vh,8rem)]">
       <FigmaReveal>
-        <h2 className="fg-display lowercase">{tHome("trustTitle")}</h2>
+        <p className="fg-small uppercase text-black/50">{t("eyebrow")}</p>
+        <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">
+          {t("title")}
+        </h2>
       </FigmaReveal>
 
       <div className="mt-[clamp(2.5rem,7vh,5rem)] grid gap-[clamp(2rem,4vw,3.5rem)] sm:grid-cols-2 lg:grid-cols-3">

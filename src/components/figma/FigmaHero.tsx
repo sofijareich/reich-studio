@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import FigmaTopNav from "./FigmaTopNav";
 import FigmaCharReveal from "./FigmaCharReveal";
-import FigmaMagnetic from "./FigmaMagnetic";
 import FigmaReveal from "./FigmaReveal";
+import FigmaArrowLink from "./FigmaArrowLink";
 
 export default async function FigmaHero() {
   const t = await getTranslations("Hero");
@@ -26,22 +25,24 @@ export default async function FigmaHero() {
           </span>
         </h1>
 
-        <FigmaReveal delay={0.5} className="mt-[clamp(1.5rem,4vh,3rem)] flex flex-wrap gap-4">
-          <FigmaMagnetic>
-            <Link href="/contact" className="fg-btn fg-mid lowercase">
-              {t("bookCall")}
-            </Link>
-          </FigmaMagnetic>
-          <FigmaMagnetic>
-            <Link href="/pricing" className="fg-btn fg-mid lowercase">
-              {t("seePricing")}
-            </Link>
-          </FigmaMagnetic>
+        <FigmaReveal delay={0.5} y={12}>
+          <p className="fg-lead mt-[clamp(1.25rem,3vh,2rem)] max-w-[46ch] text-black/70">
+            {t("subtext")}
+          </p>
+        </FigmaReveal>
+
+        <FigmaReveal
+          delay={0.6}
+          y={12}
+          className="mt-[clamp(1.5rem,4vh,2.5rem)] flex flex-wrap gap-x-[clamp(1.5rem,4vw,3rem)] gap-y-3"
+        >
+          <FigmaArrowLink href="/contact">{t("bookCall")}</FigmaArrowLink>
+          <FigmaArrowLink href="/pricing">{t("seePricing")}</FigmaArrowLink>
         </FigmaReveal>
       </div>
 
       {/* footline — positioning + mark */}
-      <FigmaReveal delay={0.65} y={12} className="flex items-end justify-between gap-6">
+      <FigmaReveal delay={0.7} y={12} className="flex items-end justify-between gap-6">
         <div>
           <p className="text-[clamp(1.25rem,2.5vw,3rem)] font-normal uppercase leading-none tracking-[-0.04em]">
             {tHome("marketingAutomation")}
