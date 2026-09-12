@@ -22,7 +22,7 @@ export default async function FigmaTrust() {
             <figure className="border-t border-black pt-[clamp(1rem,2vh,1.5rem)]">
               <blockquote className="fg-mid">{item.quote}</blockquote>
               <figcaption className="fg-small mt-[clamp(1rem,2vh,1.5rem)] text-black/60">
-                {item.name} — {item.role}
+                {item.name} · {item.role}
               </figcaption>
             </figure>
           </FigmaReveal>

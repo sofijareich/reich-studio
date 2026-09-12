@@ -38,7 +38,7 @@ export default function FigmaPortfolioProject({
       >
         <FigmaReveal>
           <p className="fg-small uppercase text-black/50">
-            {String(index + 1).padStart(2, "0")} — {project.category}
+            {String(index + 1).padStart(2, "0")} · {project.category}
           </p>
           <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-4xl lowercase">
             {project.name}
@@ -102,7 +102,7 @@ export default function FigmaPortfolioProject({
                 ))}
               </blockquote>
               <figcaption className="fg-small mt-[clamp(1rem,2.5vh,1.5rem)] text-black/60">
-                {project.testimonial.author} — {project.testimonial.role}
+                {project.testimonial.author} · {project.testimonial.role}
               </figcaption>
             </figure>
           </FigmaReveal>

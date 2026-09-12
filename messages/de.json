@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Reich Studio Sursee — Marketing Agentur & KI-Automation",
-    "description": "Marketing- & KI-Automation-Agentur in Sursee. Reich Studio automatisiert dein Marketing und baut echtes Vertrauen bei Kund:innen auf — ohne Agentur-Retainer."
+    "title": "Reich Studio Sursee: Marketing Agentur & KI-Automation",
+    "description": "Marketing- & KI-Automation-Agentur in Sursee. Reich Studio automatisiert dein Marketing und baut echtes Vertrauen bei Kund:innen auf, ohne Agentur-Retainer."
   },
   "Nav": {
     "home": "Home",
@@ -25,7 +25,7 @@
     "eyebrow": "Marketing & Automatisierung · Sursee",
     "titleLine1": "The agency",
     "titleLine2": "you don't need to hire.",
-    "subtext": "Professionelles Marketing mit AI, die wirklich funktioniert — solo, ohne Agentur, in kürzester Zeit.",
+    "subtext": "Professionelles Marketing mit AI, die wirklich funktioniert: solo, ohne Agentur, in kürzester Zeit.",
     "bookCall": "Erstgespräch buchen",
     "seePricing": "Preise ansehen"
   },
@@ -45,7 +45,7 @@
       },
       {
         "title": "Systeme, keine Reportings",
-        "text": "Automatisierung, die läuft — statt Dashboards, die niemand liest."
+        "text": "Automatisierung, die läuft, statt Dashboards, die niemand liest."
       },
       {
         "title": "Klar statt Buzzword",
@@ -56,7 +56,7 @@
   "Problem": {
     "eyebrow": "Die Ausgangslage",
     "lead": "Du bist gut in dem, was du tust. Aber Content, Posts und Follow-ups fressen dir genau die Zeit weg, die du eigentlich für Kund:innen brauchst.",
-    "body": "Die meisten Marketing-Agenturen verkaufen dir Buzzwords und Reportings, die niemand versteht. Reich Studio baut dir stattdessen Systeme, die automatisiert im Hintergrund laufen — ohne dass du selbst zur Marketing-Expertin werden musst."
+    "body": "Die meisten Marketing-Agenturen verkaufen dir Buzzwords und Reportings, die niemand versteht. Reich Studio baut dir stattdessen Systeme, die automatisiert im Hintergrund laufen, ohne dass du selbst zur Marketing-Expertin werden musst."
   },
   "Process": {
     "eyebrow": "So arbeiten wir",
@@ -65,7 +65,7 @@
       {
         "step": "01",
         "title": "Kennenlernen",
-        "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt — und was sich davon automatisieren lässt."
+        "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt, und was sich davon automatisieren lässt."
       },
       {
         "step": "02",
@@ -75,7 +75,7 @@
       {
         "step": "03",
         "title": "Laufen lassen",
-        "text": "Das System läuft im Hintergrund. Du bekommst nur, was wichtig ist — den Rest übernehme ich."
+        "text": "Du bekommst nur, was wichtig ist. Den Rest übernehme ich."
       }
     ]
   },
@@ -125,7 +125,7 @@
         "name": "Full-Service",
         "price": "ab CHF 5'000",
         "period": "/Monat",
-        "description": "Du machst dein Fachgebiet. Wir übernehmen den Rest — komplett.",
+        "description": "Du machst dein Fachgebiet. Wir übernehmen den Rest komplett.",
         "points": [
           "Alles aus Growth",
           "Volle Kundenkommunikation",
@@ -135,7 +135,7 @@
           "Alles aus Growth, plus laufende Weiterentwicklung",
           "Ich übernehme die Kommunikation mit deinen Kund:innen im Marketing-Prozess",
           "Priorität bei Anfragen und Anpassungen",
-          "Direkter, persönlicher Draht zu mir — keine Warteschlange"
+          "Direkter, persönlicher Draht zu mir. Keine Warteschlange."
         ]
       }
     ]
@@ -149,15 +149,15 @@
     "eyebrow": "Warteliste",
     "titlePlain": "Bleib auf dem",
     "titleGold": "Laufenden.",
-    "subtext": "Neue Playbooks, Produkte und Einblicke aus der Arbeit mit Reich Studio — bevor sie öffentlich sind.",
+    "subtext": "Neue Playbooks, Produkte und Einblicke aus der Arbeit mit Reich Studio, bevor sie öffentlich sind.",
     "successSection": "Bist drin. Du hörst als Erste:r von neuen Sachen.",
     "placeholder": "deine@email.ch",
     "signUp": "Eintragen",
     "sending": "Wird gesendet …",
     "errorSection": "Da ist etwas schiefgelaufen. Bitte versuch es in ein paar Minuten nochmal.",
     "inlineText": "Newsletter: neue Playbooks & Produkte, bevor sie öffentlich sind.",
-    "successInline": "Bist drin — danke!",
-    "errorInline": "Fehler — bitte nochmal versuchen."
+    "successInline": "Bist drin, danke!",
+    "errorInline": "Fehler: bitte nochmal versuchen."
   },
   "CtaBand": {
     "heading": "Bereit, Marketing abzugeben?",
@@ -165,7 +165,7 @@
     "bookCall": "Erstgespräch buchen"
   },
   "StudioPage": {
-    "metaTitle": "Reich Studio — Über uns | Marketing Studio Sursee",
+    "metaTitle": "Reich Studio: Über uns | Marketing Studio Sursee",
     "metaDescription": "Reich Studio ist Sofijas Ein-Personen-Studio für Marketing- und Automatisierungssysteme mit Sitz in Sursee. Persönlich, ehrlich, ohne Buzzwords.",
     "heroEyebrow": "Reich Studio",
     "heroLine1": "Ein Name.",
@@ -176,16 +176,16 @@
   },
   "About": {
     "lead": "Hinter Reich Studio steht kein Team von zwanzig Leuten. Es steht Sofija.",
-    "p1": "Ich habe Reich Studio gegründet, weil ich zu oft gesehen habe, wie fähige Professionals Kund:innen verlieren — nicht, weil ihre Arbeit schlecht ist, sondern weil niemand ihr Marketing übernimmt.",
+    "p1": "Ich habe Reich Studio gegründet, weil ich zu oft gesehen habe, wie fähige Professionals Kund:innen verlieren: nicht, weil ihre Arbeit schlecht ist, sondern weil niemand ihr Marketing übernimmt.",
     "p2": "Ich baue keine Kampagnen, die gut aussehen und nichts bringen. Ich baue Systeme, die laufen, messbar sind und die du verstehst, auch wenn du selbst nie etwas mit Marketing zu tun haben wolltest.",
-    "p3": "Wenn wir zusammenarbeiten, sprichst du mit mir — nicht mit einem Account Manager, der drei Kunden weiterreicht.",
+    "p3": "Wenn wir zusammenarbeiten, sprichst du mit mir, nicht mit einem Account Manager, der drei Kunden weiterreicht.",
     "imageAlt": "Sofija Reich, Gründerin von Reich Studio",
     "valuesEyebrow": "Wie ich arbeite",
     "valuesTitle": "Drei Dinge, auf die du dich verlassen kannst.",
     "values": [
       {
         "title": "Ehrlich statt glatt",
-        "text": "Wenn etwas nicht funktioniert, sage ich das — bevor du dafür bezahlst."
+        "text": "Wenn etwas nicht funktioniert, sage ich das, bevor du dafür bezahlst."
       },
       {
         "title": "Verständlich statt kompliziert",
@@ -200,19 +200,19 @@
   "AiWorkflow": {
     "eyebrow": "Wie AI-Automatisierung bei mir aussieht",
     "title": "Von der Idee zum laufenden System.",
-    "subtext": "Kein Blackbox-Versprechen — das ist der tatsächliche Ablauf, mit dem ich Prozesse automatisiere. Vier Tools, ein durchgängiger Fluss.",
+    "subtext": "Kein Blackbox-Versprechen: das ist der tatsächliche Ablauf, mit dem ich Prozesse automatisiere. Vier Tools, ein durchgängiger Fluss.",
     "nodeStart": "Idee / Aufgabe",
     "nodeEnd": "Fertiges Ergebnis",
     "stages": [
       {
         "step": "01",
         "tool": "Claude",
-        "text": "Konzept, Recherche und Texte — vom ersten Briefing bis zur fertigen Struktur."
+        "text": "Konzept, Recherche und Texte: vom ersten Briefing bis zur fertigen Struktur."
       },
       {
         "step": "02",
         "tool": "Claude Code (Terminal)",
-        "text": "Setzt das Konzept in echte Automatisierungen um — Skripte, Integrationen, Deployments, direkt im Terminal gesteuert."
+        "text": "Setzt das Konzept in echte Automatisierungen um: Skripte, Integrationen, Deployments, direkt im Terminal gesteuert."
       },
       {
         "step": "03",
@@ -222,36 +222,36 @@
       {
         "step": "04",
         "tool": "Higgsfield",
-        "text": "Erstellt Bild- und Video-Content per AI — für Visuals, die sonst ein Fotoshooting gebraucht hätten."
+        "text": "Erstellt Bild- und Video-Content per AI, für Visuals, die sonst ein Fotoshooting gebraucht hätten."
       }
     ]
   },
   "PricingPage": {
-    "metaTitle": "Reich Studio — Preise",
+    "metaTitle": "Reich Studio: Preise",
     "metaDescription": "Individuelle Angebote statt Pakete: CHF 60/Stunde, mit groben Richtwerten für Website, Automatisierung, Branding und mehr.",
     "heroEyebrow": "Preise",
     "heroLine1": "Individuell.",
     "heroLine2": "statt von der Stange.",
-    "heroSubtext": "Keine fixen Pakete — jedes Angebot wird auf die Anfrage zugeschnitten. Die Zahlen unten sind grobe Richtwerte.",
+    "heroSubtext": "Keine fixen Pakete: jedes Angebot wird auf die Anfrage zugeschnitten. Die Zahlen unten sind grobe Richtwerte.",
     "faqHeading": "Fragen zu den Preisen",
     "ctaHeading": "Was würde dein Projekt kosten?",
-    "ctaSubtext": "Schreib mir kurz, worum es geht — du bekommst eine ehrliche Einschätzung, keine Verkaufsmasche.",
+    "ctaSubtext": "Schreib mir kurz, worum es geht. Du bekommst eine ehrliche Einschätzung, keine Verkaufsmasche.",
     "faq": [
       {
         "q": "Sind das feste Preise?",
-        "a": "Nein — das sind grobe Richtwerte, keine Preisliste. Der genaue Preis hängt vom Umfang deines Projekts ab und wird im Erstgespräch gemeinsam festgelegt."
+        "a": "Nein, das sind grobe Richtwerte, keine Preisliste. Der genaue Preis hängt vom Umfang deines Projekts ab und wird im Erstgespräch gemeinsam festgelegt."
       },
       {
         "q": "Wie wird abgerechnet?",
-        "a": "Nach Aufwand, zum Stundensatz von CHF 60 — oder als Fixpreis, wenn wir den Umfang vorher klar abstecken können. Das entscheiden wir gemeinsam, je nachdem was für dein Projekt passt."
+        "a": "Nach Aufwand, zum Stundensatz von CHF 60, oder als Fixpreis, wenn wir den Umfang vorher klar abstecken können. Das entscheiden wir gemeinsam, je nachdem was für dein Projekt passt."
       },
       {
         "q": "Muss ich mich langfristig binden?",
-        "a": "Nein. Es gibt kein Abo und keine Mindestlaufzeit — jedes Projekt ist einzeln. Für laufende Arbeit wie Social Media legen wir gemeinsam fest, wie lange das Sinn macht."
+        "a": "Nein. Es gibt kein Abo und keine Mindestlaufzeit: jedes Projekt ist einzeln. Für laufende Arbeit wie Social Media legen wir gemeinsam fest, wie lange das Sinn macht."
       },
       {
         "q": "Was, wenn mein Projekt nicht in der Liste steht?",
-        "a": "Kein Problem — die Liste zeigt nur die häufigsten Anfragen. Schreib mir einfach, worum es geht, dann bekommst du eine passende Einschätzung."
+        "a": "Kein Problem: die Liste zeigt nur die häufigsten Anfragen. Schreib mir einfach, worum es geht, dann bekommst du eine passende Einschätzung."
       },
       {
         "q": "Wie schnell bekomme ich ein Angebot?",
@@ -259,7 +259,7 @@
       },
       {
         "q": "Was, wenn sich der Umfang während des Projekts ändert?",
-        "a": "Das passiert oft. Wir besprechen Anpassungen offen, und du weisst vorher, was ein Mehraufwand kostet — keine versteckten Kosten."
+        "a": "Das passiert oft. Wir besprechen Anpassungen offen, und du weisst vorher, was ein Mehraufwand kostet. Keine versteckten Kosten."
       }
     ]
   },
@@ -268,12 +268,12 @@
     "bookCall": "Erstgespräch buchen"
   },
   "PortfolioPage": {
-    "metaTitle": "Reich Studio — Portfolio",
-    "metaDescription": "Drei echte Projekte, drei Branchen — Gastronomie, Hotellerie und Nightlife. So sah die Arbeit tatsächlich aus.",
+    "metaTitle": "Reich Studio: Portfolio",
+    "metaDescription": "Drei echte Projekte, drei Branchen: Gastronomie, Hotellerie und Nightlife. So sah die Arbeit tatsächlich aus.",
     "heroEyebrow": "Portfolio",
     "heroLine1": "Echte Projekte,",
     "heroLine2": "echte Arbeit.",
-    "heroSubtext": "Kein Showreel, keine Stock-Fotos. Drei Projekte, so wie sie tatsächlich gelaufen sind — mit allem, was dazugehört.",
+    "heroSubtext": "Kein Showreel, keine Stock-Fotos. Drei Projekte, so wie sie tatsächlich gelaufen sind, mit allem, was dazugehört.",
     "navLabel": "Projekte",
     "viewAllPhotos": "Alle Fotos",
     "allPhotosHeading": "Alle Fotos",
@@ -284,17 +284,17 @@
     "originLabel": "Ausgangslage",
     "approachLabel": "Vorgehen",
     "ctaHeading": "Willst du auch so ein Projekt?",
-    "ctaSubtext": "Erzähl mir, worum es geht — den Rest klären wir im Erstgespräch.",
+    "ctaSubtext": "Erzähl mir, worum es geht. Den Rest klären wir im Erstgespräch.",
     "projects": [
       {
         "id": "sempia",
         "name": "Restaurant Sempia",
         "shortName": "Sempia",
         "category": "Gastronomie",
-        "logline": "TikTok von 0 aufgebaut — Gäste kamen wegen des Contents vorbei.",
+        "logline": "TikTok von 0 aufgebaut. Gäste kamen wegen des Contents vorbei.",
         "duration": "10 Monate laufende Betreuung",
-        "origin": "Ich habe für Sempia im Alleingang einen TikTok-Account aufgebaut — spontan, ohne grossen Plan, einfach angefangen. Gäste kamen bald ins Restaurant und sprachen uns direkt auf den Content an.",
-        "approach": "Parallel dazu habe ich zehn Monate lang die Printmaterialien komplett erneuert — Menüs, Banner, Sponsorentafeln, Flyer. Auf Instagram liefen weiterhin Videos, die gezielt auf die Zielgruppe zugeschnitten waren.",
+        "origin": "Ich habe für Sempia im Alleingang einen TikTok-Account aufgebaut, spontan, ohne grossen Plan, einfach angefangen. Gäste kamen bald ins Restaurant und sprachen uns direkt auf den Content an.",
+        "approach": "Parallel dazu habe ich zehn Monate lang die Printmaterialien komplett erneuert: Menüs, Banner, Sponsorentafeln, Flyer. Auf Instagram liefen weiterhin Videos, die gezielt auf die Zielgruppe zugeschnitten waren.",
         "statsSource": "Quelle: TikTok-Analytics-Export (60-Tage-Fenster, Mai–Juli 2024) sowie aktueller Live-Stand von @restaurantsempia.",
         "stats": [
           {
@@ -339,8 +339,8 @@
         "category": "Hotel & Gastronomie",
         "logline": "Ein Konto, vier Marken: Hotel, Vivace, LAGO und Aurora unter einem Dach.",
         "duration": "Laufende Betreuung über mehrere Monate",
-        "origin": "Für Hotel Sempachersee habe ich das komplette Marketing-Paket übernommen — nur ohne TikTok. Darunter laufen das Restaurant Vivace, die Bar & Lounge LAGO und die Event Location Aurora, alle über den gemeinsamen Hotel-Account vermarktet.",
-        "approach": "Über Monate hinweg habe ich Events beworben, Ads geschaltet und die Ergebnisse laufend angepasst — statt einmal aufzusetzen und laufen zu lassen.",
+        "origin": "Für Hotel Sempachersee habe ich das komplette Marketing-Paket übernommen, nur ohne TikTok. Darunter laufen das Restaurant Vivace, die Bar & Lounge LAGO und die Event Location Aurora, alle über den gemeinsamen Hotel-Account vermarktet.",
+        "approach": "Über Monate hinweg habe ich Events beworben, Ads geschaltet und die Ergebnisse laufend angepasst, statt einmal aufzusetzen und laufen zu lassen.",
         "statsSource": "Quelle: aktueller Live-Stand von @hotelsempachersee.",
         "stats": [
           {
@@ -387,7 +387,7 @@
         "category": "Nightlife",
         "logline": "Ein Testvideo, eingefangen mit echten Momenten statt gestellter Szenen.",
         "duration": "Kurzprojekt: ein Event, ein Reel",
-        "origin": "Für die All in One Bar in Ebikon habe ich ein Event mit Foto und Video begleitet — gedacht als Instagram Reel.",
+        "origin": "Für die All in One Bar in Ebikon habe ich ein Event mit Foto und Video begleitet, gedacht als Instagram Reel.",
         "approach": "Veröffentlicht wurde das Reel, das die Stimmung am echtesten eingefangen hat. Hier ein Ausschnitt aus dem Bildmaterial dazu.",
         "statsSource": "",
         "stats": [],
@@ -469,12 +469,12 @@
         "name": "Nadine Frei",
         "role": "Business-Coach",
         "photo": "/testimonials/coach.png",
-        "quote": "Reich Studio hat mir erklärt, was passiert — nicht nur eine Rechnung geschickt. Das hat mir das Vertrauen gegeben, das ich brauchte."
+        "quote": "Reich Studio hat mir erklärt, was passiert, nicht nur eine Rechnung geschickt. Das hat mir das Vertrauen gegeben, das ich brauchte."
       }
     ]
   },
   "ProductsPage": {
-    "metaTitle": "Reich Studio — {productName}",
+    "metaTitle": "Reich Studio: {productName}",
     "heroEyebrow": "Digitales Produkt",
     "heroLine1": "Selbst automatisieren.",
     "heroLine2": "Ohne Agentur.",
@@ -488,28 +488,28 @@
     "tagline": "Das Playbook: Claude aufsetzen. Verstehen. Automatisieren.",
     "price": "$27",
     "format": "PDF, 16 Seiten (Hoch- & Querformat), sofortiger Download",
-    "description": "Der direkte Weg von \"Ich hab Claude installiert\" zu deiner ersten laufenden Automatisierung — ohne Fachchinesisch, ohne 40-Seiten-Roman. Zum Nachschlagen, nicht zum Durchlesen.",
+    "description": "Der direkte Weg von \"Ich hab Claude installiert\" zu deiner ersten laufenden Automatisierung. Ohne Fachchinesisch, ohne 40-Seiten-Roman. Zum Nachschlagen, nicht zum Durchlesen.",
     "includes": [
       "Die Claude-Landkarte: Projekte, Brain, Skills, Artefakte und MCP-Connectors verständlich erklärt",
       "Dein Brain aufsetzen: eine Notion-Wissensbasis, die Claude live erreicht, in 4 Schritten",
-      "Skills schreiben, die Claude automatisch erkennt — inklusive Beispiel-Skill zum Nachbauen",
+      "Skills schreiben, die Claude automatisch erkennt, inklusive Beispiel-Skill zum Nachbauen",
       "MCP-Connectors verbinden: Notion, Gmail, Kalender, Drive, Slack",
       "Zapier, Make oder n8n: welches Automatisierungs-Tool zu dir passt, mit konkretem Einstieg",
       "Eine komplette, nachbaubare erste Automatisierung (Formular → Claude → CRM → Team-Benachrichtigung)",
       "Der 7-Tage-Fahrplan vom Nullpunkt zur laufenden Automatisierung, 20–40 Minuten pro Tag",
       "6 copy-paste-fertige Prompt-Bausteine, Troubleshooting-Guide und ein Ein-Seiten-Cheat-Sheet"
     ],
-    "forWhom": "Professionals und junge Agenturen, die Claude wirklich verstehen und produktiv einsetzen wollen — ohne Programmierkenntnisse, an einem Nachmittag durcharbeitbar.",
+    "forWhom": "Professionals und junge Agenturen, die Claude wirklich verstehen und produktiv einsetzen wollen. Ohne Programmierkenntnisse, an einem Nachmittag durcharbeitbar.",
     "whatsInside": "Was drin ist",
     "whoItsFor": "Für wen",
     "oneTime": "einmalig, kein Abo",
-    "buyNow": "Jetzt kaufen — {price}",
+    "buyNow": "Jetzt kaufen ({price})",
     "reserveByEmail": "Per E-Mail reservieren",
-    "comingSoon": "Direktkauf-Button folgt in Kürze — bis dahin melde ich mich nach deiner Anfrage persönlich mit dem Download.",
+    "comingSoon": "Direktkauf-Button folgt in Kürze. Bis dahin melde ich mich nach deiner Anfrage persönlich mit dem Download.",
     "faq": [
       {
         "q": "Brauche ich Programmierkenntnisse?",
-        "a": "Nein. Jeder Schritt ist so beschrieben, dass er ohne Code-Kenntnisse nachvollziehbar ist — von der Claude-Einrichtung bis zur ersten Automatisierung."
+        "a": "Nein. Jeder Schritt ist so beschrieben, dass er ohne Code-Kenntnisse nachvollziehbar ist, von der Claude-Einrichtung bis zur ersten Automatisierung."
       },
       {
         "q": "Wie lange dauert es, das umzusetzen?",
@@ -517,7 +517,7 @@
       },
       {
         "q": "Welche Tools brauche ich zusätzlich?",
-        "a": "Claude, eine Notion-Wissensbasis (kostenlos) und ein Automatisierungs-Tool wie Zapier, Make oder n8n — welches am besten zu dir passt, erklärt das Playbook."
+        "a": "Claude, eine Notion-Wissensbasis (kostenlos) und ein Automatisierungs-Tool wie Zapier, Make oder n8n. Welches am besten zu dir passt, erklärt das Playbook."
       },
       {
         "q": "Wie bekomme ich das Playbook nach dem Kauf?",
@@ -525,27 +525,27 @@
       },
       {
         "q": "Ist das dasselbe wie eine Zusammenarbeit mit Reich Studio?",
-        "a": "Nein. Das Playbook ist zum Selbermachen. Wenn du willst, dass jemand das komplette Fundament — Website, Brain, Automatisierung — für dich aufsetzt, ist das der Starter-Ansatz von Reich Studio — dafür gibt es die Erstgespräch-Option."
+        "a": "Nein. Das Playbook ist zum Selbermachen. Wenn du willst, dass jemand das komplette Fundament (Website, Brain, Automatisierung) für dich aufsetzt, ist das der Starter-Ansatz von Reich Studio. Dafür gibt es die Erstgespräch-Option."
       }
     ]
   },
   "ThanksPage": {
-    "metaTitle": "Reich Studio — Danke für deinen Kauf",
+    "metaTitle": "Reich Studio: Danke für deinen Kauf",
     "eyebrow": "Kauf bestätigt",
     "thanks": "Danke!",
     "hereIs": "Hier ist dein Download.",
-    "bothFormats": "{productName} — beide Formate zum direkten Herunterladen.",
+    "bothFormats": "{productName}: beide Formate zum direkten Herunterladen.",
     "downloadPortrait": "Hochformat herunterladen",
     "downloadLandscape": "Querformat herunterladen",
-    "saveNote": "Speichere diese Seite oder die Dateien direkt ab — bei Problemen einfach an <link>sofijareich@gmail.com</link> schreiben."
+    "saveNote": "Speichere diese Seite oder die Dateien direkt ab. Bei Problemen einfach an <link>sofijareich@gmail.com</link> schreiben."
   },
   "ContactPage": {
-    "metaTitle": "Reich Studio — Kontakt",
+    "metaTitle": "Reich Studio: Kontakt",
     "metaDescription": "Kurze Nachricht reicht. Sofija von Reich Studio in Sursee meldet sich innert ein bis zwei Tagen persönlich zurück.",
     "heroEyebrow": "Kontakt",
     "heroLine1": "Lass uns",
     "heroLine2": "reden.",
-    "heroSubtext": "Kurze Nachricht reicht. Ich melde mich persönlich zurück — meist innert ein bis zwei Tagen.",
+    "heroSubtext": "Kurze Nachricht reicht. Ich melde mich persönlich zurück, meist innert ein bis zwei Tagen.",
     "faqEyebrow": "Bevor du schreibst",
     "faqHeading": "Kurz beantwortet",
     "faq": [
@@ -558,21 +558,21 @@
         "a": "Nein. Es dient dazu, zu klären, ob und wie wir zusammenarbeiten."
       },
       {
-        "q": "Ich weiss noch nicht, was ich brauche — ist das ein Problem?",
+        "q": "Ich weiss noch nicht, was ich brauche. Ist das ein Problem?",
         "a": "Nein. Die meisten wissen das nicht genau. Dafür ist das Gespräch da."
       },
       {
         "q": "Arbeitest du auch überregional?",
-        "a": "Ja. Ich sitze in Sursee (Kanton Luzern), aber die Zusammenarbeit läuft grösstenteils remote — ein Call und kurze Nachrichten reichen meistens."
+        "a": "Ja. Ich sitze in Sursee (Kanton Luzern), aber die Zusammenarbeit läuft grösstenteils remote. Ein Call und kurze Nachrichten reichen meistens."
       },
       {
         "q": "In welcher Sprache läuft die Zusammenarbeit?",
-        "a": "Auf Deutsch oder Englisch — je nachdem, was für dich passt."
+        "a": "Auf Deutsch oder Englisch, je nachdem, was für dich passt."
       }
     ]
   },
   "Contact": {
-    "successTitle": "Danke — deine Nachricht ist da.",
+    "successTitle": "Danke! Deine Nachricht ist da.",
     "successSubtext": "Ich melde mich innert ein bis zwei Tagen persönlich zurück.",
     "namePlaceholder": "Name",
     "emailPlaceholder": "E-Mail",
@@ -589,19 +589,19 @@
   },
   "AiAutomationPage": {
     "metaTitle": "KI-Automatisierung fürs Marketing | Reich Studio Sursee",
-    "metaDescription": "KI-Automatisierung fürs Marketing in Sursee: Content, Anfragen und Follow-ups laufen automatisch. Kein Software-Projekt — ein Marketing-System, das ohne dich weiterläuft.",
+    "metaDescription": "KI-Automatisierung fürs Marketing in Sursee: Content, Anfragen und Follow-ups laufen automatisch. Kein Software-Projekt: ein Marketing-System, das ohne dich weiterläuft.",
     "heroEyebrow": "Leistung · KI im Marketing",
     "heroLine1": "Arbeit, die",
     "heroLine2": "sich selbst macht.",
-    "heroSubtext": "Ich baue KI-gestützte Abläufe, die Routinearbeit übernehmen — damit du dich um Kund:innen kümmerst statt um Copy-Paste.",
+    "heroSubtext": "Ich baue KI-gestützte Abläufe, die Routinearbeit übernehmen, damit du dich um Kund:innen kümmerst statt um Copy-Paste.",
     "introLead": "Die meisten Automatisierungs-Anbieter bauen dir Software. Ich übernehme dein Marketing.",
-    "introBody": "Wenn du ein Kundenportal oder eine individuelle Anwendung brauchst, bist du bei einer Software-Firma besser aufgehoben. Ich setze KI dort ein, wo es um Sichtbarkeit geht: Inhalte, die entstehen ohne dass du davor sitzt, Anfragen die nicht untergehen, Nachfassnachrichten die von selbst rausgehen. Marketing-Arbeit, die eine Maschine übernehmen kann — nicht ein IT-Projekt.",
+    "introBody": "Wenn du ein Kundenportal oder eine individuelle Anwendung brauchst, bist du bei einer Software-Firma besser aufgehoben. Ich setze KI dort ein, wo es um Sichtbarkeit geht: Inhalte, die entstehen ohne dass du davor sitzt, Anfragen die nicht untergehen, Nachfassnachrichten die von selbst rausgehen. Marketing-Arbeit, die eine Maschine übernehmen kann, nicht ein IT-Projekt.",
     "blocksEyebrow": "Was ich baue",
     "blocksHeading": "Typische Automatisierungen",
     "blocks": [
       {
         "title": "Anfragen automatisch erfassen",
-        "text": "Kontaktformular, DM oder Mail landen strukturiert in deinem System — inklusive Benachrichtigung, damit keine Anfrage untergeht."
+        "text": "Kontaktformular, DM oder Mail landen strukturiert in deinem System, inklusive Benachrichtigung, damit keine Anfrage untergeht."
       },
       {
         "title": "Follow-ups, die von selbst rausgehen",
@@ -613,7 +613,7 @@
       },
       {
         "title": "Social-Media-Automatisierung",
-        "text": "Kommentare, DMs und Interessent:innen werden automatisch beantwortet und erfasst — zum Beispiel per n8n-Workflow."
+        "text": "Kommentare, DMs und Interessent:innen werden automatisch beantwortet und erfasst, zum Beispiel per n8n-Workflow."
       },
       {
         "title": "Interne Abläufe verbinden",
@@ -636,7 +636,7 @@
       },
       {
         "q": "Welche Tools setzt du ein?",
-        "a": "Je nach Aufgabe — häufig n8n für Workflows, Notion als Datenbasis und verschiedene KI-Modelle für Text- und Bildarbeit. Ich wähle nach deinem Bedarf, nicht nach Lieblingstool."
+        "a": "Je nach Aufgabe. Häufig n8n für Workflows, Notion als Datenbasis und verschiedene KI-Modelle für Text- und Bildarbeit. Ich wähle nach deinem Bedarf, nicht nach Lieblingstool."
       },
       {
         "q": "Wie lange dauert die Umsetzung?",
@@ -654,11 +654,11 @@
   },
   "MarketingAutomationPage": {
     "metaTitle": "Marketing-Automatisierung | Reich Studio Sursee",
-    "metaDescription": "Marketing-Automatisierung für Selbstständige und KMU in Sursee: Content, Follow-ups und Leads laufen automatisch — ohne Agentur-Retainer und ohne Fachchinesisch.",
+    "metaDescription": "Marketing-Automatisierung für Selbstständige und KMU in Sursee: Content, Follow-ups und Leads laufen automatisch, ohne Agentur-Retainer und ohne Fachchinesisch.",
     "heroEyebrow": "Leistung · Marketing-Automatisierung",
     "heroLine1": "Marketing,",
     "heroLine2": "das ohne dich läuft.",
-    "heroSubtext": "Sichtbar bleiben, ohne jeden Tag Zeit dafür zu haben — mit Systemen statt Dauer-Aufwand.",
+    "heroSubtext": "Sichtbar bleiben, ohne jeden Tag Zeit dafür zu haben, mit Systemen statt Dauer-Aufwand.",
     "introLead": "Marketing scheitert selten an der Idee. Es scheitert daran, dass niemand Zeit hat, es durchzuhalten.",
     "introBody": "Du weisst, dass du regelmässig posten und dich bei Interessent:innen melden solltest. Aber zwischen Kundenterminen bleibt das liegen. Statt dir noch eine To-do-Liste zu geben, baue ich dir einen Ablauf, der auch dann weiterläuft, wenn du drei Wochen im Tagesgeschäft steckst.",
     "blocksEyebrow": "Was ich baue",
@@ -670,7 +670,7 @@
       },
       {
         "title": "Lead-Erfassung ohne Lücken",
-        "text": "Jede Anfrage landet automatisch am richtigen Ort — mit Quelle, Datum und Status."
+        "text": "Jede Anfrage landet automatisch am richtigen Ort, mit Quelle, Datum und Status."
       },
       {
         "title": "Automatische Nachfassnachrichten",
@@ -686,7 +686,7 @@
       },
       {
         "title": "Übersicht, die stimmt",
-        "text": "Du siehst auf einen Blick, was funktioniert — ohne dafür Zahlen von Hand zusammenzusuchen."
+        "text": "Du siehst auf einen Blick, was funktioniert, ohne dafür Zahlen von Hand zusammenzusuchen."
       }
     ],
     "faqHeading": "Häufige Fragen zur Marketing-Automatisierung",
@@ -722,13 +722,13 @@
     "hourlyValue": "CHF 60",
     "hourlyNote": "pro Stunde",
     "noteLabel": "Wichtig",
-    "note": "Diese Preise sind grobe Richtwerte und keine fixe Preisliste. Der tatsächliche Preis hängt stark vom Projekt ab — Umfang, Komplexität und was du bereits hast, verändern die Kalkulation. Das genaue Angebot besprechen wir im Erstgespräch.",
+    "note": "Diese Preise sind grobe Richtwerte und keine fixe Preisliste. Der tatsächliche Preis hängt stark vom Projekt ab: Umfang, Komplexität und was du bereits hast, verändern die Kalkulation. Das genaue Angebot besprechen wir im Erstgespräch.",
     "listEyebrow": "Grobe Richtwerte",
     "listHeading": "Was Projekte in etwa kosten.",
     "items": [
       {
         "label": "Professionelle Website, 3 Seiten",
-        "sublabel": "Design, Umsetzung, Feinschliff — herausstechend statt Baukasten",
+        "sublabel": "Design, Umsetzung, Feinschliff: herausstechend statt Baukasten",
         "low": "1'500",
         "high": "2'400"
       },
@@ -740,19 +740,19 @@
       },
       {
         "label": "Grössere Prozessautomatisierung",
-        "sublabel": "n8n, Zapier oder AI — von Konzept bis laufendem Workflow",
+        "sublabel": "n8n, Zapier oder AI: von Konzept bis laufendem Workflow",
         "low": "900",
         "high": "1'800"
       },
       {
         "label": "Eigene App, Software oder System",
-        "sublabel": "Sehr projektabhängig — vom Tool bis zum eigenen System",
+        "sublabel": "Sehr projektabhängig: vom Tool bis zum eigenen System",
         "low": "3'500",
         "high": "9'000"
       },
       {
         "label": "Brandaufbau von Grund auf",
-        "sublabel": "Brand, Logo, Styleguide, Philosophie — mit fertigem Endprodukt",
+        "sublabel": "Brand, Logo, Styleguide, Philosophie (mit fertigem Endprodukt)",
         "low": "1'200",
         "high": "2'100"
       },
