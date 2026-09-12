@@ -65,7 +65,7 @@
       {
         "step": "01",
         "title": "Kennenlernen",
-        "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt, und was sich davon automatisieren lässt."
+        "text": "Im Erstgespräch schauen wir, wo dir Marketing gerade Zeit stiehlt, und was sich davon automatisieren lässt. Das Erstgespräch selbst ist kostenlos."
       },
       {
         "step": "02",
@@ -329,6 +329,12 @@
           },
           {
             "alt": "Sempia Wochenmenü"
+          },
+          {
+            "alt": "Sempia Menükarte, Seite 2"
+          },
+          {
+            "alt": "Sempia Tageskarte"
           }
         ]
       },
@@ -377,6 +383,24 @@
           },
           {
             "alt": "Plakat für die Winterlounge"
+          },
+          {
+            "alt": "Detailaufnahme im Restaurant Vivace"
+          },
+          {
+            "alt": "Pflanzen im Restaurant Vivace"
+          },
+          {
+            "alt": "Verkaufsmappe Hotel Sempachersee, Seite 1"
+          },
+          {
+            "alt": "Verkaufsmappe Hotel Sempachersee, Seite 2"
+          },
+          {
+            "alt": "Verkaufsmappe Hotel Sempachersee, Seite 3"
+          },
+          {
+            "alt": "Verkaufsmappe Hotel Sempachersee, Seite 4"
           }
         ]
       },
@@ -412,6 +436,9 @@
           },
           {
             "alt": "Live-Performance in der All in One Bar"
+          },
+          {
+            "alt": "Werbevideo für die All in One Bar"
           }
         ],
         "testimonial": {
@@ -420,7 +447,11 @@
           "role": "All in One Bar, Ebikon"
         }
       }
-    ]
+    ],
+    "playVideo": "Video abspielen",
+    "pauseVideo": "Video pausieren",
+    "muteVideo": "Stummschalten",
+    "unmuteVideo": "Ton einschalten"
   },
   "Stats": {
     "source": "Quelle: TikTok-Analytics-Export (60-Tage-Fenster, Mai–Juli 2024) sowie aktueller Live-Stand der betreuten Instagram-Accounts.",
@@ -545,7 +576,7 @@
     "heroEyebrow": "Kontakt",
     "heroLine1": "Lass uns",
     "heroLine2": "reden.",
-    "heroSubtext": "Kurze Nachricht reicht. Ich melde mich persönlich zurück, meist innert ein bis zwei Tagen.",
+    "heroSubtext": "Kurze Nachricht reicht. Ich melde mich persönlich zurück, meist innert ein bis zwei Tagen. Das Erstgespräch ist immer kostenlos.",
     "faqEyebrow": "Bevor du schreibst",
     "faqHeading": "Kurz beantwortet",
     "faq": [
@@ -722,7 +753,7 @@
     "hourlyValue": "CHF 60",
     "hourlyNote": "pro Stunde",
     "noteLabel": "Wichtig",
-    "note": "Diese Preise sind grobe Richtwerte und keine fixe Preisliste. Der tatsächliche Preis hängt stark vom Projekt ab: Umfang, Komplexität und was du bereits hast, verändern die Kalkulation. Das genaue Angebot besprechen wir im Erstgespräch.",
+    "note": "Diese Preise sind grobe Richtwerte und keine fixe Preisliste. Der tatsächliche Preis hängt stark vom Projekt ab: Umfang, Komplexität und was du bereits hast, verändern die Kalkulation. Das genaue Angebot besprechen wir im Erstgespräch, das immer kostenlos ist.",
     "listEyebrow": "Grobe Richtwerte",
     "listHeading": "Was Projekte in etwa kosten.",
     "items": [

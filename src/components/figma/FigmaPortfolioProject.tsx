@@ -26,6 +26,10 @@ export default function FigmaPortfolioProject({
     backToGrid: string;
     prevPhoto: string;
     nextPhoto: string;
+    playVideo: string;
+    pauseVideo: string;
+    muteVideo: string;
+    unmuteVideo: string;
   };
 }) {
   const media = portfolioMedia[project.id] ?? [];

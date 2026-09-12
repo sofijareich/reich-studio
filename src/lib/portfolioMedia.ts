@@ -10,6 +10,8 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "video", src: "/referenzen/sempia/ad.webm" },
     { type: "image", src: "/referenzen/sempia/print/menu-1.png" },
     { type: "image", src: "/referenzen/sempia/print/wochenmenu.png" },
+    { type: "image", src: "/referenzen/sempia/print/menu-2.png" },
+    { type: "image", src: "/referenzen/sempia/print/tageskarte.png" },
   ],
   "hotel-sempachersee": [
     { type: "image", src: "/referenzen/hotel-sempachersee/vivace/interior-wide.jpg" },
@@ -18,6 +20,12 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "video", src: "/referenzen/hotel-sempachersee/aurora/before-after.webm" },
     { type: "video", src: "/referenzen/hotel-sempachersee/lago/promo.webm" },
     { type: "image", src: "/referenzen/hotel-sempachersee/print/poster-winterlounge.jpg" },
+    { type: "image", src: "/referenzen/hotel-sempachersee/vivace/detail.jpg" },
+    { type: "image", src: "/referenzen/hotel-sempachersee/vivace/plants.jpg" },
+    { type: "image", src: "/referenzen/hotel-sempachersee/print/sales-folder-01.png" },
+    { type: "image", src: "/referenzen/hotel-sempachersee/print/sales-folder-03.png" },
+    { type: "image", src: "/referenzen/hotel-sempachersee/print/sales-folder-05.png" },
+    { type: "image", src: "/referenzen/hotel-sempachersee/print/sales-folder-07.png" },
   ],
   "ebikon-bar": [
     { type: "video", src: "/referenzen/ebikon-bar/testvideo-instagram.mp4" },
@@ -27,6 +35,7 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "image", src: "/referenzen/ebikon-bar/bar-ambiance.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/dj-1.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/performer.jpg" },
+    { type: "video", src: "/referenzen/ebikon-bar/promo.mp4" },
   ],
 };
 

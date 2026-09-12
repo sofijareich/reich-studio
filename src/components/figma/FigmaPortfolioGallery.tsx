@@ -1,10 +1,210 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import type { PortfolioMediaItem } from "@/lib/portfolioMedia";
 
-type LightboxState = { mode: "grid" | "single"; index: number } | null;
+type LightboxState =
+  | { mode: "grid" | "single"; index: number }
+  | { mode: "video"; src: string; caption: string }
+  | null;
+
+type GalleryLabels = {
+  viewAllPhotos: string;
+  allPhotosHeading: string;
+  closeLightbox: string;
+  backToGrid: string;
+  prevPhoto: string;
+  nextPhoto: string;
+  playVideo: string;
+  pauseVideo: string;
+  muteVideo: string;
+  unmuteVideo: string;
+};
+
+function PlayGlyph({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M4 2.5L13.5 8L4 13.5V2.5Z" fill="currentColor" />
+    </svg>
+  );
+}
+
+function PauseGlyph() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <rect x="3.5" y="2.5" width="3" height="11" fill="currentColor" />
+      <rect x="9.5" y="2.5" width="3" height="11" fill="currentColor" />
+    </svg>
+  );
+}
+
+function MutedGlyph() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M1 6H4L8 2.5V13.5L4 10H1V6Z" fill="currentColor" />
+      <path d="M10.5 5.5L14.5 9.5M14.5 5.5L10.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function UnmutedGlyph() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M1 6H4L8 2.5V13.5L4 10H1V6Z" fill="currentColor" />
+      <path d="M10.8 4.8C11.9 5.9 11.9 10.1 10.8 11.2M12.8 3C14.7 4.9 14.7 11.1 12.8 13" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+/**
+ * A video tile in the grid: no native <video> controls (no play bar, no
+ * fullscreen button). Hovering plays it muted and looped inline, like a
+ * silent preview; leaving pauses and rewinds it. The badge is the only UI -
+ * visible at rest to signal "this moves", fading out while the preview
+ * plays. Clicking opens the full video with sound in the lightbox.
+ */
+function VideoTile({
+  src,
+  caption,
+  playLabel,
+  onOpen,
+}: {
+  src: string;
+  caption: string;
+  playLabel: string;
+  onOpen: () => void;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [hovering, setHovering] = useState(false);
+
+  function handleEnter() {
+    setHovering(true);
+    const v = videoRef.current;
+    if (!v) return;
+    v.currentTime = 0;
+    v.play().catch(() => {});
+  }
+
+  function handleLeave() {
+    setHovering(false);
+    const v = videoRef.current;
+    if (!v) return;
+    v.pause();
+    v.currentTime = 0;
+  }
+
+  return (
+    <button
+      type="button"
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      onClick={onOpen}
+      className="group relative block aspect-video w-full cursor-pointer"
+      aria-label={caption || playLabel}
+    >
+      <video
+        ref={videoRef}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="h-full w-full bg-black/5 object-cover"
+      >
+        <source src={src} />
+      </video>
+      <span
+        className={`absolute inset-0 flex items-center justify-center bg-black/15 transition-opacity duration-300 ${
+          hovering ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        <span className="flex h-11 w-11 items-center justify-center border border-white/80 text-white">
+          <PlayGlyph size={18} />
+        </span>
+      </span>
+    </button>
+  );
+}
+
+/**
+ * The video lightbox player: sound is on by default (opening it is a
+ * deliberate "watch this" click, unlike the muted grid preview), with a
+ * hairline-bordered play/pause and mute button pair matching the photo
+ * lightbox's prev/next buttons instead of the browser's native controls.
+ */
+function VideoLightboxPlayer({
+  src,
+  caption,
+  labels,
+}: {
+  src: string;
+  caption: string;
+  labels: GalleryLabels;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(true);
+  const [muted, setMuted] = useState(false);
+
+  useEffect(() => {
+    videoRef.current?.play().catch(() => {
+      setPlaying(false);
+    });
+  }, []);
+
+  function togglePlay() {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.paused) {
+      v.play();
+      setPlaying(true);
+    } else {
+      v.pause();
+      setPlaying(false);
+    }
+  }
+
+  return (
+    <div
+      className="relative flex max-h-full w-full max-w-3xl flex-col items-center"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <video
+        ref={videoRef}
+        muted={muted}
+        loop
+        playsInline
+        autoPlay
+        onClick={togglePlay}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        className="max-h-[70vh] w-full cursor-pointer border border-black/10 object-contain"
+      >
+        <source src={src} />
+      </video>
+
+      {caption && <p className="fg-small mt-4 text-black/50">{caption}</p>}
+
+      <div className="mt-6 flex items-center gap-4">
+        <button
+          type="button"
+          onClick={togglePlay}
+          aria-label={playing ? labels.pauseVideo : labels.playVideo}
+          className="flex h-10 w-10 items-center justify-center border border-black/20 text-black/70 transition-colors hover:border-black hover:bg-black hover:text-white"
+        >
+          {playing ? <PauseGlyph /> : <PlayGlyph />}
+        </button>
+        <button
+          type="button"
+          onClick={() => setMuted((m) => !m)}
+          aria-label={muted ? labels.unmuteVideo : labels.muteVideo}
+          className="flex h-10 w-10 items-center justify-center border border-black/20 text-black/70 transition-colors hover:border-black hover:bg-black hover:text-white"
+        >
+          {muted ? <MutedGlyph /> : <UnmutedGlyph />}
+        </button>
+      </div>
+    </div>
+  );
+}
 
 /**
  * Figma has no gallery/lightbox frame to match, so this restyles the
@@ -12,7 +212,8 @@ type LightboxState = { mode: "grid" | "single"; index: number } | null;
  * black-on-white language established elsewhere on the page: thin black
  * hairline borders instead of filled dark cards, sharp corners, no glow.
  * Interaction structure is unchanged - grid, click photo, full-grid
- * overview, single image with prev/next.
+ * overview, single image with prev/next. Videos get their own hover-preview
+ * + custom-controls lightbox instead of native <video controls>.
  */
 export default function FigmaPortfolioGallery({
   media,
@@ -21,14 +222,7 @@ export default function FigmaPortfolioGallery({
 }: {
   media: PortfolioMediaItem[];
   captions: string[];
-  labels: {
-    viewAllPhotos: string;
-    allPhotosHeading: string;
-    closeLightbox: string;
-    backToGrid: string;
-    prevPhoto: string;
-    nextPhoto: string;
-  };
+  labels: GalleryLabels;
 }) {
   const [lightbox, setLightbox] = useState<LightboxState>(null);
 
@@ -37,24 +231,30 @@ export default function FigmaPortfolioGallery({
     .filter((entry) => entry.item.type === "image");
 
   useEffect(() => {
-    if (!lightbox) return;
+    if (!lightbox || lightbox.mode !== "single") return;
 
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setLightbox(null);
-      if (lightbox?.mode === "single") {
-        if (e.key === "ArrowRight") {
-          setLightbox((s) =>
-            s ? { mode: "single", index: (s.index + 1) % photos.length } : s
-          );
-        }
-        if (e.key === "ArrowLeft") {
-          setLightbox((s) =>
-            s
-              ? { mode: "single", index: (s.index - 1 + photos.length) % photos.length }
-              : s
-          );
-        }
+      if (e.key === "ArrowRight") {
+        setLightbox((s) =>
+          s && s.mode === "single" ? { mode: "single", index: (s.index + 1) % photos.length } : s
+        );
       }
+      if (e.key === "ArrowLeft") {
+        setLightbox((s) =>
+          s && s.mode === "single"
+            ? { mode: "single", index: (s.index - 1 + photos.length) % photos.length }
+            : s
+        );
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightbox, photos.length]);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setLightbox(null);
     }
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -62,7 +262,7 @@ export default function FigmaPortfolioGallery({
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [lightbox, photos.length]);
+  }, [lightbox]);
 
   return (
     <>
@@ -76,14 +276,12 @@ export default function FigmaPortfolioGallery({
             >
               <div className="overflow-hidden border border-black/15">
                 {item.type === "video" ? (
-                  <video
-                    controls
-                    preload="metadata"
-                    className="aspect-video w-full bg-black/5 object-cover"
-                    aria-label={caption}
-                  >
-                    <source src={item.src} />
-                  </video>
+                  <VideoTile
+                    src={item.src}
+                    caption={caption}
+                    playLabel={labels.playVideo}
+                    onOpen={() => setLightbox({ mode: "video", src: item.src, caption })}
+                  />
                 ) : (
                   <button
                     type="button"
@@ -135,7 +333,9 @@ export default function FigmaPortfolioGallery({
             </svg>
           </button>
 
-          {lightbox.mode === "grid" ? (
+          {lightbox.mode === "video" ? (
+            <VideoLightboxPlayer src={lightbox.src} caption={lightbox.caption} labels={labels} />
+          ) : lightbox.mode === "grid" ? (
             <div
               className="max-h-full w-full max-w-5xl overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
@@ -191,7 +391,9 @@ export default function FigmaPortfolioGallery({
                   type="button"
                   onClick={() =>
                     setLightbox((s) =>
-                      s ? { mode: "single", index: (s.index - 1 + photos.length) % photos.length } : s
+                      s && s.mode === "single"
+                        ? { mode: "single", index: (s.index - 1 + photos.length) % photos.length }
+                        : s
                     )
                   }
                   aria-label={labels.prevPhoto}
@@ -212,7 +414,9 @@ export default function FigmaPortfolioGallery({
                   type="button"
                   onClick={() =>
                     setLightbox((s) =>
-                      s ? { mode: "single", index: (s.index + 1) % photos.length } : s
+                      s && s.mode === "single"
+                        ? { mode: "single", index: (s.index + 1) % photos.length }
+                        : s
                     )
                   }
                   aria-label={labels.nextPhoto}

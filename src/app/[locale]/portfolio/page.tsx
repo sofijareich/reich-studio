@@ -54,6 +54,10 @@ export default async function PortfolioPage({
             backToGrid: t("backToGrid"),
             prevPhoto: t("prevPhoto"),
             nextPhoto: t("nextPhoto"),
+            playVideo: t("playVideo"),
+            pauseVideo: t("pauseVideo"),
+            muteVideo: t("muteVideo"),
+            unmuteVideo: t("unmuteVideo"),
           }}
         />
       ))}

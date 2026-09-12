@@ -65,7 +65,7 @@
       {
         "step": "01",
         "title": "Get to know each other",
-        "text": "In the first call, we find where marketing is stealing your time, and what part of it can be automated."
+        "text": "In the first call, we find where marketing is stealing your time, and what part of it can be automated. The call itself is free."
       },
       {
         "step": "02",
@@ -329,6 +329,12 @@
           },
           {
             "alt": "Sempia weekly menu"
+          },
+          {
+            "alt": "Sempia menu card, page 2"
+          },
+          {
+            "alt": "Sempia daily specials board"
           }
         ]
       },
@@ -377,6 +383,24 @@
           },
           {
             "alt": "Poster for the Winterlounge"
+          },
+          {
+            "alt": "Detail shot at Restaurant Vivace"
+          },
+          {
+            "alt": "Plants at Restaurant Vivace"
+          },
+          {
+            "alt": "Hotel Sempachersee sales folder, page 1"
+          },
+          {
+            "alt": "Hotel Sempachersee sales folder, page 2"
+          },
+          {
+            "alt": "Hotel Sempachersee sales folder, page 3"
+          },
+          {
+            "alt": "Hotel Sempachersee sales folder, page 4"
           }
         ]
       },
@@ -412,6 +436,9 @@
           },
           {
             "alt": "Live performance at the All in One Bar"
+          },
+          {
+            "alt": "Promo video for the All in One Bar"
           }
         ],
         "testimonial": {
@@ -420,7 +447,11 @@
           "role": "All in One Bar, Ebikon"
         }
       }
-    ]
+    ],
+    "playVideo": "Play video",
+    "pauseVideo": "Pause video",
+    "muteVideo": "Mute",
+    "unmuteVideo": "Unmute"
   },
   "Stats": {
     "source": "Source: TikTok Analytics export (60-day window, May–July 2024) plus current live stats from managed Instagram accounts.",
@@ -545,7 +576,7 @@
     "heroEyebrow": "Contact",
     "heroLine1": "Let's",
     "heroLine2": "talk.",
-    "heroSubtext": "A short message is enough. I reply personally, usually within one to two days.",
+    "heroSubtext": "A short message is enough. I reply personally, usually within one to two days. The first call is always free.",
     "faqEyebrow": "Before you write",
     "faqHeading": "Quick answers",
     "faq": [
@@ -722,7 +753,7 @@
     "hourlyValue": "CHF 60",
     "hourlyNote": "per hour",
     "noteLabel": "Important",
-    "note": "These prices are rough guidance, not a fixed price list. The real price depends heavily on the project: scope, complexity, and what you already have all shift the calculation. We work out the exact quote together in the first call.",
+    "note": "These prices are rough guidance, not a fixed price list. The real price depends heavily on the project: scope, complexity, and what you already have all shift the calculation. We work out the exact quote together in the first call, which is always free.",
     "listEyebrow": "Rough guidance",
     "listHeading": "What things tend to cost.",
     "items": [
