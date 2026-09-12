@@ -37,7 +37,7 @@ export default async function FigmaAiWorkflow() {
   return (
     <section className="fg-page-x py-[clamp(3rem,8vh,6rem)]">
       <FigmaReveal>
-        <p className="fg-small uppercase text-black/50">{t("eyebrow")}</p>
+        <p className="fg-small uppercase text-black/60">{t("eyebrow")}</p>
         <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">{t("title")}</h2>
         <p className="fg-mid mt-[clamp(0.75rem,2vh,1.25rem)] max-w-[46ch] text-black/60">
           {t("subtext")}

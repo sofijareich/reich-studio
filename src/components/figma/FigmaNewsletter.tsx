@@ -43,7 +43,7 @@ export default function FigmaNewsletter() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               aria-label={t("placeholder")}
-              className="fg-mid w-full max-w-xs border-x-0 border-t-0 border-b border-black/30 bg-transparent pb-2 text-black placeholder:text-black/40 focus:border-b-black focus:outline-none"
+              className="fg-mid w-full max-w-xs border-x-0 border-t-0 border-b border-black/30 bg-transparent pb-2 text-black placeholder:text-black/60 focus:border-b-black focus:outline-none"
             />
             <button
               type="submit"

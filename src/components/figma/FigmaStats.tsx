@@ -24,14 +24,14 @@ export default async function FigmaStats() {
               <p className="fg-stat-value">{formatValue(stat)}</p>
               <p className="fg-small mt-[0.5em] lowercase text-black/80">{stat.label}</p>
               {stat.sublabel && (
-                <p className="fg-small mt-[0.15em] text-black/45">{stat.sublabel}</p>
+                <p className="fg-small mt-[0.15em] text-black/60">{stat.sublabel}</p>
               )}
             </div>
           </FigmaReveal>
         ))}
       </div>
 
-      <p className="fg-small mt-[clamp(2rem,5vh,3.5rem)] max-w-[70ch] text-black/45">
+      <p className="fg-small mt-[clamp(2rem,5vh,3.5rem)] max-w-[70ch] text-black/60">
         {tStats("source")}
       </p>
     </section>

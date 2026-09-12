@@ -28,7 +28,7 @@ export default async function FigmaProductDetail() {
       <div className="grid gap-[clamp(2.5rem,5vw,4rem)] lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
         <div>
           <FigmaReveal>
-            <p className="fg-small uppercase text-black/50">{t("whatsInside")}</p>
+            <p className="fg-small uppercase text-black/60">{t("whatsInside")}</p>
             <ul className="mt-[1.25em] space-y-[0.85em]">
               {includes.map((item) => (
                 <li key={item} className="fg-mid flex items-start gap-3 text-black/80">
@@ -41,7 +41,7 @@ export default async function FigmaProductDetail() {
 
           <FigmaReveal delay={0.1}>
             <div className="mt-[clamp(2rem,4vh,3rem)] border-t border-black/15 pt-[clamp(1.5rem,3vh,2rem)]">
-              <p className="fg-small uppercase text-black/50">{t("whoItsFor")}</p>
+              <p className="fg-small uppercase text-black/60">{t("whoItsFor")}</p>
               <p className="fg-mid mt-[0.75em] max-w-xl text-black/70">{t("forWhom")}</p>
             </div>
           </FigmaReveal>
@@ -61,7 +61,7 @@ export default async function FigmaProductDetail() {
                 {buyLabel}
               </a>
               {!stripeLink && (
-                <p className="fg-small mt-[1em] text-white/45">{t("comingSoon")}</p>
+                <p className="fg-small mt-[1em] text-white/60">{t("comingSoon")}</p>
               )}
             </div>
           </FigmaReveal>

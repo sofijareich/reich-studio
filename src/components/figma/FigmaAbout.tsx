@@ -33,7 +33,7 @@ export default async function FigmaAbout() {
 
       <section className="fg-page-x py-[clamp(3rem,8vh,6rem)]">
         <FigmaReveal>
-          <p className="fg-small uppercase text-black/50">{t("valuesEyebrow")}</p>
+          <p className="fg-small uppercase text-black/60">{t("valuesEyebrow")}</p>
           <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">
             {t("valuesTitle")}
           </h2>

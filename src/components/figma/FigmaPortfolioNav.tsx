@@ -45,7 +45,7 @@ export default function FigmaPortfolioNav({
   return (
     <div className="fg-page-x sticky top-0 z-30 border-b border-black/10 bg-white/95 backdrop-blur-md">
       <div className="flex items-center gap-2 py-3">
-        <span className="fg-small mr-2 hidden shrink-0 lowercase text-black/50 sm:inline">
+        <span className="fg-small mr-2 hidden shrink-0 lowercase text-black/60 sm:inline">
           {navLabel}
         </span>
         <div
@@ -60,7 +60,7 @@ export default function FigmaPortfolioNav({
               className={`fg-small shrink-0 whitespace-nowrap border-b py-1 lowercase transition-colors ${
                 active === p.id
                   ? "border-black text-black"
-                  : "border-transparent text-black/45 hover:text-black/80"
+                  : "border-transparent text-black/60 hover:text-black/80"
               }`}
             >
               {p.shortName}

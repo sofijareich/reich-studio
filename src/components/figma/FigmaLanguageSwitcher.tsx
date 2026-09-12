@@ -35,7 +35,7 @@ export default function FigmaLanguageSwitcher() {
         onClick={() => switchTo("en")}
         aria-pressed={locale === "en"}
         className={`px-2.5 py-1 transition-colors ${
-          locale === "en" ? "bg-black text-white" : "text-black/50 hover:text-black"
+          locale === "en" ? "bg-black text-white" : "text-black/60 hover:text-black"
         }`}
       >
         en
@@ -45,7 +45,7 @@ export default function FigmaLanguageSwitcher() {
         onClick={() => switchTo("de")}
         aria-pressed={locale === "de"}
         className={`px-2.5 py-1 transition-colors ${
-          locale === "de" ? "bg-black text-white" : "text-black/50 hover:text-black"
+          locale === "de" ? "bg-black text-white" : "text-black/60 hover:text-black"
         }`}
       >
         de

@@ -41,7 +41,7 @@ export default function FigmaPortfolioProject({
         className="fg-page-x scroll-mt-20 border-t border-black/10 py-[clamp(3.5rem,9vh,7rem)]"
       >
         <FigmaReveal>
-          <p className="fg-small uppercase text-black/50">
+          <p className="fg-small uppercase text-black/60">
             {String(index + 1).padStart(2, "0")} · {project.category}
           </p>
           <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-4xl lowercase">
@@ -50,7 +50,7 @@ export default function FigmaPortfolioProject({
           <p className="fg-lead mt-[clamp(1rem,2.5vh,1.75rem)] max-w-[52ch] text-black/80">
             {project.logline}
           </p>
-          <p className="fg-small mt-[clamp(0.5rem,1.2vh,0.75rem)] text-black/45">
+          <p className="fg-small mt-[clamp(0.5rem,1.2vh,0.75rem)] text-black/60">
             {project.duration}
           </p>
         </FigmaReveal>
@@ -66,14 +66,14 @@ export default function FigmaPortfolioProject({
                     </p>
                     <p className="fg-small mt-[0.4em] lowercase text-black/80">{stat.label}</p>
                     {stat.sublabel && (
-                      <p className="fg-small mt-[0.15em] text-black/45">{stat.sublabel}</p>
+                      <p className="fg-small mt-[0.15em] text-black/60">{stat.sublabel}</p>
                     )}
                   </div>
                 </FigmaReveal>
               ))}
             </div>
             {project.statsSource && (
-              <p className="fg-small mt-[clamp(1rem,2.5vh,1.5rem)] max-w-[70ch] text-black/40">
+              <p className="fg-small mt-[clamp(1rem,2.5vh,1.5rem)] max-w-[70ch] text-black/60">
                 {project.statsSource}
               </p>
             )}
@@ -82,11 +82,11 @@ export default function FigmaPortfolioProject({
 
         <div className="mt-[clamp(2.5rem,6vh,4.5rem)] grid gap-[clamp(2rem,4vw,3rem)] lg:grid-cols-2">
           <FigmaReveal className="border-t border-black pt-[clamp(0.75rem,1.6vh,1.25rem)]">
-            <p className="fg-small uppercase text-black/50">{originLabel}</p>
+            <p className="fg-small uppercase text-black/60">{originLabel}</p>
             <p className="fg-mid mt-[clamp(0.75rem,1.6vh,1.25rem)] text-black/80">{project.origin}</p>
           </FigmaReveal>
           <FigmaReveal delay={0.1} className="border-t border-black pt-[clamp(0.75rem,1.6vh,1.25rem)]">
-            <p className="fg-small uppercase text-black/50">{approachLabel}</p>
+            <p className="fg-small uppercase text-black/60">{approachLabel}</p>
             <p className="fg-mid mt-[clamp(0.75rem,1.6vh,1.25rem)] text-black/80">{project.approach}</p>
           </FigmaReveal>
         </div>

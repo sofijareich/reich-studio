@@ -182,7 +182,7 @@ function VideoLightboxPlayer({
         <source src={src} />
       </video>
 
-      {caption && <p className="fg-small mt-4 text-black/50">{caption}</p>}
+      {caption && <p className="fg-small mt-4 text-black/60">{caption}</p>}
 
       <div className="mt-6 flex items-center gap-4">
         <button
@@ -310,7 +310,7 @@ export default function FigmaPortfolioGallery({
                 )}
               </div>
               {caption && (
-                <p className="fg-small mt-2 text-black/45">{caption}</p>
+                <p className="fg-small mt-2 text-black/60">{caption}</p>
               )}
             </div>
           );
@@ -340,7 +340,7 @@ export default function FigmaPortfolioGallery({
               className="max-h-full w-full max-w-5xl overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
-              <p className="fg-small mb-6 text-center lowercase text-black/50">
+              <p className="fg-small mb-6 text-center lowercase text-black/60">
                 {labels.allPhotosHeading}
               </p>
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -381,7 +381,7 @@ export default function FigmaPortfolioGallery({
               </div>
 
               {photos[lightbox.index].caption && (
-                <p className="fg-small mt-4 text-black/50">
+                <p className="fg-small mt-4 text-black/60">
                   {photos[lightbox.index].caption}
                 </p>
               )}

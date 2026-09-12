@@ -14,7 +14,7 @@ export default async function FigmaSituation() {
   return (
     <section className="fg-page-x border-t border-black/15 py-[clamp(4rem,11vh,8rem)]">
       <FigmaReveal>
-        <p className="fg-small uppercase text-black/50">{t("eyebrow")}</p>
+        <p className="fg-small uppercase text-black/60">{t("eyebrow")}</p>
         <p className="fg-lead mt-[clamp(1rem,2.5vh,1.75rem)] max-w-[36ch] text-black">
           {t("lead")}
         </p>

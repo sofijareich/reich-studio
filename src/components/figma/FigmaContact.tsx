@@ -58,7 +58,7 @@ export default function FigmaContact() {
                 placeholder={t("namePlaceholder")}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="fg-mid border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/40 focus:border-black focus:outline-none"
+                className="fg-mid border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/60 focus:border-black focus:outline-none"
               />
               <input
                 required
@@ -66,7 +66,7 @@ export default function FigmaContact() {
                 placeholder={t("emailPlaceholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="fg-mid border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/40 focus:border-black focus:outline-none"
+                className="fg-mid border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/60 focus:border-black focus:outline-none"
               />
             </div>
             <textarea
@@ -75,7 +75,7 @@ export default function FigmaContact() {
               placeholder={t("messagePlaceholder")}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="fg-mid w-full border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/40 focus:border-black focus:outline-none"
+              className="fg-mid w-full border border-black/20 bg-white px-4 py-3 text-black placeholder:text-black/60 focus:border-black focus:outline-none"
             />
             <FigmaMagnetic>
               <button

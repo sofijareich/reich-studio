@@ -29,23 +29,23 @@ export default async function FigmaRateCard() {
   return (
     <section className="fg-page-x pb-[clamp(3rem,8vh,6rem)]">
       <FigmaReveal>
-        <p className="fg-small uppercase text-black/50">{t("hourlyEyebrow")}</p>
+        <p className="fg-small uppercase text-black/60">{t("hourlyEyebrow")}</p>
         <p className="fg-stat-value mt-[0.3em]">
           {t("hourlyValue")}
-          <span className="fg-small ml-2 text-black/50">{t("hourlyNote")}</span>
+          <span className="fg-small ml-2 text-black/60">{t("hourlyNote")}</span>
         </p>
       </FigmaReveal>
 
       <FigmaReveal delay={0.1} className="mt-[clamp(1.5rem,3.5vh,2.25rem)] flex gap-[clamp(0.5rem,1vw,1rem)] border-t border-black/15 pt-[clamp(1.5rem,3.5vh,2.25rem)]">
         <TriangleRight />
         <div>
-          <p className="fg-small uppercase text-black/50">{t("noteLabel")}</p>
+          <p className="fg-small uppercase text-black/60">{t("noteLabel")}</p>
           <p className="fg-mid mt-[0.4em] max-w-[62ch] text-black/80">{t("note")}</p>
         </div>
       </FigmaReveal>
 
       <FigmaReveal delay={0.15} className="mt-[clamp(3rem,7vh,5rem)]">
-        <p className="fg-small uppercase text-black/50">{t("listEyebrow")}</p>
+        <p className="fg-small uppercase text-black/60">{t("listEyebrow")}</p>
         <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">
           {t("listHeading")}
         </h2>
@@ -57,7 +57,7 @@ export default async function FigmaRateCard() {
             <div className="grid gap-x-6 gap-y-2 py-[clamp(1.25rem,3vh,1.75rem)] sm:grid-cols-[1fr_auto] sm:items-baseline">
               <div>
                 <p className="fg-mid lowercase text-black">{item.label}</p>
-                <p className="fg-small mt-[0.35em] text-black/50">{item.sublabel}</p>
+                <p className="fg-small mt-[0.35em] text-black/60">{item.sublabel}</p>
               </div>
               <p className="fg-stat-value whitespace-nowrap text-[clamp(1.5rem,2.4vw,2.25rem)] sm:text-right">
                 CHF {item.low}–{item.high}

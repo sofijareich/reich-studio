@@ -56,7 +56,7 @@ export default function FigmaFeaturedTestimonial({
             <p key={i}>{p}</p>
           ))}
         </blockquote>
-        <p className="fg-small mt-[clamp(1.25rem,3vh,2rem)] text-black/50">
+        <p className="fg-small mt-[clamp(1.25rem,3vh,2rem)] text-black/60">
           {author} · {role}
         </p>
       </motion.div>

@@ -26,7 +26,7 @@ export default function FigmaFaq({
     <section className="fg-page-x py-[clamp(3rem,8vh,6rem)]">
       <div className="max-w-3xl">
         <FigmaReveal>
-          <p className="fg-small uppercase text-black/50">{resolvedEyebrow}</p>
+          <p className="fg-small uppercase text-black/60">{resolvedEyebrow}</p>
           <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] mb-[clamp(2rem,5vh,3rem)] lowercase">
             {heading}
           </h2>

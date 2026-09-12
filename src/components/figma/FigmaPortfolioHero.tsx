@@ -17,7 +17,7 @@ export default function FigmaPortfolioHero({
 
       <div className="pt-[clamp(3rem,9vh,7rem)]">
         <FigmaReveal y={12}>
-          <p className="fg-small uppercase text-black/50">{eyebrow}</p>
+          <p className="fg-small uppercase text-black/60">{eyebrow}</p>
         </FigmaReveal>
         <h1 className="fg-display mt-[clamp(0.5rem,1.5vh,1rem)] lowercase">
           {lines.map((line, i) => (

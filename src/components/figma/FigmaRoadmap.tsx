@@ -26,7 +26,7 @@ export default function FigmaRoadmap({
   return (
     <section className="fg-page-x border-t border-black/15 py-[clamp(4.5rem,12vh,9rem)]">
       <FigmaReveal>
-        <p className="fg-small uppercase text-black/50">{eyebrow}</p>
+        <p className="fg-small uppercase text-black/60">{eyebrow}</p>
         <h2 className="fg-h2 mt-[clamp(0.5rem,1.2vh,0.75rem)] max-w-2xl lowercase">{title}</h2>
       </FigmaReveal>
 

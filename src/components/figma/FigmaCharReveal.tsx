@@ -11,6 +11,11 @@ import { motion } from "framer-motion";
  * Spaces render as non-breaking so the stagger doesn't collapse word gaps,
  * and each word is wrapped in an inline-block so wrapping still breaks
  * between words, not mid-word.
+ *
+ * `role="text"` on the wrapper is required for the `aria-label` to be
+ * exposed at all — a plain <span> has no implicit role, and per the ARIA
+ * spec an element needs a role before aria-label is allowed on it. This is
+ * the standard fix for "visually split text that should read as one string".
  */
 export default function FigmaCharReveal({
   text,
@@ -25,7 +30,7 @@ export default function FigmaCharReveal({
   let charIndex = 0;
 
   return (
-    <span className={className} aria-label={text}>
+    <span className={className} role="text" aria-label={text}>
       {words.map((word, wi) => (
         <span key={wi} className="inline-block whitespace-nowrap">
           {word.split("").map((char, ci) => {
