@@ -31,6 +31,7 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "image", src: "/referenzen/hotel-sempachersee/lago/lago-03.jpg" },
     { type: "video", src: "/referenzen/hotel-sempachersee/easter-brunch-reel.mp4" },
     { type: "video", src: "/referenzen/hotel-sempachersee/eventlocation-video-ad.mp4" },
+    { type: "video", src: "/referenzen/hotel-sempachersee/lago/lago-promo-2.webm" },
   ],
   "ebikon-bar": [
     { type: "video", src: "/referenzen/ebikon-bar/testvideo-instagram.mp4" },
@@ -41,7 +42,6 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "image", src: "/referenzen/ebikon-bar/dj-1.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/performer.jpg" },
     { type: "video", src: "/referenzen/ebikon-bar/promo.mp4" },
-    { type: "video", src: "/referenzen/ebikon-bar/bar-video-ad.webm" },
     { type: "image", src: "/referenzen/ebikon-bar/guest-01.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/guest-02.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/guest-03.jpg" },

@@ -22,6 +22,23 @@ type GalleryLabels = {
   unmuteVideo: string;
 };
 
+/**
+ * A collage, not a uniform photo grid: tile spans cycle through this
+ * 8-step pattern (big feature, a couple of squares, a tall one, a wide
+ * one, more squares) with `grid-auto-flow: dense` closing any gaps. Works
+ * for a project with 5 photos or one with 40 - it just repeats less.
+ */
+const COLLAGE_PATTERN = [
+  "col-span-2 row-span-2",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-2",
+  "col-span-1 row-span-1",
+  "col-span-2 row-span-1",
+  "col-span-1 row-span-1",
+  "col-span-1 row-span-1",
+];
+
 function PlayGlyph({ size = 16 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -100,7 +117,7 @@ function VideoTile({
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
       onClick={onOpen}
-      className="group relative block aspect-video w-full cursor-pointer"
+      className="group relative block h-full w-full cursor-pointer"
       aria-label={caption || playLabel}
     >
       <video
@@ -264,53 +281,62 @@ export default function FigmaPortfolioGallery({
     };
   }, [lightbox]);
 
+  // The varied-span collage only reads as intentional once there are enough
+  // tiles for dense packing to fill every row - with a handful of items it
+  // just leaves visible holes. Below that, fall back to a plain uniform grid.
+  const useCollage = media.length >= 8;
+
   return (
     <>
-      <div className="mt-[clamp(2rem,5vh,3.5rem)] grid gap-[clamp(0.75rem,1.5vw,1.25rem)] sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="mt-[clamp(2rem,5vh,3.5rem)] grid grid-cols-2 gap-[clamp(0.6rem,1.5vw,1rem)] sm:grid-cols-3 lg:grid-cols-4"
+        style={
+          useCollage
+            ? { gridAutoFlow: "dense", gridAutoRows: "clamp(6rem, 16vw, 11rem)" }
+            : undefined
+        }
+      >
         {media.map((item, i) => {
           const caption = captions[i] ?? "";
+          const span = useCollage
+            ? COLLAGE_PATTERN[i % COLLAGE_PATTERN.length]
+            : i === 0
+              ? "col-span-2 sm:col-span-2 aspect-video"
+              : "aspect-video";
           return (
-            <div
-              key={item.src}
-              className={i === 0 ? "sm:col-span-2 lg:col-span-2" : ""}
-            >
-              <div className="overflow-hidden border border-black/15">
-                {item.type === "video" ? (
-                  <VideoTile
+            <div key={item.src} className={`${span} overflow-hidden border border-black/15`}>
+              {item.type === "video" ? (
+                <VideoTile
+                  src={item.src}
+                  caption={caption}
+                  playLabel={labels.playVideo}
+                  onOpen={() => setLightbox({ mode: "video", src: item.src, caption })}
+                />
+              ) : (
+                <button
+                  type="button"
+                  onClick={() =>
+                    setLightbox({
+                      mode: "grid",
+                      index: photos.findIndex((p) => p.originalIndex === i),
+                    })
+                  }
+                  className="group relative block h-full w-full cursor-zoom-in"
+                  aria-label={caption}
+                >
+                  <Image
                     src={item.src}
-                    caption={caption}
-                    playLabel={labels.playVideo}
-                    onOpen={() => setLightbox({ mode: "video", src: item.src, caption })}
+                    alt={caption}
+                    fill
+                    sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setLightbox({
-                        mode: "grid",
-                        index: photos.findIndex((p) => p.originalIndex === i),
-                      })
-                    }
-                    className="group relative block aspect-video w-full cursor-zoom-in"
-                    aria-label={caption}
-                  >
-                    <Image
-                      src={item.src}
-                      alt={caption}
-                      fill
-                      sizes="(min-width: 1024px) 480px, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <span className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/40 group-hover:opacity-100">
-                      <span className="fg-small border border-white/70 px-4 py-1.5 lowercase text-white">
-                        {labels.viewAllPhotos}
-                      </span>
+                  <span className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/40 group-hover:opacity-100">
+                    <span className="fg-small border border-white/70 px-4 py-1.5 lowercase text-white">
+                      {labels.viewAllPhotos}
                     </span>
-                  </button>
-                )}
-              </div>
-              {caption && (
-                <p className="fg-small mt-2 text-black/60">{caption}</p>
+                  </span>
+                </button>
               )}
             </div>
           );
