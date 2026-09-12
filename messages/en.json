@@ -228,38 +228,38 @@
   },
   "PricingPage": {
     "metaTitle": "Reich Studio — Pricing",
-    "metaDescription": "Three packages: Starter from CHF 2'800 one-time, Growth from CHF 2'500/month, Full-Service from CHF 5'000/month.",
+    "metaDescription": "Individual quotes instead of packages: CHF 60/hour, with rough guidance for websites, automation, branding, and more.",
     "heroEyebrow": "Pricing",
-    "heroLine1": "Clearly priced.",
-    "heroLine2": "No fine print.",
-    "heroSubtext": "Three packages, three starting points. Exact scope gets tailored to your field in the first call.",
+    "heroLine1": "Tailored.",
+    "heroLine2": "not off the shelf.",
+    "heroSubtext": "No fixed packages — every quote is cut to the request. The numbers below are rough guidance.",
     "faqHeading": "Pricing questions",
-    "ctaHeading": "Which package fits you?",
-    "ctaSubtext": "We'll figure it out together in the first call.",
+    "ctaHeading": "What would your project cost?",
+    "ctaSubtext": "Tell me briefly what it's about — you'll get an honest estimate, not a sales pitch.",
     "faq": [
       {
-        "q": "Are these final prices?",
-        "a": "These are starting prices. The exact price depends on your field and scope — we clarify that in the first call, before anything becomes binding."
+        "q": "Are these fixed prices?",
+        "a": "No — these are rough guidance, not a price list. The exact price depends on your project's scope and gets set together in the first call."
+      },
+      {
+        "q": "How does billing work?",
+        "a": "By effort, at CHF 60/hour — or as a fixed price once we can pin the scope down clearly beforehand. We decide together, based on what fits your project."
       },
       {
         "q": "Do I have to commit long-term?",
-        "a": "Starter is one-time, no subscription. For Growth and Full-Service, we discuss the term that makes sense for you in the first call."
+        "a": "No. There's no subscription and no minimum term — every project stands on its own. For ongoing work like social media, we agree together on what length makes sense."
       },
       {
-        "q": "What if I don't know which package fits?",
-        "a": "That's the norm, not the exception. In the first call we look together at where you stand and what actually makes sense."
+        "q": "What if my project isn't on the list?",
+        "a": "No problem — the list only shows the most common requests. Just tell me what it's about and you'll get a fitting estimate."
       },
       {
-        "q": "Can I switch later?",
-        "a": "Yes. The packages are a starting point, not a contract set in stone — we adjust as your needs change."
+        "q": "How fast do I get a quote?",
+        "a": "Usually within a few days of the first call, depending on scope."
       },
       {
-        "q": "How fast will I see results?",
-        "a": "With Starter, usually within a few weeks of project start. With Growth and Full-Service it depends on scope — we discuss concrete timelines in the first call."
-      },
-      {
-        "q": "What if my field is very niche?",
-        "a": "That's exactly what Reich Studio is for. The more specific your field, the more clearly we can build trust with your clients — we find the right approach together."
+        "q": "What if the scope changes during the project?",
+        "a": "That happens often. We talk through adjustments openly, and you know upfront what extra work costs — no hidden costs."
       }
     ]
   },
@@ -297,15 +297,39 @@
         "approach": "In parallel, over ten months I completely redid the print material — menus, banners, sponsor boards, flyers. On Instagram, videos kept running, tailored to the audience that actually cared.",
         "statsSource": "Source: TikTok analytics export (60-day window, May–July 2024) and the current live status of @restaurantsempia.",
         "stats": [
-          { "value": 186, "suffix": "K", "label": "TikTok video views", "sublabel": "+3,837% in 60 days" },
-          { "value": 25, "suffix": "K", "label": "TikTok likes", "sublabel": "+17,670% over the same period" },
-          { "value": 2750, "label": "TikTok profile views", "sublabel": "+4,993% in 60 days" },
-          { "value": 384, "label": "Instagram followers today", "sublabel": "@restaurantsempia" }
+          {
+            "value": 186,
+            "suffix": "K",
+            "label": "TikTok video views",
+            "sublabel": "+3,837% in 60 days"
+          },
+          {
+            "value": 25,
+            "suffix": "K",
+            "label": "TikTok likes",
+            "sublabel": "+17,670% over the same period"
+          },
+          {
+            "value": 2750,
+            "label": "TikTok profile views",
+            "sublabel": "+4,993% in 60 days"
+          },
+          {
+            "value": 384,
+            "label": "Instagram followers today",
+            "sublabel": "@restaurantsempia"
+          }
         ],
         "gallery": [
-          { "alt": "Ad video for Restaurant Sempia" },
-          { "alt": "Sempia menu card" },
-          { "alt": "Sempia weekly menu" }
+          {
+            "alt": "Ad video for Restaurant Sempia"
+          },
+          {
+            "alt": "Sempia menu card"
+          },
+          {
+            "alt": "Sempia weekly menu"
+          }
         ]
       },
       {
@@ -319,17 +343,41 @@
         "approach": "Over several months I promoted events, ran ads, and kept adjusting based on results — instead of setting something up once and leaving it running.",
         "statsSource": "Source: current live status of @hotelsempachersee.",
         "stats": [
-          { "value": 1257, "label": "Instagram followers today", "sublabel": "@hotelsempachersee" },
-          { "value": 390, "label": "Posts", "sublabel": "since account start" },
-          { "value": 4, "label": "Brands under one roof", "sublabel": "Hotel, Vivace, LAGO, Aurora" }
+          {
+            "value": 1257,
+            "label": "Instagram followers today",
+            "sublabel": "@hotelsempachersee"
+          },
+          {
+            "value": 390,
+            "label": "Posts",
+            "sublabel": "since account start"
+          },
+          {
+            "value": 4,
+            "label": "Brands under one roof",
+            "sublabel": "Hotel, Vivace, LAGO, Aurora"
+          }
         ],
         "gallery": [
-          { "alt": "Restaurant Vivace, interior" },
-          { "alt": "A dish at Restaurant Vivace" },
-          { "alt": "Bar setup at Restaurant Vivace" },
-          { "alt": "Before/after video of the Aurora event space" },
-          { "alt": "Promo video for the LAGO bar" },
-          { "alt": "Poster for the Winterlounge" }
+          {
+            "alt": "Restaurant Vivace, interior"
+          },
+          {
+            "alt": "A dish at Restaurant Vivace"
+          },
+          {
+            "alt": "Bar setup at Restaurant Vivace"
+          },
+          {
+            "alt": "Before/after video of the Aurora event space"
+          },
+          {
+            "alt": "Promo video for the LAGO bar"
+          },
+          {
+            "alt": "Poster for the Winterlounge"
+          }
         ]
       },
       {
@@ -344,13 +392,27 @@
         "statsSource": "",
         "stats": [],
         "gallery": [
-          { "alt": "Test video for Instagram Reel" },
-          { "alt": "DJ set with fire show at the All in One Bar" },
-          { "alt": "The crowd at the All in One Bar" },
-          { "alt": "An event moment at the All in One Bar" },
-          { "alt": "Ambiance at the All in One Bar" },
-          { "alt": "DJ set at the All in One Bar" },
-          { "alt": "Live performance at the All in One Bar" }
+          {
+            "alt": "Test video for Instagram Reel"
+          },
+          {
+            "alt": "DJ set with fire show at the All in One Bar"
+          },
+          {
+            "alt": "The crowd at the All in One Bar"
+          },
+          {
+            "alt": "An event moment at the All in One Bar"
+          },
+          {
+            "alt": "Ambiance at the All in One Bar"
+          },
+          {
+            "alt": "DJ set at the All in One Bar"
+          },
+          {
+            "alt": "Live performance at the All in One Bar"
+          }
         ],
         "testimonial": {
           "quote": "We at All In One had a really positive experience working with Sofija. The collaboration was straightforward, pleasant and professional from the start. She took a range of photos and videos for us and put together a genuinely great video from them.\n\nWhat we especially appreciated was that Sofija understood what we had in mind while also bringing her own ideas to the table. During the shoot she was engaged, flexible, and adapted well to what we wanted. We're very happy with the final result too.\n\nOverall, working together was genuinely fun, and we can absolutely recommend Sofija and her work. Thank you for the great collaboration!",
@@ -654,5 +716,58 @@
     "schemaType": "Marketing Automation",
     "ctaHeading": "Shall we automate your marketing?",
     "ctaSubtext": "A 20-minute first call is enough to see where the biggest lever is."
+  },
+  "RateCard": {
+    "hourlyEyebrow": "Hourly rate",
+    "hourlyValue": "CHF 60",
+    "hourlyNote": "per hour",
+    "noteLabel": "Important",
+    "note": "These prices are rough guidance, not a fixed price list. The real price depends heavily on the project — scope, complexity, and what you already have all shift the calculation. We work out the exact quote together in the first call.",
+    "listEyebrow": "Rough guidance",
+    "listHeading": "What things tend to cost.",
+    "items": [
+      {
+        "label": "Professional website, 3 pages",
+        "sublabel": "Design, build, polish — standing out, not off a template",
+        "low": "1'500",
+        "high": "2'400"
+      },
+      {
+        "label": "Social media build-up, 1 month",
+        "sublabel": "Content planning, production, and posting",
+        "low": "900",
+        "high": "1'500"
+      },
+      {
+        "label": "Larger process automation",
+        "sublabel": "n8n, Zapier, or AI — from concept to a running workflow",
+        "low": "900",
+        "high": "1'800"
+      },
+      {
+        "label": "Custom app, software, or system",
+        "sublabel": "Very project-dependent — from a small tool to a full system",
+        "low": "3'500",
+        "high": "9'000"
+      },
+      {
+        "label": "Brand build, from scratch",
+        "sublabel": "Brand, logo, styleguide, philosophy — with a finished end product",
+        "low": "1'200",
+        "high": "2'100"
+      },
+      {
+        "label": "Redesign of a 10-page document",
+        "sublabel": "Layout, template, applied across every page",
+        "low": "480",
+        "high": "900"
+      },
+      {
+        "label": "Image video, 30 seconds",
+        "sublabel": "Concept, production, editing",
+        "low": "480",
+        "high": "900"
+      }
+    ]
   }
 }

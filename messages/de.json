@@ -228,38 +228,38 @@
   },
   "PricingPage": {
     "metaTitle": "Reich Studio — Preise",
-    "metaDescription": "Drei Pakete: Starter ab CHF 2'800 einmalig, Growth ab CHF 2'500/Monat, Full-Service ab CHF 5'000/Monat.",
+    "metaDescription": "Individuelle Angebote statt Pakete: CHF 60/Stunde, mit groben Richtwerten für Website, Automatisierung, Branding und mehr.",
     "heroEyebrow": "Preise",
-    "heroLine1": "Klar kalkuliert.",
-    "heroLine2": "Kein Kleingedrucktes.",
-    "heroSubtext": "Drei Pakete, drei Ausgangspunkte. Der genaue Umfang wird im Erstgespräch auf dein Fachgebiet zugeschnitten.",
+    "heroLine1": "Individuell.",
+    "heroLine2": "statt von der Stange.",
+    "heroSubtext": "Keine fixen Pakete — jedes Angebot wird auf die Anfrage zugeschnitten. Die Zahlen unten sind grobe Richtwerte.",
     "faqHeading": "Fragen zu den Preisen",
-    "ctaHeading": "Welches Paket passt zu dir?",
-    "ctaSubtext": "Im Erstgespräch finden wir es gemeinsam heraus.",
+    "ctaHeading": "Was würde dein Projekt kosten?",
+    "ctaSubtext": "Schreib mir kurz, worum es geht — du bekommst eine ehrliche Einschätzung, keine Verkaufsmasche.",
     "faq": [
       {
-        "q": "Sind das die Endpreise?",
-        "a": "Das sind Startpreise. Der genaue Preis hängt von deinem Fachgebiet und Umfang ab — das klären wir im Erstgespräch, bevor irgendetwas verbindlich wird."
+        "q": "Sind das feste Preise?",
+        "a": "Nein — das sind grobe Richtwerte, keine Preisliste. Der genaue Preis hängt vom Umfang deines Projekts ab und wird im Erstgespräch gemeinsam festgelegt."
+      },
+      {
+        "q": "Wie wird abgerechnet?",
+        "a": "Nach Aufwand, zum Stundensatz von CHF 60 — oder als Fixpreis, wenn wir den Umfang vorher klar abstecken können. Das entscheiden wir gemeinsam, je nachdem was für dein Projekt passt."
       },
       {
         "q": "Muss ich mich langfristig binden?",
-        "a": "Starter ist einmalig, kein Abo. Bei Growth und Full-Service besprechen wir im Erstgespräch die Laufzeit, die für dich sinnvoll ist."
+        "a": "Nein. Es gibt kein Abo und keine Mindestlaufzeit — jedes Projekt ist einzeln. Für laufende Arbeit wie Social Media legen wir gemeinsam fest, wie lange das Sinn macht."
       },
       {
-        "q": "Was, wenn ich nicht weiss, welches Paket passt?",
-        "a": "Das ist der Normalfall, nicht die Ausnahme. Im Erstgespräch schauen wir gemeinsam, wo du stehst und was wirklich Sinn macht."
+        "q": "Was, wenn mein Projekt nicht in der Liste steht?",
+        "a": "Kein Problem — die Liste zeigt nur die häufigsten Anfragen. Schreib mir einfach, worum es geht, dann bekommst du eine passende Einschätzung."
       },
       {
-        "q": "Kann ich später wechseln?",
-        "a": "Ja. Die Pakete sind ein Ausgangspunkt, kein Vertrag in Stein — wir passen an, wenn sich dein Bedarf ändert."
+        "q": "Wie schnell bekomme ich ein Angebot?",
+        "a": "Meist innerhalb weniger Tage nach dem Erstgespräch, abhängig vom Umfang."
       },
       {
-        "q": "Wie schnell sehe ich erste Ergebnisse?",
-        "a": "Bei Starter meist innerhalb weniger Wochen ab Projektstart. Bei Growth und Full-Service hängt es vom Umfang ab — konkrete Zeitrahmen besprechen wir im Erstgespräch."
-      },
-      {
-        "q": "Was, wenn mein Fachgebiet sehr speziell ist?",
-        "a": "Genau dafür ist Reich Studio da. Je spezifischer dein Fachgebiet, desto klarer lässt sich Vertrauen bei Kund:innen aufbauen — wir finden gemeinsam die passende Herangehensweise."
+        "q": "Was, wenn sich der Umfang während des Projekts ändert?",
+        "a": "Das passiert oft. Wir besprechen Anpassungen offen, und du weisst vorher, was ein Mehraufwand kostet — keine versteckten Kosten."
       }
     ]
   },
@@ -297,15 +297,39 @@
         "approach": "Parallel dazu habe ich zehn Monate lang die Printmaterialien komplett erneuert — Menüs, Banner, Sponsorentafeln, Flyer. Auf Instagram liefen weiterhin Videos, die gezielt auf die Zielgruppe zugeschnitten waren.",
         "statsSource": "Quelle: TikTok-Analytics-Export (60-Tage-Fenster, Mai–Juli 2024) sowie aktueller Live-Stand von @restaurantsempia.",
         "stats": [
-          { "value": 186, "suffix": "K", "label": "TikTok-Video-Views", "sublabel": "+3'837% in 60 Tagen" },
-          { "value": 25, "suffix": "K", "label": "TikTok-Likes", "sublabel": "+17'670% im selben Zeitraum" },
-          { "value": 2750, "label": "TikTok-Profilaufrufe", "sublabel": "+4'993% in 60 Tagen" },
-          { "value": 384, "label": "Instagram-Follower heute", "sublabel": "@restaurantsempia" }
+          {
+            "value": 186,
+            "suffix": "K",
+            "label": "TikTok-Video-Views",
+            "sublabel": "+3'837% in 60 Tagen"
+          },
+          {
+            "value": 25,
+            "suffix": "K",
+            "label": "TikTok-Likes",
+            "sublabel": "+17'670% im selben Zeitraum"
+          },
+          {
+            "value": 2750,
+            "label": "TikTok-Profilaufrufe",
+            "sublabel": "+4'993% in 60 Tagen"
+          },
+          {
+            "value": 384,
+            "label": "Instagram-Follower heute",
+            "sublabel": "@restaurantsempia"
+          }
         ],
         "gallery": [
-          { "alt": "Werbevideo für Restaurant Sempia" },
-          { "alt": "Sempia Menükarte" },
-          { "alt": "Sempia Wochenmenü" }
+          {
+            "alt": "Werbevideo für Restaurant Sempia"
+          },
+          {
+            "alt": "Sempia Menükarte"
+          },
+          {
+            "alt": "Sempia Wochenmenü"
+          }
         ]
       },
       {
@@ -319,17 +343,41 @@
         "approach": "Über Monate hinweg habe ich Events beworben, Ads geschaltet und die Ergebnisse laufend angepasst — statt einmal aufzusetzen und laufen zu lassen.",
         "statsSource": "Quelle: aktueller Live-Stand von @hotelsempachersee.",
         "stats": [
-          { "value": 1257, "label": "Instagram-Follower heute", "sublabel": "@hotelsempachersee" },
-          { "value": 390, "label": "Beiträge", "sublabel": "seit Kontostart" },
-          { "value": 4, "label": "Marken unter einem Dach", "sublabel": "Hotel, Vivace, LAGO, Aurora" }
+          {
+            "value": 1257,
+            "label": "Instagram-Follower heute",
+            "sublabel": "@hotelsempachersee"
+          },
+          {
+            "value": 390,
+            "label": "Beiträge",
+            "sublabel": "seit Kontostart"
+          },
+          {
+            "value": 4,
+            "label": "Marken unter einem Dach",
+            "sublabel": "Hotel, Vivace, LAGO, Aurora"
+          }
         ],
         "gallery": [
-          { "alt": "Restaurant Vivace, Innenraum" },
-          { "alt": "Gericht im Restaurant Vivace" },
-          { "alt": "Bar-Aufbau im Restaurant Vivace" },
-          { "alt": "Vorher-Nachher-Video der Event Location Aurora" },
-          { "alt": "Werbevideo für die Bar LAGO" },
-          { "alt": "Plakat für die Winterlounge" }
+          {
+            "alt": "Restaurant Vivace, Innenraum"
+          },
+          {
+            "alt": "Gericht im Restaurant Vivace"
+          },
+          {
+            "alt": "Bar-Aufbau im Restaurant Vivace"
+          },
+          {
+            "alt": "Vorher-Nachher-Video der Event Location Aurora"
+          },
+          {
+            "alt": "Werbevideo für die Bar LAGO"
+          },
+          {
+            "alt": "Plakat für die Winterlounge"
+          }
         ]
       },
       {
@@ -344,13 +392,27 @@
         "statsSource": "",
         "stats": [],
         "gallery": [
-          { "alt": "Testvideo für Instagram Reel" },
-          { "alt": "DJ-Set mit Feuer-Show in der All in One Bar" },
-          { "alt": "Stimmung in der All in One Bar" },
-          { "alt": "Event-Moment in der All in One Bar" },
-          { "alt": "Ambiente in der All in One Bar" },
-          { "alt": "DJ-Set in der All in One Bar" },
-          { "alt": "Live-Performance in der All in One Bar" }
+          {
+            "alt": "Testvideo für Instagram Reel"
+          },
+          {
+            "alt": "DJ-Set mit Feuer-Show in der All in One Bar"
+          },
+          {
+            "alt": "Stimmung in der All in One Bar"
+          },
+          {
+            "alt": "Event-Moment in der All in One Bar"
+          },
+          {
+            "alt": "Ambiente in der All in One Bar"
+          },
+          {
+            "alt": "DJ-Set in der All in One Bar"
+          },
+          {
+            "alt": "Live-Performance in der All in One Bar"
+          }
         ],
         "testimonial": {
           "quote": "Wir von All In One haben mit Sofija eine sehr positive Erfahrung gemacht. Die Zusammenarbeit war von Anfang an unkompliziert, angenehm und professionell. Sie hat bei uns verschiedene Fotos und Videos aufgenommen und daraus ein wirklich gelungenes Video zusammengestellt.\n\nBesonders geschätzt haben wir, dass Sofija unsere Vorstellungen gut verstanden und gleichzeitig eigene Ideen eingebracht hat. Während der Aufnahmen war sie engagiert, flexibel und hat sich gut auf unsere Wünsche eingestellt. Auch mit dem Endergebnis sind wir sehr zufrieden.\n\nInsgesamt hat die Zusammenarbeit wirklich Spass gemacht und wir können Sofija und ihre Arbeit auf jeden Fall weiterempfehlen. Vielen Dank für die tolle Zusammenarbeit!",
@@ -654,5 +716,58 @@
     "schemaType": "Marketing Automation",
     "ctaHeading": "Sollen wir dein Marketing automatisieren?",
     "ctaSubtext": "20 Minuten Erstgespräch reichen, um zu sehen, wo der grösste Hebel liegt."
+  },
+  "RateCard": {
+    "hourlyEyebrow": "Stundensatz",
+    "hourlyValue": "CHF 60",
+    "hourlyNote": "pro Stunde",
+    "noteLabel": "Wichtig",
+    "note": "Diese Preise sind grobe Richtwerte und keine fixe Preisliste. Der tatsächliche Preis hängt stark vom Projekt ab — Umfang, Komplexität und was du bereits hast, verändern die Kalkulation. Das genaue Angebot besprechen wir im Erstgespräch.",
+    "listEyebrow": "Grobe Richtwerte",
+    "listHeading": "Was Projekte in etwa kosten.",
+    "items": [
+      {
+        "label": "Professionelle Website, 3 Seiten",
+        "sublabel": "Design, Umsetzung, Feinschliff — herausstechend statt Baukasten",
+        "low": "1'500",
+        "high": "2'400"
+      },
+      {
+        "label": "Social-Media-Aufbau, 1 Monat",
+        "sublabel": "Content-Planung, -Produktion und Posting",
+        "low": "900",
+        "high": "1'500"
+      },
+      {
+        "label": "Grössere Prozessautomatisierung",
+        "sublabel": "n8n, Zapier oder AI — von Konzept bis laufendem Workflow",
+        "low": "900",
+        "high": "1'800"
+      },
+      {
+        "label": "Eigene App, Software oder System",
+        "sublabel": "Sehr projektabhängig — vom Tool bis zum eigenen System",
+        "low": "3'500",
+        "high": "9'000"
+      },
+      {
+        "label": "Brandaufbau von Grund auf",
+        "sublabel": "Brand, Logo, Styleguide, Philosophie — mit fertigem Endprodukt",
+        "low": "1'200",
+        "high": "2'100"
+      },
+      {
+        "label": "Redesign eines 10-seitigen Dokuments",
+        "sublabel": "Layout, Vorlage, Umsetzung auf allen Seiten",
+        "low": "480",
+        "high": "900"
+      },
+      {
+        "label": "Image-Video, 30 Sekunden",
+        "sublabel": "Konzept, Produktion, Schnitt",
+        "low": "480",
+        "high": "900"
+      }
+    ]
   }
 }

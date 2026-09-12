@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import HomeTheme from "@/components/figma/HomeTheme";
 import FigmaPageHero from "@/components/figma/FigmaPageHero";
-import FigmaPricingCards from "@/components/figma/FigmaPricingCards";
+import FigmaRateCard from "@/components/figma/FigmaRateCard";
 import FigmaFaq from "@/components/figma/FigmaFaq";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import FigmaCta from "@/components/figma/FigmaCta";
@@ -36,7 +36,7 @@ export default async function PricingPage({
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
       />
-      <FigmaPricingCards />
+      <FigmaRateCard />
       <FigmaFaq heading={t("faqHeading")} items={faqItems} />
       <FaqJsonLd items={faqItems} />
       <FigmaCta heading={t("ctaHeading")} subtext={t("ctaSubtext")} />
