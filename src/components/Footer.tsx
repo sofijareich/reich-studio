@@ -58,8 +58,8 @@ export default async function Footer() {
         <p>
           Reich Studio · {tf("location")} · © {new Date().getFullYear()}
         </p>
-        <a href="mailto:sofijareich@gmail.com" className="hover:text-fg/70">
-          sofijareich@gmail.com
+        <a href="mailto:sofija.reich@reichstudio.ch" className="hover:text-fg/70">
+          sofija.reich@reichstudio.ch
         </a>
       </div>
     </footer>

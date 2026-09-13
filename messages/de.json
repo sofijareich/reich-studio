@@ -11,7 +11,8 @@
     "products": "Produkte",
     "contact": "Kontakt",
     "bookCall": "Erstgespräch buchen",
-    "openMenu": "Menü öffnen",
+    "openMenu": "Menü",
+    "closeMenu": "Menü schliessen",
     "aiAutomation": "KI-Automatisierung",
     "marketingAutomation": "Marketing-Automatisierung",
     "services": "Leistungen"
@@ -19,7 +20,14 @@
   "Footer": {
     "tagline": "Marketing- und Automatisierungssysteme für Professionals, die keine Zeit dafür haben.",
     "newsletter": "Newsletter: neue Playbooks & Produkte, bevor sie öffentlich sind.",
-    "location": "Sursee, Schweiz"
+    "location": "Sursee, Schweiz",
+    "locationLabel": "Standort",
+    "contactLabel": "Kontakt",
+    "pagesLabel": "Seiten",
+    "faqLabel": "FAQ",
+    "phone": "+41 78 421 76 11",
+    "impressum": "Impressum",
+    "rights": "Alle Rechte vorbehalten."
   },
   "Hero": {
     "eyebrow": "Marketing & Automatisierung · Sursee",
@@ -277,6 +285,7 @@
     "navLabel": "Projekte",
     "viewAllPhotos": "Alle Fotos",
     "allPhotosHeading": "Alle Fotos",
+    "showAllMedia": "Alle anzeigen",
     "closeLightbox": "Schliessen",
     "backToGrid": "Zurück zur Übersicht",
     "prevPhoto": "Vorheriges Foto",
@@ -685,7 +694,7 @@
     "bothFormats": "{productName}: beide Formate zum direkten Herunterladen.",
     "downloadPortrait": "Hochformat herunterladen",
     "downloadLandscape": "Querformat herunterladen",
-    "saveNote": "Speichere diese Seite oder die Dateien direkt ab. Bei Problemen einfach an <link>sofijareich@gmail.com</link> schreiben."
+    "saveNote": "Speichere diese Seite oder die Dateien direkt ab. Bei Problemen einfach an <link>sofija.reich@reichstudio.ch</link> schreiben."
   },
   "ContactPage": {
     "metaTitle": "Reich Studio: Kontakt",
@@ -718,6 +727,29 @@
         "a": "Auf Deutsch oder Englisch, je nachdem, was für dich passt."
       }
     ]
+  },
+  "ImpressumPage": {
+    "metaTitle": "Reich Studio: Impressum",
+    "metaDescription": "Rechtliche Angaben zu reichstudio.ch gemäss Schweizer Recht.",
+    "heroEyebrow": "Rechtliches",
+    "heroLine1": "Impressum.",
+    "heroSubtext": "Angaben gemäss Schweizer Recht (Art. 3 UWG).",
+    "providerHeading": "Anbieterin",
+    "nameLabel": "Name",
+    "name": "Sofija Reich",
+    "legalFormLabel": "Rechtsform",
+    "legalForm": "Einzelunternehmen, nicht im Handelsregister eingetragen",
+    "addressLabel": "Adresse",
+    "addressLine1": "Sofija Reich, c/o JL Consulting Group GmbH #1641",
+    "addressLine2": "Zürcherstrasse 84",
+    "addressLine3": "8852 Altendorf, Schweiz",
+    "contactHeading": "Kontakt",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "liabilityHeading": "Haftungsausschluss",
+    "liabilityText": "Die Inhalte dieser Website wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Haftungsansprüche gegen die Anbieterin wegen Schäden materieller oder immaterieller Art, welche aus dem Zugriff oder der Nutzung bzw. Nichtnutzung der veröffentlichten Informationen, durch Missbrauch der Verbindung oder durch technische Störungen entstanden sind, werden ausgeschlossen, sofern seitens der Anbieterin kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.",
+    "copyrightHeading": "Urheberrecht",
+    "copyrightText": "Die Urheberrechte an sämtlichen Inhalten und Werken dieser Website liegen bei Sofija Reich / Reich Studio. Die Vervielfältigung, Verbreitung oder Nutzung über das Urheberrecht hinaus bedarf der vorherigen schriftlichen Zustimmung."
   },
   "Contact": {
     "successTitle": "Danke! Deine Nachricht ist da.",

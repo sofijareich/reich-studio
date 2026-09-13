@@ -1,13 +1,13 @@
 export type PortfolioMediaItem =
   | { type: "image"; src: string }
-  | { type: "video"; src: string };
+  | { type: "video"; src: string; poster: string };
 
 // Order matches the "gallery" arrays in messages/{locale}.json under
 // PortfolioPage.projects[].gallery — each entry there supplies the alt/caption
 // text for the item at the same index here.
 export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
   sempia: [
-    { type: "video", src: "/referenzen/sempia/ad.webm" },
+    { type: "video", src: "/referenzen/sempia/ad.webm", poster: "/referenzen/sempia/ad-poster.jpg" },
     { type: "image", src: "/referenzen/sempia/print/menu-1.png" },
     { type: "image", src: "/referenzen/sempia/print/wochenmenu.png" },
     { type: "image", src: "/referenzen/sempia/print/menu-2.png" },
@@ -17,8 +17,16 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "image", src: "/referenzen/hotel-sempachersee/vivace/interior-wide.jpg" },
     { type: "image", src: "/referenzen/hotel-sempachersee/vivace/dish.jpg" },
     { type: "image", src: "/referenzen/hotel-sempachersee/vivace/bar-setup.jpg" },
-    { type: "video", src: "/referenzen/hotel-sempachersee/aurora/before-after.webm" },
-    { type: "video", src: "/referenzen/hotel-sempachersee/lago/promo.webm" },
+    {
+      type: "video",
+      src: "/referenzen/hotel-sempachersee/aurora/before-after.webm",
+      poster: "/referenzen/hotel-sempachersee/aurora/before-after-poster.jpg",
+    },
+    {
+      type: "video",
+      src: "/referenzen/hotel-sempachersee/lago/promo.webm",
+      poster: "/referenzen/hotel-sempachersee/lago/promo-poster.jpg",
+    },
     { type: "image", src: "/referenzen/hotel-sempachersee/print/poster-winterlounge.jpg" },
     { type: "image", src: "/referenzen/hotel-sempachersee/vivace/detail.jpg" },
     { type: "image", src: "/referenzen/hotel-sempachersee/vivace/plants.jpg" },
@@ -29,19 +37,39 @@ export const portfolioMedia: Record<string, PortfolioMediaItem[]> = {
     { type: "image", src: "/referenzen/hotel-sempachersee/lago/lago-01.jpg" },
     { type: "image", src: "/referenzen/hotel-sempachersee/lago/lago-02.jpg" },
     { type: "image", src: "/referenzen/hotel-sempachersee/lago/lago-03.jpg" },
-    { type: "video", src: "/referenzen/hotel-sempachersee/easter-brunch-reel.mp4" },
-    { type: "video", src: "/referenzen/hotel-sempachersee/eventlocation-video-ad.mp4" },
-    { type: "video", src: "/referenzen/hotel-sempachersee/lago/lago-promo-2.webm" },
+    {
+      type: "video",
+      src: "/referenzen/hotel-sempachersee/easter-brunch-reel.mp4",
+      poster: "/referenzen/hotel-sempachersee/easter-brunch-reel-poster.jpg",
+    },
+    {
+      type: "video",
+      src: "/referenzen/hotel-sempachersee/eventlocation-video-ad.mp4",
+      poster: "/referenzen/hotel-sempachersee/eventlocation-video-ad-poster.jpg",
+    },
+    {
+      type: "video",
+      src: "/referenzen/hotel-sempachersee/lago/lago-promo-2.webm",
+      poster: "/referenzen/hotel-sempachersee/lago/lago-promo-2-poster.jpg",
+    },
   ],
   "ebikon-bar": [
-    { type: "video", src: "/referenzen/ebikon-bar/testvideo-instagram.mp4" },
+    {
+      type: "video",
+      src: "/referenzen/ebikon-bar/testvideo-instagram.mp4",
+      poster: "/referenzen/ebikon-bar/testvideo-instagram-poster.jpg",
+    },
     { type: "image", src: "/referenzen/ebikon-bar/dj-fire.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/crowd.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/action.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/bar-ambiance.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/dj-1.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/performer.jpg" },
-    { type: "video", src: "/referenzen/ebikon-bar/promo.mp4" },
+    {
+      type: "video",
+      src: "/referenzen/ebikon-bar/promo.mp4",
+      poster: "/referenzen/ebikon-bar/promo-poster.jpg",
+    },
     { type: "image", src: "/referenzen/ebikon-bar/guest-01.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/guest-02.jpg" },
     { type: "image", src: "/referenzen/ebikon-bar/guest-03.jpg" },

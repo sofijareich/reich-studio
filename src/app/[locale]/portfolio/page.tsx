@@ -58,6 +58,7 @@ export default async function PortfolioPage({
             pauseVideo: t("pauseVideo"),
             muteVideo: t("muteVideo"),
             unmuteVideo: t("unmuteVideo"),
+            showAllMedia: t("showAllMedia"),
           }}
         />
       ))}

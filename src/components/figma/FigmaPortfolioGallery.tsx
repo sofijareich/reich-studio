@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import type { PortfolioMediaItem } from "@/lib/portfolioMedia";
 
@@ -20,6 +21,7 @@ type GalleryLabels = {
   pauseVideo: string;
   muteVideo: string;
   unmuteVideo: string;
+  showAllMedia: string;
 };
 
 /**
@@ -83,11 +85,13 @@ function UnmutedGlyph() {
  */
 function VideoTile({
   src,
+  poster,
   caption,
   playLabel,
   onOpen,
 }: {
   src: string;
+  poster: string;
   caption: string;
   playLabel: string;
   onOpen: () => void;
@@ -126,6 +130,7 @@ function VideoTile({
         loop
         playsInline
         preload="metadata"
+        poster={poster}
         className="h-full w-full bg-black/5 object-cover"
       >
         <source src={src} />
@@ -242,6 +247,7 @@ export default function FigmaPortfolioGallery({
   labels: GalleryLabels;
 }) {
   const [lightbox, setLightbox] = useState<LightboxState>(null);
+  const [expanded, setExpanded] = useState(false);
 
   const photos = media
     .map((item, i) => ({ item, caption: captions[i] ?? "", originalIndex: i }))
@@ -286,17 +292,26 @@ export default function FigmaPortfolioGallery({
   // just leaves visible holes. Below that, fall back to a plain uniform grid.
   const useCollage = media.length >= 8;
 
+  // Long galleries (Ebikon Bar's 41 items, say) would otherwise force
+  // visitors to scroll through a wall of tiles before reaching the next
+  // section - clamp to roughly a screen's worth (~8-9 tiles) with a fade,
+  // and let people opt into the rest.
+  const canCollapse = media.length > 9;
+  const collapsed = canCollapse && !expanded;
+
   return (
     <>
-      <div
-        className="mt-[clamp(2rem,5vh,3.5rem)] grid grid-cols-2 gap-[clamp(0.6rem,1.5vw,1rem)] sm:grid-cols-3 lg:grid-cols-4"
-        style={
-          useCollage
-            ? { gridAutoFlow: "dense", gridAutoRows: "clamp(6rem, 16vw, 11rem)" }
-            : undefined
-        }
-      >
-        {media.map((item, i) => {
+      <div className="relative">
+        <div
+          className="mt-[clamp(2rem,5vh,3.5rem)] grid grid-cols-2 gap-[clamp(0.6rem,1.5vw,1rem)] sm:grid-cols-3 lg:grid-cols-4"
+          style={{
+            ...(useCollage
+              ? { gridAutoFlow: "dense", gridAutoRows: "clamp(6rem, 16vw, 11rem)" }
+              : {}),
+            ...(collapsed ? { maxHeight: "80vh", overflow: "hidden" } : {}),
+          }}
+        >
+          {media.map((item, i) => {
           const caption = captions[i] ?? "";
           const span = useCollage
             ? COLLAGE_PATTERN[i % COLLAGE_PATTERN.length]
@@ -308,6 +323,7 @@ export default function FigmaPortfolioGallery({
               {item.type === "video" ? (
                 <VideoTile
                   src={item.src}
+                  poster={item.poster}
                   caption={caption}
                   playLabel={labels.playVideo}
                   onOpen={() => setLightbox({ mode: "video", src: item.src, caption })}
@@ -340,14 +356,28 @@ export default function FigmaPortfolioGallery({
               )}
             </div>
           );
-        })}
+          })}
+        </div>
+
+        {collapsed && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 flex h-40 items-end justify-center bg-gradient-to-t from-white via-white/85 to-transparent pb-6">
+            <button
+              type="button"
+              onClick={() => setExpanded(true)}
+              className="fg-small pointer-events-auto border border-black/20 bg-white px-5 py-2 lowercase text-black/70 transition-colors hover:border-black hover:bg-black hover:text-white"
+            >
+              {labels.showAllMedia}
+            </button>
+          </div>
+        )}
       </div>
 
-      {lightbox && (
-        <div
-          className="lightbox-fade fixed inset-0 z-[60] flex items-center justify-center bg-white/97 p-4 backdrop-blur-md sm:p-8"
-          onClick={() => setLightbox(null)}
-        >
+      {lightbox &&
+        createPortal(
+          <div
+            className="lightbox-fade fixed inset-0 z-[60] flex items-center justify-center bg-white/97 p-4 backdrop-blur-md sm:p-8"
+            onClick={() => setLightbox(null)}
+          >
           <button
             type="button"
             onClick={() => setLightbox(null)}
@@ -455,8 +485,9 @@ export default function FigmaPortfolioGallery({
               </div>
             </div>
           )}
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
     </>
   );
 }

@@ -23,7 +23,7 @@ export default function FigmaFaq({
   const resolvedEyebrow = eyebrow ?? t("eyebrow");
 
   return (
-    <section className="fg-page-x py-[clamp(3rem,8vh,6rem)]">
+    <section id="faq" className="fg-page-x py-[clamp(3rem,8vh,6rem)] scroll-mt-20">
       <div className="max-w-3xl">
         <FigmaReveal>
           <p className="fg-small uppercase text-black/60">{resolvedEyebrow}</p>

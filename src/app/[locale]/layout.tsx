@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FigmaFooter from "@/components/figma/FigmaFooter";
 import Mascots from "@/components/Mascots";
 import FigmaSmoothScroll from "@/components/figma/FigmaSmoothScroll";
 import { routing } from "@/i18n/routing";
@@ -93,7 +94,7 @@ export default async function LocaleLayout({
     logo: "https://reichstudio.ch/icon.png",
     image: "https://reichstudio.ch/opengraph-image",
     description,
-    email: "sofijareich@gmail.com",
+    email: "sofija.reich@reichstudio.ch",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sursee",
@@ -133,6 +134,7 @@ export default async function LocaleLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <FigmaFooter />
             <Mascots />
           </FigmaSmoothScroll>
         </NextIntlClientProvider>

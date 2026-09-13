@@ -10,7 +10,7 @@ export default async function ProductDetail() {
   const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK;
   const buyHref = stripeLink
     ? stripeLink
-    : `mailto:sofijareich@gmail.com?subject=${encodeURIComponent(
+    : `mailto:sofija.reich@reichstudio.ch?subject=${encodeURIComponent(
         "Reserve " + name
       )}&body=${encodeURIComponent(
         "Hi Sofija, I'd like to buy the " + name + " (" + price + ") as soon as direct checkout is available."

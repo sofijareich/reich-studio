@@ -349,11 +349,21 @@ footer {
   filter: none;
 }
 
-/* the redesigned page ships its own top bar and closes on the
-   newsletter band, so the global chrome steps aside */
+/* the redesigned page ships its own top bar and its own footer
+   (FigmaFooter, tagged [data-figma-footer]), so the old dark chrome steps
+   aside on those pages — and FigmaFooter itself only makes sense there, so
+   it stays hidden everywhere else. */
 [data-home-theme="light"] body > header,
-[data-home-theme="light"] body > footer {
+[data-home-theme="light"] body > footer:not([data-figma-footer]) {
   display: none;
+}
+
+body > footer[data-figma-footer] {
+  display: none;
+}
+
+[data-home-theme="light"] body > footer[data-figma-footer] {
+  display: block;
 }
 
 /* --- type scale, measured off the 1920px Figma canvas --- */

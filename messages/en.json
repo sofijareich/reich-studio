@@ -11,7 +11,8 @@
     "products": "Products",
     "contact": "Contact",
     "bookCall": "Book a call",
-    "openMenu": "Open menu",
+    "openMenu": "Menu",
+    "closeMenu": "Close menu",
     "aiAutomation": "AI Automation",
     "marketingAutomation": "Marketing Automation",
     "services": "Services"
@@ -19,7 +20,14 @@
   "Footer": {
     "tagline": "Marketing and automation systems for professionals who don't have time for it.",
     "newsletter": "Newsletter: new playbooks & products, before they go public.",
-    "location": "Sursee, Switzerland"
+    "location": "Sursee, Switzerland",
+    "locationLabel": "Location",
+    "contactLabel": "Contact",
+    "pagesLabel": "Pages",
+    "faqLabel": "FAQ",
+    "phone": "+41 78 421 76 11",
+    "impressum": "Imprint",
+    "rights": "All rights reserved."
   },
   "Hero": {
     "eyebrow": "Marketing & Automation · Sursee",
@@ -277,6 +285,7 @@
     "navLabel": "Projects",
     "viewAllPhotos": "View all photos",
     "allPhotosHeading": "All photos",
+    "showAllMedia": "Show all",
     "closeLightbox": "Close",
     "backToGrid": "Back to overview",
     "prevPhoto": "Previous photo",
@@ -685,7 +694,7 @@
     "bothFormats": "{productName}: both formats, ready to download.",
     "downloadPortrait": "Download portrait",
     "downloadLandscape": "Download landscape",
-    "saveNote": "Save this page or the files directly. If anything goes wrong, just email <link>sofijareich@gmail.com</link>."
+    "saveNote": "Save this page or the files directly. If anything goes wrong, just email <link>sofija.reich@reichstudio.ch</link>."
   },
   "ContactPage": {
     "metaTitle": "Reich Studio: Contact",
@@ -718,6 +727,29 @@
         "a": "In English or German, whatever works for you."
       }
     ]
+  },
+  "ImpressumPage": {
+    "metaTitle": "Reich Studio: Imprint",
+    "metaDescription": "Legal disclosure for reichstudio.ch, as required under Swiss law.",
+    "heroEyebrow": "Legal",
+    "heroLine1": "Imprint.",
+    "heroSubtext": "Information required under Swiss law (Art. 3 UWG).",
+    "providerHeading": "Provider",
+    "nameLabel": "Name",
+    "name": "Sofija Reich",
+    "legalFormLabel": "Legal form",
+    "legalForm": "Sole proprietorship (Einzelunternehmen), not entered in the commercial register",
+    "addressLabel": "Address",
+    "addressLine1": "Sofija Reich, c/o JL Consulting Group GmbH #1641",
+    "addressLine2": "Zürcherstrasse 84",
+    "addressLine3": "8852 Altendorf, Switzerland",
+    "contactHeading": "Contact",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "liabilityHeading": "Disclaimer",
+    "liabilityText": "The content of this website has been compiled with the greatest care, but no guarantee is made for its accuracy, completeness, or timeliness. Liability claims against the provider relating to material or immaterial damage caused by the use or non-use of the information provided, or by the use of incorrect or incomplete information, are excluded, unless the provider is proven to have acted with intent or gross negligence.",
+    "copyrightHeading": "Copyright",
+    "copyrightText": "All content and works on this website are subject to copyright. Any reproduction, distribution, or use beyond copyright law requires the prior written consent of Sofija Reich / Reich Studio."
   },
   "Contact": {
     "successTitle": "Thanks! Your message is in.",

@@ -30,6 +30,7 @@ export default function FigmaPortfolioProject({
     pauseVideo: string;
     muteVideo: string;
     unmuteVideo: string;
+    showAllMedia: string;
   };
 }) {
   const media = portfolioMedia[project.id] ?? [];

@@ -56,7 +56,7 @@ export default async function ThanksPage({
         <p className="mt-10 text-sm text-fg/45">
           {t.rich("saveNote", {
             link: (chunks) => (
-              <a href="mailto:sofijareich@gmail.com" className="underline">
+              <a href="mailto:sofija.reich@reichstudio.ch" className="underline">
                 {chunks}
               </a>
             ),
