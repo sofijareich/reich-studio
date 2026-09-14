@@ -16,7 +16,7 @@ export function OgCard({ logoSrc }: { logoSrc: string }) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        background: "linear-gradient(135deg, #0A0A0A 0%, #17130d 55%, #0A0A0A 100%)",
+        background: "#ffffff",
       }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -25,7 +25,7 @@ export function OgCard({ logoSrc }: { logoSrc: string }) {
         style={{
           fontSize: 64,
           fontWeight: 700,
-          color: "#F5F5F5",
+          color: "#000000",
           letterSpacing: -1,
         }}
       >
@@ -35,7 +35,7 @@ export function OgCard({ logoSrc }: { logoSrc: string }) {
         style={{
           marginTop: 18,
           fontSize: 28,
-          color: "#e8b923",
+          color: "rgba(0,0,0,0.6)",
           letterSpacing: 1,
         }}
       >
