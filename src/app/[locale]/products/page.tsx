@@ -40,6 +40,7 @@ export default async function ProductsPage({
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={tProduct("description")}
+        breadcrumbHref="/products"
       />
       <FigmaProductDetail />
       <FigmaFaq eyebrow={t("faqEyebrow")} heading={t("faqHeading")} items={faqItems} />

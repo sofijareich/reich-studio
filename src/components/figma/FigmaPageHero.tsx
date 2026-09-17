@@ -1,6 +1,8 @@
 import FigmaTopNav from "./FigmaTopNav";
 import FigmaCharReveal from "./FigmaCharReveal";
 import FigmaReveal from "./FigmaReveal";
+import FigmaBreadcrumbs from "./FigmaBreadcrumbs";
+import type { AppPathnames } from "@/i18n/routing";
 
 /**
  * Top nav + eyebrow + headline + subtext — the shape every inner page in
@@ -15,16 +17,22 @@ export default function FigmaPageHero({
   eyebrow,
   lines,
   subtext,
+  breadcrumbHref,
 }: {
   eyebrow: string;
   lines: string[];
   subtext: string;
+  breadcrumbHref: AppPathnames;
 }) {
   return (
     <section className="fg-page-x pb-[clamp(3rem,7vh,5rem)] pt-[clamp(1.5rem,3vh,2.5rem)]">
       <FigmaTopNav />
 
-      <div className="pt-[clamp(3rem,9vh,7rem)]">
+      <div className="mt-[clamp(1.5rem,3vh,2.5rem)]">
+        <FigmaBreadcrumbs href={breadcrumbHref} />
+      </div>
+
+      <div className="pt-[clamp(2rem,6vh,5rem)]">
         <FigmaReveal y={12}>
           <p className="fg-small uppercase text-black/60">{eyebrow}</p>
         </FigmaReveal>

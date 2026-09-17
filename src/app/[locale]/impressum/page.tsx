@@ -38,6 +38,7 @@ export default async function ImpressumPage({
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1")]}
         subtext={t("heroSubtext")}
+        breadcrumbHref="/impressum"
       />
 
       <section className="fg-page-x pb-[clamp(3.5rem,9vh,7rem)]">

@@ -32,6 +32,7 @@ export default async function ContactPage({
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
+        breadcrumbHref="/contact"
       />
       <FigmaContact />
       <FigmaFaq eyebrow={t("faqEyebrow")} heading={t("faqHeading")} items={faqItems} />

@@ -97,6 +97,8 @@ export default async function LocaleLayout({
     image: "https://reichstudio.ch/opengraph-image",
     description,
     email: "sofija.reich@reichstudio.ch",
+    telephone: "+41784217611",
+    priceRange: "CHF 60/h",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sursee",

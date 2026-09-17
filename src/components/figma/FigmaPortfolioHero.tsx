@@ -1,6 +1,7 @@
 import FigmaTopNav from "./FigmaTopNav";
 import FigmaCharReveal from "./FigmaCharReveal";
 import FigmaReveal from "./FigmaReveal";
+import FigmaBreadcrumbs from "./FigmaBreadcrumbs";
 
 export default function FigmaPortfolioHero({
   eyebrow,
@@ -15,7 +16,11 @@ export default function FigmaPortfolioHero({
     <section className="fg-page-x pb-[clamp(3rem,7vh,5rem)] pt-[clamp(1.5rem,3vh,2.5rem)]">
       <FigmaTopNav />
 
-      <div className="pt-[clamp(3rem,9vh,7rem)]">
+      <div className="mt-[clamp(1.5rem,3vh,2.5rem)]">
+        <FigmaBreadcrumbs href="/portfolio" />
+      </div>
+
+      <div className="pt-[clamp(2rem,6vh,5rem)]">
         <FigmaReveal y={12}>
           <p className="fg-small uppercase text-black/60">{eyebrow}</p>
         </FigmaReveal>

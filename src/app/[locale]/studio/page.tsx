@@ -31,6 +31,7 @@ export default async function StudioPage({
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
+        breadcrumbHref="/studio"
       />
       <FigmaAbout />
       <FigmaAiWorkflow />

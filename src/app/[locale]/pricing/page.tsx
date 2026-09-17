@@ -33,6 +33,7 @@ export default async function PricingPage({
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}
         subtext={t("heroSubtext")}
+        breadcrumbHref="/pricing"
       />
       <FigmaRateCard />
       <FigmaFaq heading={t("faqHeading")} items={faqItems} />
