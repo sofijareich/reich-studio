@@ -3,6 +3,14 @@
     "title": "Reich Studio Sursee: Marketing Agentur & KI-Automation",
     "description": "Marketing- & KI-Automation-Agentur in Sursee. Reich Studio automatisiert dein Marketing und baut echtes Vertrauen bei Kund:innen auf, ohne Agentur-Retainer."
   },
+  "NotFoundPage": {
+    "metaTitle": "Reich Studio: Seite nicht gefunden",
+    "eyebrow": "404",
+    "heading": "Diese Seite gibt es nicht.",
+    "text": "Der Link ist vielleicht falsch, oder die Seite wurde verschoben. So findest du, was du gesucht hast.",
+    "homeLink": "Zurück zur Startseite",
+    "contactLink": "Kontakt aufnehmen"
+  },
   "Nav": {
     "home": "Home",
     "studio": "Studio",
@@ -907,10 +915,16 @@
     "listHeading": "Was Projekte in etwa kosten.",
     "items": [
       {
-        "label": "Professionelle Website, 3 Seiten",
-        "sublabel": "Design, Umsetzung, Feinschliff: herausstechend statt Baukasten",
-        "low": "1'500",
-        "high": "2'400"
+        "label": "Redesign eines 10-seitigen Dokuments",
+        "sublabel": "Layout, Vorlage, Umsetzung auf allen Seiten",
+        "low": "480",
+        "high": "900"
+      },
+      {
+        "label": "Image-Video, 30 Sekunden",
+        "sublabel": "Konzept, Produktion, Schnitt",
+        "low": "480",
+        "high": "900"
       },
       {
         "label": "Social-Media-Aufbau, 1 Monat",
@@ -925,28 +939,22 @@
         "high": "1'800"
       },
       {
-        "label": "Eigene App, Software oder System",
-        "sublabel": "Sehr projektabhängig: vom Tool bis zum eigenen System",
-        "low": "3'500",
-        "high": "9'000"
-      },
-      {
         "label": "Brandaufbau von Grund auf",
         "sublabel": "Brand, Logo, Styleguide, Philosophie (mit fertigem Endprodukt)",
         "low": "1'200",
         "high": "2'100"
       },
       {
-        "label": "Redesign eines 10-seitigen Dokuments",
-        "sublabel": "Layout, Vorlage, Umsetzung auf allen Seiten",
-        "low": "480",
-        "high": "900"
+        "label": "Professionelle Website, 3 Seiten",
+        "sublabel": "Design, Umsetzung, Feinschliff: herausstechend statt Baukasten",
+        "low": "1'500",
+        "high": "2'400"
       },
       {
-        "label": "Image-Video, 30 Sekunden",
-        "sublabel": "Konzept, Produktion, Schnitt",
-        "low": "480",
-        "high": "900"
+        "label": "Eigene App, Software oder System",
+        "sublabel": "Sehr projektabhängig: vom Tool bis zum eigenen System",
+        "low": "3'500",
+        "high": "9'000"
       }
     ]
   }

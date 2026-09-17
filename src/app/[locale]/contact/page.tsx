@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeTheme from "@/components/figma/HomeTheme";
 import FigmaPageHero from "@/components/figma/FigmaPageHero";
 import FigmaContact from "@/components/figma/FigmaContact";
 import FigmaFaq from "@/components/figma/FigmaFaq";
@@ -29,7 +28,6 @@ export default async function ContactPage({
 
   return (
     <>
-      <HomeTheme />
       <FigmaPageHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}

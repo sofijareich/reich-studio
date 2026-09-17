@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeTheme from "@/components/figma/HomeTheme";
 import FigmaPortfolioHero from "@/components/figma/FigmaPortfolioHero";
 import FigmaPortfolioNav from "@/components/figma/FigmaPortfolioNav";
 import FigmaPortfolioProject from "@/components/figma/FigmaPortfolioProject";
@@ -30,7 +29,6 @@ export default async function PortfolioPage({
 
   return (
     <>
-      <HomeTheme />
       <FigmaPortfolioHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}

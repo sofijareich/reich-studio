@@ -3,6 +3,14 @@
     "title": "Reich Studio Sursee: Marketing & AI Automation Agency",
     "description": "Marketing & AI automation agency in Sursee, Switzerland. Reich Studio helps busy professionals automate their marketing and build real client trust."
   },
+  "NotFoundPage": {
+    "metaTitle": "Reich Studio: Page not found",
+    "eyebrow": "404",
+    "heading": "This page doesn't exist.",
+    "text": "The link might be broken, or the page has moved. Here's how to find what you were looking for instead.",
+    "homeLink": "Back to home",
+    "contactLink": "Get in touch"
+  },
   "Nav": {
     "home": "Home",
     "studio": "Studio",
@@ -907,10 +915,16 @@
     "listHeading": "What things tend to cost.",
     "items": [
       {
-        "label": "Professional website, 3 pages",
-        "sublabel": "Design, build, polish: standing out, not off a template",
-        "low": "1'500",
-        "high": "2'400"
+        "label": "Redesign of a 10-page document",
+        "sublabel": "Layout, template, applied across every page",
+        "low": "480",
+        "high": "900"
+      },
+      {
+        "label": "Image video, 30 seconds",
+        "sublabel": "Concept, production, editing",
+        "low": "480",
+        "high": "900"
       },
       {
         "label": "Social media build-up, 1 month",
@@ -925,28 +939,22 @@
         "high": "1'800"
       },
       {
-        "label": "Custom app, software, or system",
-        "sublabel": "Very project-dependent: from a small tool to a full system",
-        "low": "3'500",
-        "high": "9'000"
-      },
-      {
         "label": "Brand build, from scratch",
         "sublabel": "Brand, logo, styleguide, philosophy (with a finished end product)",
         "low": "1'200",
         "high": "2'100"
       },
       {
-        "label": "Redesign of a 10-page document",
-        "sublabel": "Layout, template, applied across every page",
-        "low": "480",
-        "high": "900"
+        "label": "Professional website, 3 pages",
+        "sublabel": "Design, build, polish: standing out, not off a template",
+        "low": "1'500",
+        "high": "2'400"
       },
       {
-        "label": "Image video, 30 seconds",
-        "sublabel": "Concept, production, editing",
-        "low": "480",
-        "high": "900"
+        "label": "Custom app, software, or system",
+        "sublabel": "Very project-dependent: from a small tool to a full system",
+        "low": "3'500",
+        "high": "9'000"
       }
     ]
   }

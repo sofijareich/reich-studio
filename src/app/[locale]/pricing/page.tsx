@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeTheme from "@/components/figma/HomeTheme";
 import FigmaPageHero from "@/components/figma/FigmaPageHero";
 import FigmaRateCard from "@/components/figma/FigmaRateCard";
 import FigmaFaq from "@/components/figma/FigmaFaq";
@@ -30,7 +29,6 @@ export default async function PricingPage({
 
   return (
     <>
-      <HomeTheme />
       <FigmaPageHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1"), t("heroLine2")]}

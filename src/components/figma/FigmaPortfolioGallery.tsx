@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
+import { useLenis } from "lenis/react";
 import type { PortfolioMediaItem } from "@/lib/portfolioMedia";
 
 type LightboxState =
@@ -248,6 +249,15 @@ export default function FigmaPortfolioGallery({
 }) {
   const [lightbox, setLightbox] = useState<LightboxState>(null);
   const [expanded, setExpanded] = useState(false);
+  const lenis = useLenis();
+
+  // Expanding removes the 80vh clamp and can add dozens of tiles' worth of
+  // height in one render — well outside what Lenis's debounced auto-resize
+  // reliably catches before the next scroll input, which reads as the page
+  // "stopping" partway down. Force it in sync with the state change.
+  useEffect(() => {
+    lenis?.resize();
+  }, [expanded, lenis]);
 
   const photos = media
     .map((item, i) => ({ item, caption: captions[i] ?? "", originalIndex: i }))

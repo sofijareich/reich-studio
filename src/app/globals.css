@@ -307,8 +307,8 @@ footer {
 /* ============================================================
    Figma redesign — light editorial theme
    Manrope, black on white, #D9D9D9 bands, -6% tracking.
-   Scoped to [data-home-theme="light"] (set by HomeTheme on the
-   redesigned page) so every other page keeps the dark theme
+   Scoped to [data-home-theme="light"] (set by ThemeController, based on
+   the current path) so pages still on the old design keep the dark theme
    until the redesign rolls out site-wide.
    ============================================================ */
 

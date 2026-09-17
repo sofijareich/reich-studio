@@ -1,6 +1,28 @@
 "use client";
 
-import { ReactLenis } from "lenis/react";
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { ReactLenis, useLenis } from "lenis/react";
+
+/**
+ * Lenis caches the page's scrollable height and only recomputes it via a
+ * debounced ResizeObserver. That's fine for content that grows in place,
+ * but a client-side route change can swap in a shorter page while Lenis is
+ * still holding onto the previous, taller page's limit — which reads
+ * exactly like "scrolling stops before the real bottom". Forcing a resize
+ * right after the pathname changes keeps Lenis's limit in sync with what's
+ * actually on the page.
+ */
+function ResizeOnNavigate() {
+  const pathname = usePathname();
+  const lenis = useLenis();
+
+  useEffect(() => {
+    lenis?.resize();
+  }, [pathname, lenis]);
+
+  return null;
+}
 
 /**
  * Site-wide inertia scroll (the lenis.dev effect itself) — wraps the whole
@@ -23,6 +45,7 @@ export default function FigmaSmoothScroll({ children }: { children: React.ReactN
         smoothWheel: true,
       }}
     >
+      <ResizeOnNavigate />
       {children}
     </ReactLenis>
   );

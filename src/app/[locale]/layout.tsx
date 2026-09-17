@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Manrope } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -8,6 +9,7 @@ import Footer from "@/components/Footer";
 import FigmaFooter from "@/components/figma/FigmaFooter";
 import Mascots from "@/components/Mascots";
 import FigmaSmoothScroll from "@/components/figma/FigmaSmoothScroll";
+import ThemeController, { THEME_INIT_SCRIPT } from "@/components/figma/ThemeController";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
@@ -116,7 +118,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    /* suppressHydrationWarning: the redesigned page's theme script stamps
+    /* suppressHydrationWarning: the theme-init script (below) stamps
        data-home-theme onto <html> before React hydrates (the standard theming
        pattern — it only covers this element's own attributes). */
     <html
@@ -125,12 +127,20 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col bg-bg text-fg antialiased">
-        <script
+        <Script
+          id="theme-init"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }}
+        />
+        <Script
+          id="organization-jsonld"
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
         <NextIntlClientProvider>
           <FigmaSmoothScroll>
+            <ThemeController />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />

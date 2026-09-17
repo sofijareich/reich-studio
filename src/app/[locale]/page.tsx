@@ -1,5 +1,4 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeTheme from "@/components/figma/HomeTheme";
 import FigmaHero from "@/components/figma/FigmaHero";
 import FigmaSituation from "@/components/figma/FigmaSituation";
 import FigmaRoadmap from "@/components/figma/FigmaRoadmap";
@@ -32,7 +31,6 @@ export default async function Home({
 
   return (
     <>
-      <HomeTheme />
       {/* homepage narrative, top to bottom:
           hero → the situation → the roadmap → results → one real voice → the ask → newsletter */}
       <FigmaHero />

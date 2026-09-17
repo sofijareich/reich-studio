@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import HomeTheme from "@/components/figma/HomeTheme";
 import FigmaPageHero from "@/components/figma/FigmaPageHero";
 import FigmaReveal from "@/components/figma/FigmaReveal";
 import { pageMetadata } from "@/lib/seo";
@@ -35,7 +34,6 @@ export default async function ImpressumPage({
 
   return (
     <>
-      <HomeTheme />
       <FigmaPageHero
         eyebrow={t("heroEyebrow")}
         lines={[t("heroLine1")]}

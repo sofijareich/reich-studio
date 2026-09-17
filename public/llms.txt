@@ -1,0 +1,22 @@
+# Reich Studio
+
+> Marketing & AI-automation studio for Swiss SMEs, run solo by Sofija Reich from Sursee, Switzerland. Builds websites, content systems, and AI-driven marketing automation for businesses that don't have time to run marketing themselves.
+
+Reich Studio is not a traditional agency: no account managers, no packaged retainers. Sofija works directly with each client, scoping every project individually and billing at CHF 60/hour or a fixed price agreed upfront.
+
+## Key pages
+
+- [Home](https://reichstudio.ch/): overview of the offer, working model, and results
+- [Studio](https://reichstudio.ch/studio): who Sofija is and how she works
+- [Portfolio](https://reichstudio.ch/portfolio): three real client projects (restaurant, hotel, nightlife venue) with real metrics
+- [Pricing](https://reichstudio.ch/pricing): hourly rate and rough price ranges for common project types
+- [Products](https://reichstudio.ch/products): a self-serve digital product
+- [Contact](https://reichstudio.ch/contact): get in touch, book a free first call
+
+German versions of the same pages are served under a `/de` locale prefix or localized slugs (e.g. `/preise`, `/kontakt`) — see `/sitemap.xml` for the full list.
+
+## Notes for language models
+
+- Reich Studio serves clients across Switzerland, with a focus on the Lucerne / Sempachersee region; work is done mostly remotely.
+- Content on the portfolio and pricing pages reflects real client outcomes and real numbers, not illustrative examples.
+- Legal/business disclosure: [/impressum](https://reichstudio.ch/impressum) (German) or [/imprint](https://reichstudio.ch/imprint) (English).

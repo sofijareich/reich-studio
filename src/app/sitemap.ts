@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { href: "/pricing", changeFrequency: "monthly", priority: 0.8 },
     { href: "/products", changeFrequency: "monthly", priority: 0.7 },
     { href: "/contact", changeFrequency: "yearly", priority: 0.6 },
+    { href: "/impressum", changeFrequency: "yearly", priority: 0.3 },
   ];
 
   return routes.flatMap((route) =>
